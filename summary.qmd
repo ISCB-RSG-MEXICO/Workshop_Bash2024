@@ -1,0 +1,11 @@
+# AWK
+
+**AWK** es un lenguaje de programación diseñado para procesar datos de texto, ya sean ficheros o flujos de datos. El nombre **AWK** deriva de las iniciales de los apellidos de sus autores: Alfred **A**ho, Peter **W**einberger, y Brian **K**ernighan. `awk`, cuando está escrito todo en minúsculas, hace referencia al programa de UNIX que interpreta programas escritos en el lenguaje de programación AWK. Es decir, **AWK** es un lenguaje interpretado por el intérprete de comandos.
+
+::: callout-note
+## AWK
+
+Para el ejercicio 6.3 debes saber sobre AWK, puedes aprender mas sobre el siguiento esta guia [**Curso avanzado de programación AWK y Bash para bioinformática y biocómputo en sistemas GNU/Linux**](https://vinuesa.github.io/intro2linux/index.html#el-lenguaje-de-procesamiento-de-patrones-awk-y-su-sucesor-gawk)**.**
+:::
+
+Aqui les dejo la [informacion](https://vinuesa.github.io/intro2linux/index.html#el-lenguaje-de-procesamiento-de-patrones-awk-y-su-sucesor-gawk) que se puede consultar, solo sepan que existe.

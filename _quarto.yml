@@ -1,0 +1,38 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Workshop Bash 2024"
+  author: "Evelia Coss"
+  date: "10/21/2024"
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - requisitos.qmd
+    - intro.qmd
+    - Bash.qmd
+    - Rnaseq_intro.qmd
+    - ScriptBash.qmd
+    - Parte3.qmd
+    - Parte4.qmd
+    - summary.qmd
+  # Information
+  repo-url: https://github.com/EveliaCoss/Workshop_Bash2024 # link de Github
+  sharing: [twitter, facebook, linkedin]
+  favicon: "ViernesBioinfo_logo.png" # icono de la pagina en pestana
+
+format:
+  html:
+    toc-depth: 4
+    number-depth: 3
+  # Boton para cambiar tema de oscuro a claro
+    theme:
+      light: cosmo
+      dark: darkly
+    code-fold: show # Ocultar codigo
+    code-copy: true # Copy button
+    freeze: false  # Desactivar congelamiento
+
+editor: visual
+

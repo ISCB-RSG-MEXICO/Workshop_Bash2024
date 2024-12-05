@@ -1,0 +1,117 @@
+# **Análisis de datos de RNA-Seq**
+
+## **Bioinformática se conforma de la computación, biológica, matemáticas y estadística**
+
+La bioinformática, en relación con la **genética y la genómica**, es una **subdisciplina científica** que implica el uso de **ciencias informáticas** para *recopilar, almacenar, analizar y diseminar datos biológicos*, como secuencias de ADN y aminoácidos o anotaciones sobre esas secuencias [NIH, 2023](https://www.genome.gov/es/genetics-glossary/Bioinformatica).
+
+## **Transcriptoma**
+
+Es el conjunto de todas las moléculas de RNA producidos por el genoma bajo **condiciones específicas** o en **una célula específica (scRNA-Seq)** o en **una población de células (bulk RNA-Seq)**.
+
+### **¿Porque es importante medir los cambios en la expresión génica (transcriptoma)?**
+
+-   Las variaciones en la expresión entre condiciones se puede relacionar con los cambios en los **procesos biológicos**.
+
+-   El transcriptoma nos da una aproximación de los cambios relativos en la expresión génica de los **genes codificantes y no codificantes**.
+
+::: callout-note
+## Palabras claves:
+
+-   Genoma - Fijo
+-   Transcriptoma - Altamente variable
+:::
+
+## **El transcriptoma varía según:**
+
+-   Tejido / Órgano
+-   Célula
+-   Ambiente (estrés)
+-   Medicamentos (tratamientos)
+-   Salud
+-   Edad
+-   Etapa del desarrollo
+
+## **Idea principal de RNA-Seq**
+
+### **Relacionar un fenotipo con los cambios de expresión de los genes en una condición dada**
+
+[![Imagen tomada de: https://www.acobiom.com/en/rna-seq-en/](https://www.acobiom.com/wp-content/uploads/2022/09/cropped-cropped-RNA-Seq-Experiment-1.png)](https://www.acobiom.com/en/rna-seq-en/)
+
+## Pipeline general
+
+[![Imagen proveniente de mRNA-Seq data analysis workflow](https://biocorecrg.github.io/RNAseq_course_2019/images/RNAseq_workflow.png)](https://biocorecrg.github.io/RNAseq_course_2019/workflow.html)
+
+# **Control de calidad de los datos**
+
+## **Quality Check / Quality Control**
+
+-   **Uno de los pasos más importantes. Dedícale tiempo.**
+
+-   La calidad de tus datos importa, bibliotecas mal secuenciadas genera datos desconfiables.
+
+-   Debes analizar su calidad para poder reclamar en la secuenciación (\~1 semana).
+
+::: callout-note
+## Programas:
+
+-   [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
+-   [MultiQC](https://multiqc.info/)
+:::
+
+## **Archivos fastq (fastq.gz / fq.gz)**
+
+-   Derivan del formato FASTA.
+
+-   **Muestra la calidad de cada nucleótido.**
+
+-   Cada secuencia está representada por 4 líneas:
+
+    -   <div>
+
+        1.  \@ ID del read + información de la corrida
+
+        2.  Secuencia
+
+        3.  Símbolo "+"
+
+        4.  Información de la calidad de secuenciación de cada base. Cada letra o símbolo representa a una base de la secuencia codificado en formato (Escala *Phred* y código [*ASCII*](https://www.drive5.com/usearch/manual/quality_score.html))
+
+        </div>
+
+[![](img/fastq_example.png)](https://eveliacoss.github.io/RNAseq_classFEB2024/Presentaciones/Dia1_AspectosGenerales.html#45)
+
+## **Phred Quality score / Puntuación de calidad**
+
+Q = -10 x log10(P) \# where P is the probability that a base call is erroneous
+
+-   Q = Phred Quality score
+
+-   P = Probability of incorrect base call
+
+![](img/Phred_example.png)
+
+El valor máximo de calidad es = \~40 (zona verde) y los valores \< 20 se consideran de baja calidad.
+
+::: callout-note
+## Ejemplo de Buena calidad
+
+Reporte de FastQC con [buena calidad](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html) de las lecturas en la zona verde.
+:::
+
+[![](img/GoodQC.png)](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html)
+
+::: callout-note
+## Ejercicio 3
+
+1.  Visualiza el contenido del archivo "\_files/secuencias_bash.fastq" empleando head. `head _files/secuencias_bash.fastq`
+2.  Calcula el numero de lineas contenidas en este archivo. `wc -l _files/secuencias_bash.fastq`
+3.  Imprime las lineas 4 a 8 del archivo. `sed -n '4,8p' _files/secuencias_bash.fastq`
+4.  Podemos utilizar la función `grep -c` para contar el número de secuencias de un archivo (de nuevo, sustituya archivo por el nombre de uno de los archivos): `grep -c "^@SRR" _files/secuencias_bash.fastq`
+:::
+
+## Material suplementario
+
+-   [mRNA-Seq data analysis workflow](https://biocorecrg.github.io/RNAseq_course_2019/workflow.html)
+-   [Quality Control using FastQC](https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/lessons/QC_raw_data.html)
+-   [Fundamentals: FASTQ files](https://learnmetabarcoding.github.io/LearnMetabarcoding/processing/fastq.html)

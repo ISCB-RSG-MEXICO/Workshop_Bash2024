@@ -1,0 +1,89 @@
+::: {layout-ncol="2"}
+![](https://liigh.unam.mx/wp-content/uploads/2016/05/logo-liigh-unam.png)
+:::
+
+# Información general {.unnumbered}
+
+-   ::: {.panel-tabset group="globalInfo"}
+    ### Sobre el curso 📌
+
+    El contenido de este curso se realizó en base al [material de un grupo de estudio](https://github.com/RSG-Ecuador/Grupo-De-Estudio-Linux-Bash) realizado por el [RSG Ecuador](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html). La literatura adicional se especifica en cada tema de forma pertinente.
+
+    -   **Fechas:** 22 y 24 octubre 2024
+
+    -   **Duración del curso:** 3 horas
+
+    #### **Instructora:**
+
+    -   **Evelia Lorena Coss-Navarrete** - PostDoc, LIIGH-UNAM.
+
+    #### **Resumen:**
+
+    Este tutorial te enseñará los conceptos fundamentales en el empleo y manejo de Bash Shell, incluyendo **la creación de scripts de Bash, generación de programas con funcionalidades sencillas aplicables a bioinformática y a programación en general.**
+
+    #### **Objetivos:**
+
+    En esta guía rápida aprenderás a:
+
+    1.  Mis primeros pasos en bash.
+
+    2.  Consultar información sobre archivos y directorios.
+
+    3.  Permisos y como cambiarlos.
+
+    4.  Información general sobre el Análisis de datos de RNA-Seq
+
+    5.  Wildcards y Streams
+
+    6.  Crear un script en Bash.
+
+    ## Citar y reutilizar el material del curso
+
+    Los datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+    ### Requisitos previos
+
+    -   Debes tener contar con una **terminal** de Bash Shell en tu sistema operativo (Visita la ventana de Instalaciones y requerimientos previos)
+
+    -   Contar con una terminal con Git, en Windows puedes usar [Git Bash.](https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/)
+
+    ### Agenda 📆 {#agenda}
+
+    +--------------------------------------------------------+--------+
+    | Tema                                                   | Tiempo |
+    +========================================================+:======:+
+    | 🔷 **Sección** **1 - (12:00- 13:00 h) (22 octubre)**   |        |
+    +--------------------------------------------------------+--------+
+    | -   Conceptos Unix y GNU/Linux                         | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   Mis primeros pasos en Bash                         | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   **Ejercicio 1. Ubicación en repositorios**         | 5 min  |
+    +--------------------------------------------------------+--------+
+    | -   Consultar información sobre archivos y directorios | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   Comprimir y descomprimir archivos                  | 5 min  |
+    +--------------------------------------------------------+--------+
+    | -   **Ejercicio 2.** Descomprimir archivos             | 5 min  |
+    +--------------------------------------------------------+--------+
+    | ☕ *Coffee break (10 min) - (13:00-13:10) ☕*          | 10 min |
+    +--------------------------------------------------------+--------+
+    | 🔷  **Sección** **2 - (13:10 - 14:00 h)**              |        |
+    +--------------------------------------------------------+--------+
+    | -   Análisis de datos de RNA-Seq                       | 20 min |
+    +--------------------------------------------------------+--------+
+    | -   **Ejercicio 3.** Manejando datos                   | 10 min |
+    +--------------------------------------------------------+--------+
+    | 🔷  **Sección 3 - (12:00 - 13:00 h) (24 octubre)**     |        |
+    +--------------------------------------------------------+--------+
+    | -   Wildcards y Streams                                | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   **Ejercicio 4.** Wildcard                          | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   Operadores de redirección de datos I/O             | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   **Ejercicio 5.** Redirección de salidas            | 10 min |
+    +--------------------------------------------------------+--------+
+    | -   Scripts en Bash                                    | 10 min |
+    +--------------------------------------------------------+--------+
+    :::
