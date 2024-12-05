@@ -1,208 +1,107 @@
-# Scripts en Bash
+# Buenas practicas
 
-Los `scripts` son archivos de texto que contienen instrucciones ejecutables por un intérprete de un lenguaje de programación para la ejecución de tareas. El formato `.sh` se utiliza para escribir `scripts ejecutables` por un intérprete como **Bash**. En esta sección crearemos varios scripts de Bash y usaremos varios comandos y operadores.
+Notas personales recabadas a partir de los tutoriales y ejemplos 😊. Espero que les funcione 💜
 
-::: callout-note
-Los script de Bash contiene al inicio esta descripción `#!bin/bash` y la extensión `.sh`
-:::
+## Materiales informativos
 
-## Actividad grupal
+-   [Curso de Joselyn Cristina Chávez Fuentes](https://comunidadbioinfo.github.io/cdsb2023/creaci%C3%B3n-de-vi%C3%B1etas.html)
 
-**Paso 1.** Crear un script en Bash con el nombre demo.sh empleando nano.
+-   Me ayudo mucho este [Video](https://www.youtube.com/watch?v=7ZgZ6qUKZvE&ab_channel=DaniMedi)
 
-``` {.bash code-copy="true" eval="false"}
-nano demo.sh
-```
+-   [Documentación de funciones de Andrés Arredondo Cruz](https://comunidadbioinfo.github.io/cdsb2023/documentaci%C3%B3n-de-funciones.html)
 
-**Paso 2.** Copia el siguiente código dentro del script `demo.sh` y guarda los cambios.
+💪 Estuve muy intensa viendo su codigo. Muchas gracias por tenerlos publico.
 
-``` {.bash code-copy="true" eval="false"}
+## **Un algoritmo nos permite resolver un problema ⭐**
 
-#!/bin/bash
-# File: demo.sh
+Un algoritmo es un método para resolver un problema mediante una serie de pasos **definidos, precisos** y **finitos**.
 
-# Input de archivo
-# 2. Mostrar el archivo y número de argumentos
-echo "Archivo a procesar > $@"
-echo "Numero de argumentos: $#"
+-   **Definido**: si se sigue dos veces, se obtiene el mismo resultado. Es reproducible.
 
-# 3. Conteo de secuencias y separación de malas lecturas
-numero_secuencias=$(grep -c '^@SRR098026' $@)
-grep -B1 -A2 NNNNNNNNNN $@ > malas_lecturas.fastq
-malas=$(cat malas_lecturas.fastq | wc -l)
-echo "Número de malas lecturas: $malas"
+-   **Preciso**: implica el orden de realización de cada uno de los pasos.
 
-# 4. Búsqueda de patrones
-echo "Desea buscar patrones (y/n): "
-read d
+-   **Finito**: Tiene un numero determinado de pasos, implica que tiene un fin.
 
-if [[ $d == "y" ]]; then
-    echo "Los patrones se guardarán en: patrones.txt"
-    echo -e 'ACTG\nCCCCC\nNNNCNNN\nNNNGNNN\nTTTT\nTATA\nAAA' > patrones.txt
-    grep -f patrones.txt $@ > busqueda.txt
-    echo "Búsqueda de patrones guardada en: busqueda.txt"
-else
-    echo "ok :P"
-fi
+> Un algoritmo podemos definirlo como un **programa o software**.
 
-# Mensaje final
-echo "Fin :)"
-```
+## **Para escribir un buen software necesitas:**
 
-::: {.callout-note collapse="true"}
-## Explicación del código
+> Escribir **código mantenible (maintainable code), usar control de versiones (version control) y rastreadores de problemas (issue trackers), revisiones de código (code reviews), pruebas unitarias (unit testing) y automatización de tareas (task automation)**.
+>
+> Wilson, et al. 2014. PLOS Biology
 
--   1\. **Comentarios y declaración de archivo**
-
--   `#!/bin/bash`: Indica que el script se ejecutará usando el intérprete de Bash.
-
--   `# File: demo.sh`: Un comentario que indica el nombre del archivo del script.
-
--   2\. **Mostrar el archivo y número de argumentos**
-
--   `echo "Archivo a procesar > $@"`: Muestra el nombre del archivo que se pasará como argumento al script. `$@` representa todos los argumentos pasados al script.
-
--   `echo "Numero de argumentos: $#"`: Muestra cuántos argumentos ha recibido el script. `$#` indica el número de argumentos.
-
--   3\. **Contar secuencias y separar malas lecturas**
-
--   `numero_secuencias=$(grep -c '^@SRR098026' $@)`: Usa `grep` para contar cuántas secuencias empiezan con `@SRR098026` en el archivo (probablemente sea un prefijo en un archivo FASTQ que identifica secuencias de interés). `-c` cuenta las coincidencias.
-
--   `grep -B1 -A2 NNNNNNNNNN $@ > malas_lecturas.fastq`: Busca secuencias de calidad baja o problemáticas (que contengan 10 nucleótidos seguidos de `N`, que representan bases no determinadas).
-
-    -   `-B1`: Muestra 1 línea antes de cada coincidencia de `NNNNNNNNNN`.
-
-    -   `-A2`: Muestra 2 líneas después de la coincidencia.
-
-    -   El resultado se guarda en un archivo llamado `malas_lecturas.fastq`.
-
--   `malas=$(cat malas_lecturas.fastq | wc -l)`: Cuenta el número total de líneas en `malas_lecturas.fastq` (esto indica la cantidad de malas lecturas encontradas).
-
--   `echo "Número de malas lecturas: $malas"`: Muestra la cantidad de malas lecturas encontradas
-
--   `echo "Numero de argumentos: $#"`: Muestra cuántos argumentos ha recibido el script. `$#` indica el número de argumentos.
-
--   4\. **Búsqueda de patrones**
-
--   `echo "Desea buscar patrones (y/n): "`: Pregunta al usuario si desea buscar patrones específicos en el archivo.
-
--   `read d`: Lee la respuesta del usuario y la guarda en la variable `d`.
-
--   `if [[ $d == "y" ]]; then`: Si la respuesta es "y" (sí), el script procede a buscar los patrones.
-
-    -   `echo -e 'ACTG\nCCCCC\nNNNCNNN\nNNNGNNN\nTTTT\nTATA\nAAA' > patrones.txt`: Crea un archivo `patrones.txt` que contiene una lista de secuencias de interés (patrones a buscar).
-
-    -   `grep -f patrones.txt $@ > busqueda.txt`: Busca los patrones contenidos en `patrones.txt` dentro del archivo de entrada. El resultado de la búsqueda se guarda en `busqueda.txt`.
-
-    -   `echo "Búsqueda de patrones guardada en: busqueda.txt"`: Informa al usuario que los resultados de la búsqueda se guardaron en el archivo `busqueda.txt`.
-
--   `else`: Si la respuesta es "n" (no), simplemente muestra un mensaje.
-:::
-
-Este código realizará las siguientes instrucciones:
-
-1.  Tomará como input el nombre del archivo `./_files/secuencias_bash.fastq` de secuencias fastq para analizar.
-
-2.  Buscará dentro del archivo provisto por el usuario las secuencias con el string \@SRR098026 y las contará.
-
-3.  Exportará las malas secuencias a un archivo llamado `malas_lecturas.fastq`, usando el string "NNNNNNNNNN" como plantilla.
-
-4.  Reportará el número de malas secuencias.
-
-5.  Luego buscaremos patrones en el archivo `buenas_lecturas.fastq`, si es que el usuario lo desea.
-
-**Paso 3.** Deberías correr el script así, una vez que hayas descargado el archivo `secuencias_bash.fastq`:
-
-``` {.bash code-copy="true" eval="false"}
-bash demo.sh secuencias_bash.fastq
-```
-
-[![](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/_images/b5.png)](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_avanzado/02_Bash/1_bash.html)
-
-## Repaso
-
-Ahora que ya sabes realizar Script en Bash, podrias intentar realizar la actividad de [6. Extracción de información de archivos fastq](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/05_Ejercicios_procesamiento_ficheros_Bioinfo/5_Info_fastq.html) del curso de [GNU/Linuz para Bioinformatica](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html) organizado por RSG Ecuador.
-
-## Extracción de información de archivos fastq
-
-En este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos `secuencias1.fastq`, `secuencias2.fastq` y `secuencias3.fastq` que se encuentra en la carpeta `_files` dentro del directorio raíz del repositorio de GitHub [unix.bioinfo.rsgecuador](https://github.com/RSG-Ecuador/unix.bioinfo.rsgecuador/tree/gh-pages) .
-
-**Ejercicio 6.1** La letra `N` representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o `missing data`. Imprime el número de secuencias que tenga diez `N` seguidas por cada uno de los archivos `fastq` de la carpeta `_files`.
+Con el fin de *previnir retracciones*.
 
 ::: callout-note
-Es posible realizar esto con un comando de una sola línea, intenta resolverlo de esta forma.
+## Pasos para escribir un buen software
+
+1.  Análisis del problema / Definir el problema
+
+2.  Diseño del algoritmo / Diseño del programa
+
+3.  Codificación / Escribir el código
+
+4.  Compilación y ejecución del programa
+
+5.  Verificación / Realizar pruebas
+
+6.  Depuración / Detectar los errores y corregirlos
+
+> Programacion defensiva
+
+7.  Documentación
 :::
 
-::: {.callout-tip collapse="true" icon="false"}
-## Solución
+![](https://eveliacoss.github.io/Buenaspracticas_R_Mayo2024/BestPractices/figures/homersapien.jpg){fig-align="center"}
 
-``` {.bash code-copy="true" eval="false"}
-# cd C:/Users/ecoss/Documents/Respaldos/Github_notes/Workshop_Bash2024/data/unix.bioinfo.rsgecuador-gh-pages
+## **Paso 7: Documentación**
 
-#!/bin/bash
-# File: countseq.sh
+::: callout-note
+-   *Autor (author)*: Su nombre
 
-# Ruta a la carpeta que contiene los archivos .fastq
-FOLDER="_files"
+-   *Dia (date)*: Fecha de creación
 
-# Iterar sobre cada archivo .fastq en la carpeta
-for file in "$FOLDER"/*[1-3].fastq; do
-  # Imprimir el nombre del archivo
-  echo "Archivo: $file"
-  
-  # Usar grep para buscar secuencias que contengan 10 'N' seguidas y contar cuántas veces aparecen
-  count=$(grep -c 'NNNNNNNNNN' $file )
-  
-  # Imprimir el número de secuencias encontradas
-  echo "Número de secuencias con 10 N seguidas: $count"
-  echo "---------------------------------------"
-done
-```
+-   *Paquetes (packages)*
 
-Recuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida `unix.bioinfo.rsgecuador-gh-pages/`y ejecutar: `./countseq.sh.`
+-   *Directorio de trabajo (Working directory)*: En que carpeta se encuentra tu datos y programa.
 
-Salida:
+-   *Información descriptiva del programa (Description)*: ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.
 
--   `secuencias1.fastq` - 1
--   `secuencias2.fastq` - 58
--   `secuencias3.fastq` - 75
+-   *Usage* ¿Cómo se utiliza?
+
+-   *Argumentos (Arguments)*
+
+    -   *Información de entrada (Data Inputs)*: Ej: Solo numeros enteros (sin decimales).
+
+    -   *Información de salida (Outpus)*: Graficas, figuras, tablas, etc.
 :::
 
-**Ejercicio 6.2** Ahora, determina el número de secuencias (lineas) de cada archivo `.fastq` por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo `.fastq` empiezan con el string `@SRR098026`.
+![](https://eveliacoss.github.io/Buenaspracticas_R_Mayo2024/BestPractices/figures/meme_documentacion.jpg){fig-align="center"}
 
-::: {.callout-tip collapse="true" icon="false"}
-## Solución
+## Puntos claves para buenas practicas en bioinfo ⭐
 
-``` bash
-#!/bin/bash
-# File: countNseq.sh
+1.  Escriba **programas para personas, no para computadoras** (Documenta qué hace y por qué). - Se coherente en la nomenclatura, indentación y otros aspectos del estilo.
 
-# Ruta a la carpeta que contiene los archivos .fastq
-FOLDER="_files"
+2.  Divide los programas en *funciones cortas de un solo propósito.* 💻 📚
 
-# Iterar sobre cada archivo .fastq en la carpeta
-for file in "$FOLDER"/*[1-3].fastq; do
-  echo "Archivo: $file"
-  
-  # Usar grep para contar cuántas líneas empiezan con '@SRR098026'
-  count=$(grep -c '^@SRR098026' $file )
-  
-  echo "Número de secuencias: $count"
-  echo "---------------------------------------"
-done
-```
+3.  **No repitas tu código**. Crea pasos reproducibles o que se repitan por si solas. ➰
 
-Salida:
+4.  Planifique los errores (**Programacion defensiva**) 🚩
 
--   `secuencias1.fastq` - 99
--   `secuencias2.fastq` - 75
--   `secuencias3.fastq` - 75
+5.  Optimice el software sólo después de que funcione correctamente. - Si funciona no lo modifiques, simplificalo.
+
+6.  Colaborar - Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita. 👥
+
+::: callout-note
+## Ejemplo de como realizo mis documentos 💜
+
+Aqui les dejo el script que les doy a mis alumnos [VisualizacionDatos.R](https://github.com/EveliaCoss/RNAseq_classFEB2024/blob/main/Practica_Dia3/scripts/VisualizacionDatos.R) del curso de [Análisis de datos de RNA-Seq](https://github.com/EveliaCoss/RNAseq_classFEB2024).
 :::
 
-## 
-Material suplementario
+## Referencias
 
--   RSG Ecuador. [Scripts en Bash](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_avanzado/02_Bash/1_bash.html)
--   RSG Ecuador. [Wildcards y Streams](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/03_Manejo_terminal/5_wildcards.html)
--   RSG Ecuador. [Expresiones regulares (*regex*)](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/04_Procesamiento_ficheros_regex_pipes/3_Expresiones_regulares.html)
--   [Wildcard Selection in Bash](https://pressbooks.senecapolytechnic.ca/uli101/chapter/wildcard-selection-in-bash/)
+-   Haydee tutorial: [Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos](https://haydeeperuyero.github.io/Computo_Cientifico/)
+-   Alejandra Medina tutorial: [Control de versiones con GitHub y RStudio](https://comunidadbioinfo.github.io/cdsb2023/control-de-versiones-con-github-y-rstudio.html)
+-   Wilson, et al. 2014. [Best Practices for Scientific Computing](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLOS Biology
+-   Evelia Coss - tutorial [Buenas practicas en R](https://github.com/EveliaCoss/Buenaspracticas_R_Mayo2024)
+-   Evelia Coss - [Make your CV tutorial](https://github.com/EveliaCoss/Make_yourCV)

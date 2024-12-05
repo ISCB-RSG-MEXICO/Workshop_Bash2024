@@ -24,6 +24,8 @@ El signo `$` es un **prompt**, que nos muestra que la terminal está esperand
 **NOTA 1:** Si das `cd` y no indicas una ruta absoluta, te llevara al Directorio Raiz (\~).
 
 **NOTA 2:** Puedes usar la tecla TAB para completar el nombre de la carpeta. En caso de que tengas más de dos carpetas que inicien igual, tendrás que terminar de completar el nombre.
+
+**NOTA 3:** Podemos usar `pwd` para saber nuestra ubicación exacta.
 :::
 
 ## Conocer mi dirección / ubicación
@@ -51,7 +53,7 @@ A partir de `/Users/ecoss/data/`, ¿Cuál de los siguientes comandos podría Am
 
 2.  `cd /`
 
-3.  `cd /home/amanda`
+3.  `cd /``Users``/ecoss`
 
 4.  `cd ../..`
 
@@ -72,11 +74,11 @@ A partir de `/Users/ecoss/data/`, ¿Cuál de los siguientes comandos podría Am
 
     2.  No: `/` significa el directorio raíz.
 
-    3.  No: El directorio **home** de Amanda es `/Users/amanda`.
+    3.  No: El directorio **home** de Amanda es `/Users/ecoss`.
 
     4.  No: sube dos niveles, es decir termina en `/Users`.
 
-    5.  Sí: `~` significa el directorio **home** del usuario, en este caso `/Users/amanda`.
+    5.  Sí: `~` significa el directorio **home** del usuario, en este caso `/Users/ecoss`.
 
     6.  No: esto navegaría a un directorio `home` en el directorio actual, si existe.
 
@@ -88,6 +90,10 @@ A partir de `/Users/ecoss/data/`, ¿Cuál de los siguientes comandos podría Am
     :::
 :::
 
+::: callout-note
+Si colocamos `..` significa \'el directorio por encima del actual o el directorio anterior\', pero si colocamos `.` significa el directorio actual.
+:::
+
 Ejemplo de rutas:
 
 [![](https://github.com/raynamharris/Shell_Intro_for_Transcriptomics/raw/master/lessons/figures/nav_dirs.png)](https://github.com/raynamharris/Shell_Intro_for_Transcriptomics/blob/master/lessons/02_Navigating_Dirs.md)
@@ -95,7 +101,7 @@ Ejemplo de rutas:
 ## **Comandos básicos**
 
 | Comandos       | Información                                                                                                                                                             | Argumentos                          |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+|-------------|-----------------------------------------------|-------------|
 | `ssh`          | Conexión a servidores                                                                                                                                                   | ssh usuario\@servidor.mx            |
 | `ls`           | Observar el contenido de los archivos en una carpeta                                                                                                                    | ls directorio/                      |
 | `cd`           | Moverse de directorios                                                                                                                                                  | cd /home/usuario/data/              |
@@ -182,7 +188,7 @@ Por lo tanto:
 Los archivos pueden contener diversos tipos de extensiones, dependiendo del objetivo será necesario descomprimirlos y en otros dejarlos comprimidos para no abarcar tanto espacio en tu espacio de trabajo. 
 
 | Tipo de archivo | Comprimir                                                | Descomprimir               |
-|-----------------|----------------------------------------------------------|----------------------------|
+|-----------------|--------------------------------------|------------------|
 | Carpeta.tar     | `tar -cvf carpeta.tar /dir/a/comprimir/carpeta`          | `tar -xvf carpeta.tar`     |
 | Carpeta.tar.gz  | `tar -czvf carpeta.tar.gz /carpeta/a/empaquetar/carpeta` | `tar -zxvf carpeta.tar.gz` |
 | Carpeta.gz      | `gzip -9 carpeta.gz carpeta/a/empaquetar/carpeta`        | `gunzip -kd carpeta.gz`    |
@@ -200,4 +206,4 @@ Los archivos pueden contener diversos tipos de extensiones, dependiendo del obje
 
 -   Software Carpentry. [La terminal de Unix](https://swcarpentry.github.io/shell-novice-es/02-filedir.html)
 -   RSG Ecuador.[GNU/Linux para bioinfomatica](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_avanzado/02_Bash/1_bash.html)
--   [Introduction to the Unix Shell for Transcriptomics](https://github.com/raynamharris/Shell_Intro_for_Transcriptomics/tree/master)Tutorial.
+-   [Introduction to the Unix Shell for Transcriptomics](https://github.com/raynamharris/Shell_Intro_for_Transcriptomics/tree/master) Tutorial.

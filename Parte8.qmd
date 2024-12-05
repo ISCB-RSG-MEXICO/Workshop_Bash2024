@@ -1,0 +1,86 @@
+# Repaso
+
+Ahora que ya sabes realizar Script en Bash, podrias intentar realizar la actividad de [6. Extracción de información de archivos fastq](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/05_Ejercicios_procesamiento_ficheros_Bioinfo/5_Info_fastq.html) del curso de [GNU/Linuz para Bioinformatica](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html) organizado por RSG Ecuador.
+
+## Extracción de información de archivos fastq
+
+En este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos `secuencias1.fastq`, `secuencias2.fastq` y `secuencias3.fastq` que se encuentra en la carpeta `_files` dentro del directorio raíz del repositorio de GitHub [unix.bioinfo.rsgecuador](https://github.com/RSG-Ecuador/unix.bioinfo.rsgecuador/tree/gh-pages) .
+
+**Ejercicio 6.1** La letra `N` representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o `missing data`. Imprime el número de secuencias que tenga diez `N` seguidas por cada uno de los archivos `fastq` de la carpeta `_files`.
+
+::: callout-note
+Es posible realizar esto con un comando de una sola línea, intenta resolverlo de esta forma.
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solución
+
+``` {.bash code-copy="true" eval="false"}
+# cd C:/Users/ecoss/Documents/Respaldos/Github_notes/Workshop_Bash2024/data/unix.bioinfo.rsgecuador-gh-pages
+
+#!/bin/bash
+# File: countseq.sh
+
+# Ruta a la carpeta que contiene los archivos .fastq
+FOLDER="_files"
+
+# Iterar sobre cada archivo .fastq en la carpeta
+for file in "$FOLDER"/*[1-3].fastq; do
+  # Imprimir el nombre del archivo
+  echo "Archivo: $file"
+  
+  # Usar grep para buscar secuencias que contengan 10 'N' seguidas y contar cuántas veces aparecen
+  count=$(grep -c 'NNNNNNNNNN' $file )
+  
+  # Imprimir el número de secuencias encontradas
+  echo "Número de secuencias con 10 N seguidas: $count"
+  echo "---------------------------------------"
+done
+```
+
+Recuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida `unix.bioinfo.rsgecuador-gh-pages/`y ejecutar: `./countseq.sh.`
+
+Salida:
+
+-   `secuencias1.fastq` - 1
+-   `secuencias2.fastq` - 58
+-   `secuencias3.fastq` - 75
+:::
+
+**Ejercicio 6.2** Ahora, determina el número de secuencias (lineas) de cada archivo `.fastq` por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo `.fastq` empiezan con el string `@SRR098026`.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solución
+
+``` bash
+#!/bin/bash
+# File: countNseq.sh
+
+# Ruta a la carpeta que contiene los archivos .fastq
+FOLDER="_files"
+
+# Iterar sobre cada archivo .fastq en la carpeta
+for file in "$FOLDER"/*[1-3].fastq; do
+  echo "Archivo: $file"
+  
+  # Usar grep para contar cuántas líneas empiezan con '@SRR098026'
+  count=$(grep -c '^@SRR098026' $file )
+  
+  echo "Número de secuencias: $count"
+  echo "---------------------------------------"
+done
+```
+
+Salida:
+
+-   `secuencias1.fastq` - 99
+-   `secuencias2.fastq` - 75
+-   `secuencias3.fastq` - 75
+:::
+
+## Material suplementario
+
+-   RSG Ecuador. [Scripts en Bash](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_avanzado/02_Bash/1_bash.html)
+-   RSG Ecuador. [Wildcards y Streams](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/03_Manejo_terminal/5_wildcards.html)
+-   RSG Ecuador. [Expresiones regulares (*regex*)](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/04_Procesamiento_ficheros_regex_pipes/3_Expresiones_regulares.html)
+-   [Wildcard Selection in Bash](https://pressbooks.senecapolytechnic.ca/uli101/chapter/wildcard-selection-in-bash/)

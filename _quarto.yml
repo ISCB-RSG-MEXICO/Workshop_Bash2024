@@ -4,8 +4,8 @@ project:
 
 book:
   title: "Workshop Bash 2024"
-  author: "Evelia Coss"
-  date: "10/21/2024"
+  author: "Evelia Coss y Aaron Espinosa Jaime"
+  date: "12/10/2024"
   page-navigation: true
   chapters:
     - index.qmd
@@ -13,14 +13,20 @@ book:
     - intro.qmd
     - Bash.qmd
     - Rnaseq_intro.qmd
-    - ScriptBash.qmd
-    - Parte3.qmd
-    - Parte4.qmd
-    - summary.qmd
+    - Parte2A.qmd
+    - Parte2B.qmd
+    - Parte3A.qmd
+    - Parte3B.qmd
+    - Parte4A.qmd
+    - Parte4B.qmd
+    - Parte5.qmd
+    - Parte6.qmd
+    - Parte7.qmd
+    - Parte8.qmd
   # Information
-  repo-url: https://github.com/EveliaCoss/Workshop_Bash2024 # link de Github
+  repo-url: https://github.com/ISCB-RSG-MEXICO/Workshop_Bash2024 # link de Github
   sharing: [twitter, facebook, linkedin]
-  favicon: "ViernesBioinfo_logo.png" # icono de la pagina en pestana
+  favicon: "rsgMexico.png" # icono de la pagina en pestana
 
 format:
   html:

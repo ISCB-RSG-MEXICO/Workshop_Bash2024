@@ -39,6 +39,34 @@
 Bash es un intérprete de comandos que te da el poder de hacer tareas simples rápidamente.
 :::
 
+## ¿Por qué usarlo?
+
+-   **Ventajas de usar Bash o terminal**:
+
+    -   Es más cómodo para programar que usar un ratón.
+
+    -   Los comandos son breves y eficientes, aunque pueden parecer crípticos.
+
+    -   Permite automatizar tareas y manejar grandes volúmenes de datos.
+
+-   **Mejora de la productividad y reproducibilidad**:
+
+    -   Facilita la creación de pipelines potentes combinando herramientas existentes.
+
+    -   La automatización asegura la repetición exacta de procesos con simples comandos.
+
+-   **Interacción con sistemas especializados**:
+
+    -   Es la forma más sencilla de trabajar con máquinas remotas y supercomputadoras.
+
+    -   Es esencial para el uso de herramientas y recursos especializados, como la computación de alto rendimiento.
+
+-   **Relevancia para la ciencia y el análisis de datos**:
+
+    -   La terminal es clave para aprovechar clusters y sistemas en la nube.
+
+    -   Las habilidades adquiridas son útiles para resolver problemas científicos y computacionales complejos.
+
 ## Material suplementario
 
 Si quieren aprender temas más sobre UNIX, GNU/Linux, bash, emulador de terminal y otros tema, pueden explorar los siguientes recursos, que son de acceso libre:
@@ -49,3 +77,4 @@ Si quieren aprender temas más sobre UNIX, GNU/Linux, bash, emulador de terminal
 -   Linux Journey. (2020). Linux Journey. <https://linuxjourney.com/>
 -   GNU. (2020). GNU. <https://www.gnu.org/>
 -   [GNU/Linux para bioinformatica](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/01_Unix_GNU-Linux/1_Conceptos_Unix_GNU_Linux.html)
+-   Software Carpentry - [Introducción a la Terminal](https://swcarpentry.github.io/shell-novice-es/01-intro.html)
