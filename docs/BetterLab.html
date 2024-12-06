@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop Bash 2024 - 6&nbsp; Operadores de redirección de datos I/O</title>
+<title>Workshop Bash 2024 - 1&nbsp; Uso de BetterLab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Parte3A.html" rel="next">
-<link href="./Parte2A.html" rel="prev">
+<link href="./intro.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./rsgMexico.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -110,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Rnaseq_intro.html"><strong>Section 2</strong> - Manejo y redirección de datos</a></li><li class="breadcrumb-item"><a href="./Parte2B.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Operadores de redirección de datos I/O</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BetterLab.html"><strong>Section 1</strong> - Introducción a Bash</a></li><li class="breadcrumb-item"><a href="./BetterLab.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -179,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
+  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
   </div>
 </li>
@@ -220,7 +186,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Parte2B.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Parte2B.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Operadores de redirección de datos I/O</span></span></a>
   </div>
 </li>
@@ -334,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#material-suplementario" id="toc-material-suplementario" class="nav-link active" data-scroll-target="#material-suplementario"><span class="header-section-number">6.1</span> Material suplementario</a></li>
+  <li><a href="#material-suplementario" id="toc-material-suplementario" class="nav-link active" data-scroll-target="#material-suplementario"><span class="header-section-number">1.1</span> Material suplementario</a></li>
   </ul>
 </nav>
     </div>
@@ -343,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Operadores de redirección de datos I/O</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></h1>
 </div>
 
 
@@ -358,80 +324,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Usualmente cuando trabajamos con datos, es necesario pasar el resultado de un comando a otro para hacer un procesamiento de datos apilado, como en un algortimo. Un&nbsp;<code>stream</code>&nbsp;o&nbsp;<code>corriente</code>&nbsp;esta hecha de datos. Es una corriente de datos. Un ejemplo muy familiar es el teclado y la pantalla. El teclado tiene una interfaz en donde por cada tecla presionada, un caracter se guarda en un archivo. Se dice entonces que es una&nbsp;<code>corriente&nbsp;de&nbsp;entrada</code>. Cuando la pantalla nos muestra lo que estamos escribiendo entonces la data sale hacia nosotros y eso convierte a la pantalla en una&nbsp;<code>corriente&nbsp;de&nbsp;salida</code>. Los dispositivos que hacen este tipo de transmisión de datos se llaman dispositivos&nbsp;<code>I/O</code>&nbsp;(input y output). Los operadores que se encargan de esto se conocen como&nbsp;<code>operadores&nbsp;de&nbsp;redirección</code>. Tres importantes son:</p>
-<table class="table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 80%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Comando</strong></th>
-<th><strong>Función</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>&gt;</code></td>
-<td>Stream de <strong>salida de datos</strong>. Sobre escribre sobre un archivo.</td>
-</tr>
-<tr class="even">
-<td><code>&gt;&gt;</code></td>
-<td>Stream de salida de datos. Adjunta <strong>nueva salida a datos preexistentes en un archivo.</strong></td>
-</tr>
-<tr class="odd">
-<td><code>&lt;</code></td>
-<td>Stream de <strong>entrada de datos.</strong> Recibe datos para procesamiento con algun comando.</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejercicio 5
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Crea el archivo <code>bacterias_generos.txt</code> e imprime su contenido empleando los siguientes comandos:</li>
-</ol>
-<div class="sourceCode" id="cb1" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\nRickettsia\nOrientia\nWolbachia\nAegyptianella\nAnaplasma\nCowdria\nEhrlichia\nNeorickettsia\nCaedibacter\nHolospora\nLyticum\nOdyssella\nSymbiotes\nTectibacter"</span> <span class="op">&gt;</span> bacterias_generos.txt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> bacterias_generos.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li><p>Agrega una nueva especie en la ultima fila empleando “&gt;&gt;”.</p>
-<div class="sourceCode" id="cb2" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\nEscherichia\n:D"</span> <span class="op">&gt;&gt;</span> bacterias_generos.txt</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> bacterias_generos.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Ahora usaremos el comando <code>sort</code> para reordenar todos los géneros. Sin embargo notamos que el archivo original no cambia nunca.</p>
-<div class="sourceCode" id="cb3" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span> <span class="op">&lt;</span> bacterias_generos.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Para hacer un cambio sobte&nbsp;<code>bacterias_generos.txt</code>, usamos este comando. Notamos que ahora no usamos&nbsp;<code>&gt;&gt;</code>&nbsp;sino solo&nbsp;<code>&gt;</code>. Esto va a borrar el contenido previo con géneros desordenados y ahora los va a ordenar. El cambio no se puede deshacer, así que ten cuidado con el operador&nbsp;<code>&gt;</code>&nbsp;para que no pierdas datos.</p>
-<div class="sourceCode" id="cb4" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="fu">sort</span> <span class="op">&lt;</span> bacterias_generos.txt<span class="kw">)</span> <span class="op">&gt;</span> bacterias_generos_sorted.txt</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> bacterias_generos_sorted.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Advertencia
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>El operador&nbsp;<code>&gt;</code>&nbsp;sobre escribe archivos. Ten cuidado al usarlo para que no pierdas datos.</p>
-</div>
-</div>
-<section id="material-suplementario" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="material-suplementario"><span class="header-section-number">6.1</span> Material suplementario</h2>
+<p>Lo escribira Abel</p>
+<p>Falta el acceso y las pruebas en el mismo</p>
+<section id="material-suplementario" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="material-suplementario"><span class="header-section-number">1.1</span> Material suplementario</h2>
 <ul>
-<li>RSG Ecuador. <a href="https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_avanzado/02_Bash/1_bash.html">Scripts en Bash</a></li>
-<li>RSG Ecuador. <a href="https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/03_Manejo_terminal/5_wildcards.html">Wildcards y Streams</a></li>
-<li>RSG Ecuador. <a href="https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/04_Procesamiento_ficheros_regex_pipes/3_Expresiones_regulares.html">Expresiones regulares (<em>regex</em>)</a></li>
-<li><a href="https://pressbooks.senecapolytechnic.ca/uli101/chapter/wildcard-selection-in-bash/">Wildcard Selection in Bash</a></li>
+<li>Nelly Selem Tutorial - <a href="https://nselem.github.io/bioinformatics/">Bioinformática</a></li>
+<li>En Windows puedes usar <a href="https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/">Git Bash.</a></li>
 </ul>
 
 
@@ -788,13 +687,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Parte2A.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wildcards y Streams</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Información general</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Parte3A.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Edición de archivos con los editores de texto (nano y vim)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./intro.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

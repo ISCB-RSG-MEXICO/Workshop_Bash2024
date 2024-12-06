@@ -1,6 +1,6 @@
 # Edición de archivos con el editor de flujo `sed`
 
-Por trabajar
+Por trabajar - Aaron Jaime
 
 ## **Ejercicio 7:** Edición de archivos - Por crear
 

@@ -4,11 +4,11 @@
     "href": "index.html",
     "title": "Workshop Bash 2024",
     "section": "",
-    "text": "Información general\n\n\nSobre el curso 📌Requisitos previosAgenda 📆\n\n\nEl contenido de este curso se realizó en base al material realizado por Software Carpentry y RSG Ecuador. La literatura adicional se especifica en cada tema de forma pertinente.\n\nFechas: 10 y 11 diciembre 2024\nDuración del curso: 10 horas\nHorario: 9 am a 4:30 pm\n\nEste curso se encuentra registrado en The Carpentries bajo el nombre de Curso de Unix Shell.\n\nInstructores:\n\nEvelia Lorena Coss-Navarrete - PostDoc, LIIGH-UNAM. Pagina web\nAaron Espinosa Jaime\n\nAyudantes:\n\nDaniel Chávez - Posdoc,\nCamilo Pérez - Estudiante de doctorado, Cinvestav-Irapuato\nAbel Lovaco Flores - Estudiante de maestria, Cinvestav-Irapuato\nIsrael Aguilar - Posdoc, Tec de Monterrey\n\nResumen:\nEste tutorial te enseñará los conceptos fundamentales en el empleo y manejo de Bash Shell, incluyendo la creación de scripts de Bash, generación de programas con funcionalidades sencillas aplicables a bioinformática y a programación en general.\nObjetivos:\nEn esta guía rápida aprenderás a:\n\nMis primeros pasos en bash.\nConsultar información sobre archivos y directorios.\nPermisos y como cambiarlos.\nInformación general sobre el Análisis de datos de RNA-Seq\nWildcards y Streams\nBuenas prácticas\nCrear un script en Bash.\n\nCitar y reutilizar el material del curso\nLos datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).\n\n\n\nDebes tener contar con una computadora con acceso a internet.\nTe proporcionaremos una cuenta a BetterLab para tener acceso a la terminal de Bash Shell.\n\n\n\n\n\n\n\n\n\n\n\nTema\nTiempo\nInstructor\n\n\n\n\nDia 1 (10 diciembre 2024)\n\n\n\n\n🔷 Sección 1 - (9:00 - 12:00 h)\n\n\n\n\n\nUso de BetterLab\n\n10 min\nAaron Espinosa\n\n\n\nConceptos Unix y GNU/Linux\n\n10 min\nEvelia Coss\n\n\n\nMis primeros pasos en Bash\n\n10 min\nEvelia Coss\n\n\n\nEjercicio 1. Ubicación en repositorios\n\n5 min\n\n\n\n\nConsultar información sobre archivos y directorios\n\n10 min\nAaron Espinosa\n\n\n\nComprimir y descomprimir archivos\n\n5 min\nAaron Espinosa\n\n\n\nEjercicio 2. Descomprimir archivos\n\n5 min\n\n\n\n☕ Coffee break (20 min) - (10:30-10:50) ☕\n20 min\n\n\n\n🔷  Sección 2 - (10:50 - 12:00 h)\n\n\n\n\n\nAnálisis de datos de RNA-Seq\n\n20 min\nAaron Espinosa\n\n\n\nEjercicio 3. Manejando datos\n\n10 min\nAaron Espinosa\n\n\n\nWildcards y Streams\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 4. Wildcard\n\n10 min\nAaron Espinosa\n\n\n\nOperadores de redirección de datos I/O\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 5. Redirección de salidas\n\n10 min\n\n\n\n🍕Comida (1h 30min) - (12:00-13:30) 🍕\n\n\n\n\n🔷  Sección 3 - (13:30 - 14:20 h)\n\n\n\n\n\nEdición de archivos con los editores de texto (nano y vim) - Por crear (https://vinuesa.github.io/intro2linux/index.html#edici%C3%B3n-de-archivos-con-los-editores-vim-o-gnedit)\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 6: Edición de archivos - Por crear\n\n10 min\n\n\n\n\nEdición de archivos con el editor de flujo sed\n\n15 min\nAaron Espinosa\n\n\n\nEjercicio 7: Empleo de sed\n\n10 min\n\n\n\n☕ Coffee break (10 min) - (14:20-14:30) ☕\n10 min\n\n\n\n🔷  Sección 4 - (14:30 - 16:30 h)\n\n\n\n\n\nBuenas prácticas\n\n15 min\nEvelia Coss\n\n\n\nGeneración de ligas simbólicas a archivos y orden en directorios - Por crear\n\n15 min\nEvelia Coss\n\n\n\nEjercicio 8: Ejericio, descarga de archivos y creación de ligas\n\n10 min\n\n\n\n\nFiltrado de texto (grep, cut, sort, uniq, wc) - Por crear (https://vinuesa.github.io/intro2linux/index.html#ejemplo-de-alineamiento-generaci%C3%B3n-de-alineamiento-m%C3%BAltiple-con-el-alineador-muscle)\n\n10 min\nEvelia Coss\n\n\n\nEjercicio 9: Filtrado de archivos\n\n20 min\n\n\n\nDia 2 (11 diciembre 2024)\n\n\n\n\n🔷  Sección 5 - (9:00 - 10:30 h)\n\n\n\n\n\nCondicionales - Por crear\n\n10 min\n\n\n\n\nEjercicio 10. Condicionales - Por crear\n\n10 min\n\n\n\n\nScripts en Bash (agregar mas ejercicios)\n\n30 min\n\n\n\n☕ Coffee break (20 min) - (10:30-10:50) ☕\n\n\n\n\n🔷  Sección 6 - (10:50 - 12:00 h)\n\n\n\n\n\nBucles (for loops) - Por crear (https://swcarpentry.github.io/shell-novice-es/05-loop.html)\n\n15 min\n\n\n\n\nEjercicio 11. for loops - Por crear\n\n10 min\n\n\n\n\nRepaso y Ejercicio 8: En parejas (Agregar ejercicios de https://swcarpentry.github.io/shell-novice-es/04-pipefilter.html)\n\n20 min\n\n\n\n\nBucles: Scripts en Bash\n\n15 min\n\n\n\n🍕Comida (1h 30min) - (12:00-13:30) 🍕\n\n\n\n\n🔷  Sección 7 - (13:30 - 14:20 h)\n\n\n\n\n\nEjercicios en equipo (un ejercicio por equipo)\n\n\nEquipos de 3 personas\n\n\n\nPresentacion del analisis\n\n\n10 min por equipo\n\n\n☕ Coffee break (10 min) - (14:20-14:30) ☕\n\n\n\n\n🔷  Sección 8 - (14:30 - 16:30 h)\n\n\n\n\n\nPresentacion del analisis\n\n\n10 min por equipo\n\n\n\nPresentacion del analisis\n\n\n10 min por equipo"
+    "text": "Información general\n\n\nSobre el curso 📌Requisitos previosAgenda 📆\n\n\nEl contenido de este curso se realizó en base al material realizado por Software Carpentry y RSG Ecuador. La literatura adicional se especifica en cada tema de forma pertinente.\n\nFechas: 10 y 11 diciembre 2024\nDuración del curso: 10 horas\nHorario: 9 am a 4:30 pm\n\nEste curso se encuentra registrado en The Carpentries bajo el nombre de Curso de Unix Shell.\n\nInstructores:\n\nEvelia Lorena Coss-Navarrete - PostDoc, LIIGH-UNAM. Pagina web\nAaron Espinosa Jaime - Estudiante de maestria, Cinvestav-LANGEBIO.\n\nAyudantes:\n\nDaniel Chávez - Profesor invitado, UAGro.\nCamilo Pérez - Estudiante de doctorado, Cinvestav-LANGEBIO.\nAbel Lovaco Flores - Estudiante de maestria, Cinvestav-Irapuato.\nIsrael Aguilar - Posdoc, Tec de Monterrey.\n\nResumen:\nEste tutorial te enseñará los conceptos fundamentales en el empleo y manejo de Bash Shell, incluyendo la creación de scripts de Bash, generación de programas con funcionalidades sencillas aplicables a bioinformática y a programación en general.\nObjetivos:\nEn esta guía rápida aprenderás a:\n\nMis primeros pasos en bash.\nConsultar información sobre archivos y directorios.\nPermisos y como cambiarlos.\nInformación general sobre el Análisis de datos de RNA-Seq\nWildcards y Streams\nOperadores de redirección de datos I/O\nEdición de archivos con los editores de texto y con sed\nBuenas prácticas\nGeneración de ligas simbólicas a archivos y orden en directorios\nFiltrado de texto (grep, cut, sort, uniq, wc) \nCondicionales y bucles (for loops)\nCrear un script en Bash.\n\nCitar y reutilizar el material del curso\nLos datos del curso se pueden reutilizar y adaptar libremente con la debida atribución. Todos los datos de los cursos de estos repositorios están sujetos a la licencia Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).\n\n\n\nDebes tener contar con una computadora con acceso a internet.\nTe proporcionaremos una cuenta a BetterLab para tener acceso a la terminal de Bash Shell.\n\n\n\n\n\n\n\n\n\n\n\nTema\nTiempo\nInstructor\n\n\n\n\nDia 1 (10 diciembre 2024)\n\n\n\n\n🔷 Sección 1 - (9:00 - 12:00 h)\n\n\n\n\n\nUso de BetterLab\n\n10 min\nAaron Espinosa\n\n\n\nConceptos Unix y GNU/Linux\n\n10 min\nEvelia Coss\n\n\n\nMis primeros pasos en Bash\n\n10 min\nEvelia Coss\n\n\n\nEjercicio 1. Ubicación en repositorios\n\n5 min\n\n\n\n\nConsultar información sobre archivos y directorios\n\n10 min\nAaron Espinosa\n\n\n\nComprimir y descomprimir archivos\n\n5 min\nAaron Espinosa\n\n\n\nEjercicio 2. Descomprimir archivos\n\n5 min\n\n\n\n☕ Coffee break (20 min) - (10:30-10:50) ☕\n20 min\n\n\n\n🔷  Sección 2 - (10:50 - 12:00 h)\n\n\n\n\n\nAnálisis de datos de RNA-Seq\n\n20 min\nAaron Espinosa\n\n\n\nEjercicio 3. Manejando datos\n\n10 min\nAaron Espinosa\n\n\n\nWildcards y Streams\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 4. Wildcard\n\n10 min\nAaron Espinosa\n\n\n\nOperadores de redirección de datos I/O\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 5. Redirección de salidas\n\n10 min\n\n\n\n🍕Comida (1h 30min) - (12:00-13:30) 🍕\n\n\n\n\n🔷  Sección 3 - (13:30 - 14:20 h)\n\n\n\n\n\nEdición de archivos con los editores de texto (nano y vim) - Por crear (https://vinuesa.github.io/intro2linux/index.html#edici%C3%B3n-de-archivos-con-los-editores-vim-o-gnedit)\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 6: Edición de archivos - Por crear\n\n10 min\n\n\n\n\nEdición de archivos con el editor de flujo sed\n\n15 min\nAaron Espinosa\n\n\n\nEjercicio 7: Empleo de sed\n\n10 min\n\n\n\n☕ Coffee break (10 min) - (14:20-14:30) ☕\n10 min\n\n\n\n🔷  Sección 4 - (14:30 - 16:30 h)\n\n\n\n\n\nBuenas prácticas\n\n15 min\nEvelia Coss\n\n\n\nGeneración de ligas simbólicas a archivos y orden en directorios - Por crear\n\n15 min\nEvelia Coss\n\n\n\nEjercicio 8: Ejericio, descarga de archivos y creación de ligas\n\n10 min\n\n\n\n\nFiltrado de texto (grep, cut, sort, uniq, wc) - Por crear (https://vinuesa.github.io/intro2linux/index.html#ejemplo-de-alineamiento-generaci%C3%B3n-de-alineamiento-m%C3%BAltiple-con-el-alineador-muscle)\n\n10 min\nEvelia Coss\n\n\n\nEjercicio 9: Filtrado de archivos\n\n20 min\n\n\n\nDia 2 (11 diciembre 2024)\n\n\n\n\n🔷  Sección 5 - (9:00 - 10:30 h)\n\n\n\n\n\nCondicionales - Por crear\n\n10 min\nAaron Espinosa\n\n\n\nEjercicio 10. Condicionales - Por crear\n\n10 min\n\n\n\n\nScripts en Bash (agregar mas ejercicios)\n\n30 min\nAaron Espinosa\n\n\n☕ Coffee break (20 min) - (10:30-10:50) ☕\n\n\n\n\n🔷  Sección 6 - (10:50 - 12:00 h)\n\n\n\n\n\nBucles (for loops) - Por crear (https://swcarpentry.github.io/shell-novice-es/05-loop.html)\n\n15 min\nAaron Espinosa\n\n\n\nEjercicio 11. for loops - Por crear\n\n10 min\n\n\n\n\nRepaso y Ejercicio 12: En parejas (Agregar ejercicios de https://swcarpentry.github.io/shell-novice-es/04-pipefilter.html)\n\n35 min\nAaron Espinosa\n\n\n🍕Comida (1h 30min) - (12:00-13:30) 🍕\n\n\n\n\n\nEjercicios en equipo de 3 personas\n\n40 min\nEvelia Coss y Aaron Espinosa\n\n\n\nPresentacion del analisis (10 min por equipo)\n\n10 min\n\n\n\n☕ Coffee break (10 min) - (14:20-14:30) ☕\n\n\n\n\n\nPresentacion del analisis (10 min por equipo)\n\n2 h"
   },
   {
-    "objectID": "requisitos.html#material-suplementario",
-    "href": "requisitos.html#material-suplementario",
+    "objectID": "BetterLab.html#material-suplementario",
+    "href": "BetterLab.html#material-suplementario",
     "title": "1  Uso de BetterLab",
     "section": "1.1 Material suplementario",
     "text": "1.1 Material suplementario\n\nNelly Selem Tutorial - Bioinformática\nEn Windows puedes usar Git Bash."
@@ -245,87 +245,129 @@
     "text": "8.2 Referencias"
   },
   {
+    "objectID": "BuenasPracticas.html#materiales-informativos",
+    "href": "BuenasPracticas.html#materiales-informativos",
+    "title": "9  Buenas practicas",
+    "section": "9.1 Materiales informativos",
+    "text": "9.1 Materiales informativos\n\nCurso de Joselyn Cristina Chávez Fuentes\nMe ayudo mucho este Video\nDocumentación de funciones de Andrés Arredondo Cruz\n\n💪 Estuve muy intensa viendo su codigo. Muchas gracias por tenerlos publico."
+  },
+  {
+    "objectID": "BuenasPracticas.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "href": "BuenasPracticas.html#un-algoritmo-nos-permite-resolver-un-problema",
+    "title": "9  Buenas practicas",
+    "section": "9.2 Un algoritmo nos permite resolver un problema ⭐",
+    "text": "9.2 Un algoritmo nos permite resolver un problema ⭐\nUn algoritmo es un método para resolver un problema mediante una serie de pasos definidos, precisos y finitos.\n\nDefinido: si se sigue dos veces, se obtiene el mismo resultado. Es reproducible.\nPreciso: implica el orden de realización de cada uno de los pasos.\nFinito: Tiene un numero determinado de pasos, implica que tiene un fin.\n\n\nUn algoritmo podemos definirlo como un programa o software."
+  },
+  {
+    "objectID": "BuenasPracticas.html#para-escribir-un-buen-software-necesitas",
+    "href": "BuenasPracticas.html#para-escribir-un-buen-software-necesitas",
+    "title": "9  Buenas practicas",
+    "section": "9.3 Para escribir un buen software necesitas:",
+    "text": "9.3 Para escribir un buen software necesitas:\n\nEscribir código mantenible (maintainable code), usar control de versiones (version control) y rastreadores de problemas (issue trackers), revisiones de código (code reviews), pruebas unitarias (unit testing) y automatización de tareas (task automation).\nWilson, et al. 2014. PLOS Biology\n\nCon el fin de previnir retracciones.\n\n\n\n\n\n\nPasos para escribir un buen software\n\n\n\n\nAnálisis del problema / Definir el problema\nDiseño del algoritmo / Diseño del programa\nCodificación / Escribir el código\nCompilación y ejecución del programa\nVerificación / Realizar pruebas\nDepuración / Detectar los errores y corregirlos\n\n\nProgramacion defensiva\n\n\nDocumentación"
+  },
+  {
+    "objectID": "BuenasPracticas.html#paso-7-documentación",
+    "href": "BuenasPracticas.html#paso-7-documentación",
+    "title": "9  Buenas practicas",
+    "section": "9.4 Paso 7: Documentación",
+    "text": "9.4 Paso 7: Documentación\n\n\n\n\n\n\nNote\n\n\n\n\nAutor (author): Su nombre\nDia (date): Fecha de creación\nPaquetes (packages)\nDirectorio de trabajo (Working directory): En que carpeta se encuentra tu datos y programa.\nInformación descriptiva del programa (Description): ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.\nUsage ¿Cómo se utiliza?\nArgumentos (Arguments)\n\nInformación de entrada (Data Inputs): Ej: Solo numeros enteros (sin decimales).\nInformación de salida (Outpus): Graficas, figuras, tablas, etc."
+  },
+  {
+    "objectID": "BuenasPracticas.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "href": "BuenasPracticas.html#puntos-claves-para-buenas-practicas-en-bioinfo",
+    "title": "9  Buenas practicas",
+    "section": "9.5 Puntos claves para buenas practicas en bioinfo ⭐",
+    "text": "9.5 Puntos claves para buenas practicas en bioinfo ⭐\n\nEscriba programas para personas, no para computadoras (Documenta qué hace y por qué). - Se coherente en la nomenclatura, indentación y otros aspectos del estilo.\nDivide los programas en funciones cortas de un solo propósito. 💻 📚\nNo repitas tu código. Crea pasos reproducibles o que se repitan por si solas. ➰\nPlanifique los errores (Programacion defensiva) 🚩\nOptimice el software sólo después de que funcione correctamente. - Si funciona no lo modifiques, simplificalo.\nColaborar - Busque siempre bibliotecas de software bien mantenidas que hagan lo que necesita. 👥\n\n\n\n\n\n\n\nEjemplo de como realizo mis documentos 💜\n\n\n\nAqui les dejo el script que les doy a mis alumnos VisualizacionDatos.R del curso de Análisis de datos de RNA-Seq."
+  },
+  {
+    "objectID": "BuenasPracticas.html#referencias",
+    "href": "BuenasPracticas.html#referencias",
+    "title": "9  Buenas practicas",
+    "section": "9.6 Referencias",
+    "text": "9.6 Referencias\n\nHaydee tutorial: Temas Selectos de Análisis Numérico y Computación Científica: Computo científico para el análisis de datos\nAlejandra Medina tutorial: Control de versiones con GitHub y RStudio\nWilson, et al. 2014. Best Practices for Scientific Computing. PLOS Biology\nEvelia Coss - tutorial Buenas practicas en R\nEvelia Coss - Make your CV tutorial"
+  },
+  {
     "objectID": "Parte4A.html#ejercicio-8",
     "href": "Parte4A.html#ejercicio-8",
-    "title": "9  Generación de ligas simbólicas a archivos y orden en directorios",
-    "section": "9.1 Ejercicio 8:",
-    "text": "9.1 Ejercicio 8:"
+    "title": "10  Generación de ligas simbólicas a archivos y orden en directorios",
+    "section": "10.1 Ejercicio 8:",
+    "text": "10.1 Ejercicio 8:"
   },
   {
     "objectID": "Parte4A.html#referencias",
     "href": "Parte4A.html#referencias",
-    "title": "9  Generación de ligas simbólicas a archivos y orden en directorios",
-    "section": "9.2 Referencias",
-    "text": "9.2 Referencias"
-  },
-  {
-    "objectID": "Parte4B.html#ejercicio-9",
-    "href": "Parte4B.html#ejercicio-9",
-    "title": "10  Filtrado de texto (grep, cut, sort, uniq, wc)",
-    "section": "10.1 Ejercicio 9:",
-    "text": "10.1 Ejercicio 9:"
-  },
-  {
-    "objectID": "Parte4B.html#referencias",
-    "href": "Parte4B.html#referencias",
-    "title": "10  Filtrado de texto (grep, cut, sort, uniq, wc)",
+    "title": "10  Generación de ligas simbólicas a archivos y orden en directorios",
     "section": "10.2 Referencias",
     "text": "10.2 Referencias"
   },
   {
-    "objectID": "Parte5.html#ejercicio-10-edición-de-archivos---por-crear",
-    "href": "Parte5.html#ejercicio-10-edición-de-archivos---por-crear",
-    "title": "11  Condicionales",
-    "section": "11.1 Ejercicio 10: Edición de archivos - Por crear",
-    "text": "11.1 Ejercicio 10: Edición de archivos - Por crear"
+    "objectID": "Parte4B.html#ejercicio-9",
+    "href": "Parte4B.html#ejercicio-9",
+    "title": "11  Filtrado de texto (grep, cut, sort, uniq, wc)",
+    "section": "11.1 Ejercicio 9:",
+    "text": "11.1 Ejercicio 9:"
   },
   {
-    "objectID": "Parte5.html#referencias",
-    "href": "Parte5.html#referencias",
-    "title": "11  Condicionales",
+    "objectID": "Parte4B.html#referencias",
+    "href": "Parte4B.html#referencias",
+    "title": "11  Filtrado de texto (grep, cut, sort, uniq, wc)",
     "section": "11.2 Referencias",
     "text": "11.2 Referencias"
   },
   {
+    "objectID": "Parte5.html#ejercicio-10-edición-de-archivos---por-crear",
+    "href": "Parte5.html#ejercicio-10-edición-de-archivos---por-crear",
+    "title": "12  Condicionales",
+    "section": "12.1 Ejercicio 10: Edición de archivos - Por crear",
+    "text": "12.1 Ejercicio 10: Edición de archivos - Por crear"
+  },
+  {
+    "objectID": "Parte5.html#referencias",
+    "href": "Parte5.html#referencias",
+    "title": "12  Condicionales",
+    "section": "12.2 Referencias",
+    "text": "12.2 Referencias"
+  },
+  {
     "objectID": "Parte6.html#actividad-grupal",
     "href": "Parte6.html#actividad-grupal",
-    "title": "12  Scripts en Bash",
-    "section": "12.1 Actividad grupal",
-    "text": "12.1 Actividad grupal\nPaso 1. Crear un script en Bash con el nombre demo.sh empleando nano.\nnano demo.sh\nPaso 2. Copia el siguiente código dentro del script demo.sh y guarda los cambios.\n\n#!/bin/bash\n# File: demo.sh\n\n# Input de archivo\n# 2. Mostrar el archivo y número de argumentos\necho \"Archivo a procesar &gt; $@\"\necho \"Numero de argumentos: $#\"\n\n# 3. Conteo de secuencias y separación de malas lecturas\nnumero_secuencias=$(grep -c '^@SRR098026' $@)\ngrep -B1 -A2 NNNNNNNNNN $@ &gt; malas_lecturas.fastq\nmalas=$(cat malas_lecturas.fastq | wc -l)\necho \"Número de malas lecturas: $malas\"\n\n# 4. Búsqueda de patrones\necho \"Desea buscar patrones (y/n): \"\nread d\n\nif [[ $d == \"y\" ]]; then\n    echo \"Los patrones se guardarán en: patrones.txt\"\n    echo -e 'ACTG\\nCCCCC\\nNNNCNNN\\nNNNGNNN\\nTTTT\\nTATA\\nAAA' &gt; patrones.txt\n    grep -f patrones.txt $@ &gt; busqueda.txt\n    echo \"Búsqueda de patrones guardada en: busqueda.txt\"\nelse\n    echo \"ok :P\"\nfi\n\n# Mensaje final\necho \"Fin :)\"\n\n\n\n\n\n\nExplicación del código\n\n\n\n\n\n\n1. Comentarios y declaración de archivo\n#!/bin/bash: Indica que el script se ejecutará usando el intérprete de Bash.\n# File: demo.sh: Un comentario que indica el nombre del archivo del script.\n2. Mostrar el archivo y número de argumentos\necho \"Archivo a procesar &gt; $@\": Muestra el nombre del archivo que se pasará como argumento al script. $@ representa todos los argumentos pasados al script.\necho \"Numero de argumentos: $#\": Muestra cuántos argumentos ha recibido el script. $# indica el número de argumentos.\n3. Contar secuencias y separar malas lecturas\nnumero_secuencias=$(grep -c '^@SRR098026' $@): Usa grep para contar cuántas secuencias empiezan con @SRR098026 en el archivo (probablemente sea un prefijo en un archivo FASTQ que identifica secuencias de interés). -c cuenta las coincidencias.\ngrep -B1 -A2 NNNNNNNNNN $@ &gt; malas_lecturas.fastq: Busca secuencias de calidad baja o problemáticas (que contengan 10 nucleótidos seguidos de N, que representan bases no determinadas).\n\n-B1: Muestra 1 línea antes de cada coincidencia de NNNNNNNNNN.\n-A2: Muestra 2 líneas después de la coincidencia.\nEl resultado se guarda en un archivo llamado malas_lecturas.fastq.\n\nmalas=$(cat malas_lecturas.fastq | wc -l): Cuenta el número total de líneas en malas_lecturas.fastq (esto indica la cantidad de malas lecturas encontradas).\necho \"Número de malas lecturas: $malas\": Muestra la cantidad de malas lecturas encontradas\necho \"Numero de argumentos: $#\": Muestra cuántos argumentos ha recibido el script. $# indica el número de argumentos.\n4. Búsqueda de patrones\necho \"Desea buscar patrones (y/n): \": Pregunta al usuario si desea buscar patrones específicos en el archivo.\nread d: Lee la respuesta del usuario y la guarda en la variable d.\nif [[ $d == \"y\" ]]; then: Si la respuesta es “y” (sí), el script procede a buscar los patrones.\n\necho -e 'ACTG\\nCCCCC\\nNNNCNNN\\nNNNGNNN\\nTTTT\\nTATA\\nAAA' &gt; patrones.txt: Crea un archivo patrones.txt que contiene una lista de secuencias de interés (patrones a buscar).\ngrep -f patrones.txt $@ &gt; busqueda.txt: Busca los patrones contenidos en patrones.txt dentro del archivo de entrada. El resultado de la búsqueda se guarda en busqueda.txt.\necho \"Búsqueda de patrones guardada en: busqueda.txt\": Informa al usuario que los resultados de la búsqueda se guardaron en el archivo busqueda.txt.\n\nelse: Si la respuesta es “n” (no), simplemente muestra un mensaje.\n\n\n\n\nEste código realizará las siguientes instrucciones:\n\nTomará como input el nombre del archivo ./_files/secuencias_bash.fastq de secuencias fastq para analizar.\nBuscará dentro del archivo provisto por el usuario las secuencias con el string @SRR098026 y las contará.\nExportará las malas secuencias a un archivo llamado malas_lecturas.fastq, usando el string “NNNNNNNNNN” como plantilla.\nReportará el número de malas secuencias.\nLuego buscaremos patrones en el archivo buenas_lecturas.fastq, si es que el usuario lo desea.\n\nPaso 3. Deberías correr el script así, una vez que hayas descargado el archivo secuencias_bash.fastq:\nbash demo.sh secuencias_bash.fastq"
+    "title": "13  Scripts en Bash",
+    "section": "13.1 Actividad grupal",
+    "text": "13.1 Actividad grupal\nPaso 1. Crear un script en Bash con el nombre demo.sh empleando nano.\nnano demo.sh\nPaso 2. Copia el siguiente código dentro del script demo.sh y guarda los cambios.\n\n#!/bin/bash\n# File: demo.sh\n\n# Input de archivo\n# 2. Mostrar el archivo y número de argumentos\necho \"Archivo a procesar &gt; $@\"\necho \"Numero de argumentos: $#\"\n\n# 3. Conteo de secuencias y separación de malas lecturas\nnumero_secuencias=$(grep -c '^@SRR098026' $@)\ngrep -B1 -A2 NNNNNNNNNN $@ &gt; malas_lecturas.fastq\nmalas=$(cat malas_lecturas.fastq | wc -l)\necho \"Número de malas lecturas: $malas\"\n\n# 4. Búsqueda de patrones\necho \"Desea buscar patrones (y/n): \"\nread d\n\nif [[ $d == \"y\" ]]; then\n    echo \"Los patrones se guardarán en: patrones.txt\"\n    echo -e 'ACTG\\nCCCCC\\nNNNCNNN\\nNNNGNNN\\nTTTT\\nTATA\\nAAA' &gt; patrones.txt\n    grep -f patrones.txt $@ &gt; busqueda.txt\n    echo \"Búsqueda de patrones guardada en: busqueda.txt\"\nelse\n    echo \"ok :P\"\nfi\n\n# Mensaje final\necho \"Fin :)\"\n\n\n\n\n\n\nExplicación del código\n\n\n\n\n\n\n1. Comentarios y declaración de archivo\n#!/bin/bash: Indica que el script se ejecutará usando el intérprete de Bash.\n# File: demo.sh: Un comentario que indica el nombre del archivo del script.\n2. Mostrar el archivo y número de argumentos\necho \"Archivo a procesar &gt; $@\": Muestra el nombre del archivo que se pasará como argumento al script. $@ representa todos los argumentos pasados al script.\necho \"Numero de argumentos: $#\": Muestra cuántos argumentos ha recibido el script. $# indica el número de argumentos.\n3. Contar secuencias y separar malas lecturas\nnumero_secuencias=$(grep -c '^@SRR098026' $@): Usa grep para contar cuántas secuencias empiezan con @SRR098026 en el archivo (probablemente sea un prefijo en un archivo FASTQ que identifica secuencias de interés). -c cuenta las coincidencias.\ngrep -B1 -A2 NNNNNNNNNN $@ &gt; malas_lecturas.fastq: Busca secuencias de calidad baja o problemáticas (que contengan 10 nucleótidos seguidos de N, que representan bases no determinadas).\n\n-B1: Muestra 1 línea antes de cada coincidencia de NNNNNNNNNN.\n-A2: Muestra 2 líneas después de la coincidencia.\nEl resultado se guarda en un archivo llamado malas_lecturas.fastq.\n\nmalas=$(cat malas_lecturas.fastq | wc -l): Cuenta el número total de líneas en malas_lecturas.fastq (esto indica la cantidad de malas lecturas encontradas).\necho \"Número de malas lecturas: $malas\": Muestra la cantidad de malas lecturas encontradas\necho \"Numero de argumentos: $#\": Muestra cuántos argumentos ha recibido el script. $# indica el número de argumentos.\n4. Búsqueda de patrones\necho \"Desea buscar patrones (y/n): \": Pregunta al usuario si desea buscar patrones específicos en el archivo.\nread d: Lee la respuesta del usuario y la guarda en la variable d.\nif [[ $d == \"y\" ]]; then: Si la respuesta es “y” (sí), el script procede a buscar los patrones.\n\necho -e 'ACTG\\nCCCCC\\nNNNCNNN\\nNNNGNNN\\nTTTT\\nTATA\\nAAA' &gt; patrones.txt: Crea un archivo patrones.txt que contiene una lista de secuencias de interés (patrones a buscar).\ngrep -f patrones.txt $@ &gt; busqueda.txt: Busca los patrones contenidos en patrones.txt dentro del archivo de entrada. El resultado de la búsqueda se guarda en busqueda.txt.\necho \"Búsqueda de patrones guardada en: busqueda.txt\": Informa al usuario que los resultados de la búsqueda se guardaron en el archivo busqueda.txt.\n\nelse: Si la respuesta es “n” (no), simplemente muestra un mensaje.\n\n\n\n\nEste código realizará las siguientes instrucciones:\n\nTomará como input el nombre del archivo ./_files/secuencias_bash.fastq de secuencias fastq para analizar.\nBuscará dentro del archivo provisto por el usuario las secuencias con el string @SRR098026 y las contará.\nExportará las malas secuencias a un archivo llamado malas_lecturas.fastq, usando el string “NNNNNNNNNN” como plantilla.\nReportará el número de malas secuencias.\nLuego buscaremos patrones en el archivo buenas_lecturas.fastq, si es que el usuario lo desea.\n\nPaso 3. Deberías correr el script así, una vez que hayas descargado el archivo secuencias_bash.fastq:\nbash demo.sh secuencias_bash.fastq"
   },
   {
     "objectID": "Parte6.html#material-suplementario",
     "href": "Parte6.html#material-suplementario",
-    "title": "12  Scripts en Bash",
-    "section": "12.2 Material suplementario",
-    "text": "12.2 Material suplementario\n\nRSG Ecuador. Scripts en Bash\nRSG Ecuador. Wildcards y Streams\nRSG Ecuador. Expresiones regulares (regex)\nWildcard Selection in Bash"
+    "title": "13  Scripts en Bash",
+    "section": "13.2 Material suplementario",
+    "text": "13.2 Material suplementario\n\nRSG Ecuador. Scripts en Bash\nRSG Ecuador. Wildcards y Streams\nRSG Ecuador. Expresiones regulares (regex)\nWildcard Selection in Bash"
   },
   {
     "objectID": "Parte7.html#ejercicio-10",
     "href": "Parte7.html#ejercicio-10",
-    "title": "13  Bucles (for loops)",
-    "section": "13.1 Ejercicio 10",
-    "text": "13.1 Ejercicio 10"
+    "title": "14  Bucles (for loops)",
+    "section": "14.1 Ejercicio 10",
+    "text": "14.1 Ejercicio 10"
   },
   {
     "objectID": "Parte7.html#referencias",
     "href": "Parte7.html#referencias",
-    "title": "13  Bucles (for loops)",
-    "section": "13.2 Referencias",
-    "text": "13.2 Referencias"
+    "title": "14  Bucles (for loops)",
+    "section": "14.2 Referencias",
+    "text": "14.2 Referencias"
   },
   {
     "objectID": "Parte8.html#extracción-de-información-de-archivos-fastq",
     "href": "Parte8.html#extracción-de-información-de-archivos-fastq",
-    "title": "14  Repaso",
-    "section": "14.1 Extracción de información de archivos fastq",
-    "text": "14.1 Extracción de información de archivos fastq\nEn este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos secuencias1.fastq, secuencias2.fastq y secuencias3.fastq que se encuentra en la carpeta _files dentro del directorio raíz del repositorio de GitHub unix.bioinfo.rsgecuador .\nEjercicio 6.1 La letra N representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o missing data. Imprime el número de secuencias que tenga diez N seguidas por cada uno de los archivos fastq de la carpeta _files.\n\n\n\n\n\n\nNote\n\n\n\nEs posible realizar esto con un comando de una sola línea, intenta resolverlo de esta forma.\n\n\n\n\n\n\n\n\nSolución\n\n\n\n\n\n# cd C:/Users/ecoss/Documents/Respaldos/Github_notes/Workshop_Bash2024/data/unix.bioinfo.rsgecuador-gh-pages\n\n#!/bin/bash\n# File: countseq.sh\n\n# Ruta a la carpeta que contiene los archivos .fastq\nFOLDER=\"_files\"\n\n# Iterar sobre cada archivo .fastq en la carpeta\nfor file in \"$FOLDER\"/*[1-3].fastq; do\n  # Imprimir el nombre del archivo\n  echo \"Archivo: $file\"\n  \n  # Usar grep para buscar secuencias que contengan 10 'N' seguidas y contar cuántas veces aparecen\n  count=$(grep -c 'NNNNNNNNNN' $file )\n  \n  # Imprimir el número de secuencias encontradas\n  echo \"Número de secuencias con 10 N seguidas: $count\"\n  echo \"---------------------------------------\"\ndone\nRecuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida unix.bioinfo.rsgecuador-gh-pages/y ejecutar: ./countseq.sh.\nSalida:\n\nsecuencias1.fastq - 1\nsecuencias2.fastq - 58\nsecuencias3.fastq - 75\n\n\n\n\nEjercicio 6.2 Ahora, determina el número de secuencias (lineas) de cada archivo .fastq por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo .fastq empiezan con el string @SRR098026.\n\n\n\n\n\n\nSolución\n\n\n\n\n\n#!/bin/bash\n# File: countNseq.sh\n\n# Ruta a la carpeta que contiene los archivos .fastq\nFOLDER=\"_files\"\n\n# Iterar sobre cada archivo .fastq en la carpeta\nfor file in \"$FOLDER\"/*[1-3].fastq; do\n  echo \"Archivo: $file\"\n  \n  # Usar grep para contar cuántas líneas empiezan con '@SRR098026'\n  count=$(grep -c '^@SRR098026' $file )\n  \n  echo \"Número de secuencias: $count\"\n  echo \"---------------------------------------\"\ndone\nSalida:\n\nsecuencias1.fastq - 99\nsecuencias2.fastq - 75\nsecuencias3.fastq - 75"
+    "title": "15  Ejercicios en equipo",
+    "section": "15.1 Extracción de información de archivos fastq",
+    "text": "15.1 Extracción de información de archivos fastq\nEn este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos secuencias1.fastq, secuencias2.fastq y secuencias3.fastq que se encuentra en la carpeta _files dentro del directorio raíz del repositorio de GitHub unix.bioinfo.rsgecuador .\nEjercicio 6.1 La letra N representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o missing data. Imprime el número de secuencias que tenga diez N seguidas por cada uno de los archivos fastq de la carpeta _files.\n\n\n\n\n\n\nNote\n\n\n\nEs posible realizar esto con un comando de una sola línea, intenta resolverlo de esta forma.\n\n\n\n\n\n\n\n\nSolución\n\n\n\n\n\n# cd C:/Users/ecoss/Documents/Respaldos/Github_notes/Workshop_Bash2024/data/unix.bioinfo.rsgecuador-gh-pages\n\n#!/bin/bash\n# File: countseq.sh\n\n# Ruta a la carpeta que contiene los archivos .fastq\nFOLDER=\"_files\"\n\n# Iterar sobre cada archivo .fastq en la carpeta\nfor file in \"$FOLDER\"/*[1-3].fastq; do\n  # Imprimir el nombre del archivo\n  echo \"Archivo: $file\"\n  \n  # Usar grep para buscar secuencias que contengan 10 'N' seguidas y contar cuántas veces aparecen\n  count=$(grep -c 'NNNNNNNNNN' $file )\n  \n  # Imprimir el número de secuencias encontradas\n  echo \"Número de secuencias con 10 N seguidas: $count\"\n  echo \"---------------------------------------\"\ndone\nRecuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida unix.bioinfo.rsgecuador-gh-pages/y ejecutar: ./countseq.sh.\nSalida:\n\nsecuencias1.fastq - 1\nsecuencias2.fastq - 58\nsecuencias3.fastq - 75\n\n\n\n\nEjercicio 6.2 Ahora, determina el número de secuencias (lineas) de cada archivo .fastq por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo .fastq empiezan con el string @SRR098026.\n\n\n\n\n\n\nSolución\n\n\n\n\n\n#!/bin/bash\n# File: countNseq.sh\n\n# Ruta a la carpeta que contiene los archivos .fastq\nFOLDER=\"_files\"\n\n# Iterar sobre cada archivo .fastq en la carpeta\nfor file in \"$FOLDER\"/*[1-3].fastq; do\n  echo \"Archivo: $file\"\n  \n  # Usar grep para contar cuántas líneas empiezan con '@SRR098026'\n  count=$(grep -c '^@SRR098026' $file )\n  \n  echo \"Número de secuencias: $count\"\n  echo \"---------------------------------------\"\ndone\nSalida:\n\nsecuencias1.fastq - 99\nsecuencias2.fastq - 75\nsecuencias3.fastq - 75"
   },
   {
     "objectID": "Parte8.html#material-suplementario",
     "href": "Parte8.html#material-suplementario",
-    "title": "14  Repaso",
-    "section": "14.2 Material suplementario",
-    "text": "14.2 Material suplementario\n\nRSG Ecuador. Scripts en Bash\nRSG Ecuador. Wildcards y Streams\nRSG Ecuador. Expresiones regulares (regex)\nWildcard Selection in Bash"
+    "title": "15  Ejercicios en equipo",
+    "section": "15.2 Material suplementario",
+    "text": "15.2 Material suplementario\n\nRSG Ecuador. Scripts en Bash\nRSG Ecuador. Wildcards y Streams\nRSG Ecuador. Expresiones regulares (regex)\nWildcard Selection in Bash"
   }
 ]

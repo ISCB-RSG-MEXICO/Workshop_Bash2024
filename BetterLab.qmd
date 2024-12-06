@@ -1,0 +1,10 @@
+# Uso de BetterLab
+
+Lo escribira Abel
+
+Falta el acceso y las pruebas en el mismo
+
+## Material suplementario
+
+-   Nelly Selem Tutorial - [Bioinformática](https://nselem.github.io/bioinformatics/)
+-   En Windows puedes usar [Git Bash.](https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/)

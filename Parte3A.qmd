@@ -1,6 +1,6 @@
 # Edición de archivos con los editores de texto (nano y vim)
 
-Por trabajar
+Por trabajar - Aaron Jaime
 
 ## **Ejercicio 6:** Edición de archivos - Por crear
 

@@ -1,6 +1,6 @@
-# **Bucles (for loops)**
+# Bucles (for loops)
 
-Por trabajar
+Por trabajar - Aaron Jaime
 
 ## **Ejercicio 10**
 

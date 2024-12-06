@@ -9,19 +9,32 @@ book:
   page-navigation: true
   chapters:
     - index.qmd
-    - requisitos.qmd
-    - intro.qmd
-    - Bash.qmd
-    - Rnaseq_intro.qmd
-    - Parte2A.qmd
-    - Parte2B.qmd
-    - Parte3A.qmd
-    - Parte3B.qmd
-    - Parte4A.qmd
-    - Parte4B.qmd
-    - Parte5.qmd
-    - Parte6.qmd
-    - Parte7.qmd
+    - part: "**Section 1** - Introducción a Bash"
+      chapters: 
+      - BetterLab.qmd
+      - intro.qmd
+      - Bash.qmd
+    - part: "**Section 2** - Manejo y redirección de datos"
+      chapters: 
+      - Rnaseq_intro.qmd
+      - Parte2A.qmd
+      - Parte2B.qmd
+    - part: "**Section 3** - Edición de archivos"
+      chapters: 
+      - Parte3A.qmd
+      - Parte3B.qmd
+    - part: "**Section 4** - Manejo y redirección de datos"
+      chapters: 
+      - BuenasPracticas.qmd
+      - Parte4A.qmd
+      - Parte4B.qmd
+    - part: "**Section 5** - Condicionales"
+      chapters: 
+      - Parte5.qmd
+      - Parte6.qmd
+    - part: "**Section 6** - Bucles (for loops)"
+      chapters: 
+      - Parte7.qmd
     - Parte8.qmd
   # Information
   repo-url: https://github.com/ISCB-RSG-MEXICO/Workshop_Bash2024 # link de Github
