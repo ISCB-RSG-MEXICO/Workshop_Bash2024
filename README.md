@@ -1,5 +1,5 @@
 <p align="center">
-<img src='img/flyer_workshopBash.jpg' width='600'>
+<img src='img/flyer_workshopBash.jpg' width='300'>
 </p>
 
 # Workshop Bash 2024
