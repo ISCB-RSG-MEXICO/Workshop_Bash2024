@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop Bash 2024 - 10&nbsp; Generación de ligas simbólicas a archivos y orden en directorios</title>
+<title>Workshop Bash 2024 - 10&nbsp; Enlaces simbólicos (symlinks)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -76,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BuenasPracticas.html"><strong>Section 4</strong> - Manejo y redirección de datos</a></li><li class="breadcrumb-item"><a href="./Parte4A.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Generación de ligas simbólicas a archivos y orden en directorios</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BuenasPracticas.html"><strong>Section 4</strong> - Manejo y redirección de datos</a></li><li class="breadcrumb-item"><a href="./Parte4A.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Enlaces simbólicos (symlinks)</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -233,13 +267,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Parte4A.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Generación de ligas simbólicas a archivos y orden en directorios</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Enlaces simbólicos (symlinks)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Parte4B.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (grep, cut, sort, uniq, wc)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (<code>grep, cut, sort, uniq, wc</code>)</span></span></a>
   </div>
 </li>
       </ul>
@@ -300,8 +334,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#ejercicio-8" id="toc-ejercicio-8" class="nav-link active" data-scroll-target="#ejercicio-8"><span class="header-section-number">10.1</span> <strong>Ejercicio 8:</strong></a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">10.2</span> Referencias</a></li>
+  <li><a href="#diferencias-entre-enlaces-simbólicos-symlinks-y-enlaces-duros-hard-links" id="toc-diferencias-entre-enlaces-simbólicos-symlinks-y-enlaces-duros-hard-links" class="nav-link active" data-scroll-target="#diferencias-entre-enlaces-simbólicos-symlinks-y-enlaces-duros-hard-links"><span class="header-section-number">10.1</span> Diferencias entre enlaces simbólicos (symlinks) y enlaces duros (hard links)</a></li>
+  <li><a href="#orden-de-los-archivos" id="toc-orden-de-los-archivos" class="nav-link" data-scroll-target="#orden-de-los-archivos"><span class="header-section-number">10.2</span> Orden de los archivos</a>
+  <ul>
+  <li><a href="#consejos-adicionales" id="toc-consejos-adicionales" class="nav-link" data-scroll-target="#consejos-adicionales"><span class="header-section-number">10.2.1</span> <strong>Consejos adicionales</strong></a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">10.3</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -310,7 +348,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Generación de ligas simbólicas a archivos y orden en directorios</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Enlaces simbólicos (symlinks)</span></h1>
 </div>
 
 
@@ -325,14 +363,124 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Por trabajar - Evelia</p>
-<section id="ejercicio-8" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="ejercicio-8"><span class="header-section-number">10.1</span> <strong>Ejercicio 8:</strong></h2>
-</section>
-<section id="referencias" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="referencias"><span class="header-section-number">10.2</span> Referencias</h2>
+<p>Es mejor crear <strong>enlaces simbólicos (symlinks)</strong> en vez de copiar cada archivo, ya que permite ahorrar mucho espacio en el disco al evitar la multiplicación de copias fisicas en el disco duro del mismo archivo.</p>
+<p>Una modificación realizada utilizando este enlace se reflejará en el original; pero, por el contrario, si se elimina el enlace, no se eliminará el auténtico.</p>
+<section id="diferencias-entre-enlaces-simbólicos-symlinks-y-enlaces-duros-hard-links" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="diferencias-entre-enlaces-simbólicos-symlinks-y-enlaces-duros-hard-links"><span class="header-section-number">10.1</span> Diferencias entre enlaces simbólicos (symlinks) y enlaces duros (hard links)</h2>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 40%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Características</th>
+<th>Symlinks</th>
+<th>Hard links</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Almacenamiento</strong></td>
+<td><ul>
+<li>Actúa como un puntero o referencia a otro archivo o directorio.</li>
+<li>No contiene los datos reales del archivo, sino una tuta que apunta al archivo original.</li>
+</ul></td>
+<td><ul>
+<li>Apunta directamente a los datos del archivo original.</li>
+</ul>
+<!-- -->
 <ul>
-<li></li>
+<li>Comparte el mismo contenido que el archivo enlazado, no solo una referencia.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Número de inodo</strong></td>
+<td>Cuenta con un número de inodo (nodo indice) diferente del archivo original. Se identifica como un tipo de archivo diferente.</td>
+<td>Comparte el mismo número de inodo con el destino. Elimina el concepto de “archivo original”; todos los hard links al mismo archivo son iguales.</td>
+</tr>
+<tr class="odd">
+<td><strong>Eliminación del archivo original</strong></td>
+<td>Si el archivo original se elimina, el symlink queda roto (es decir, apunta a algo inexistente).</td>
+<td>Si un hard link se elimina, los datos del archivo permanecen accesibles mientras existan otros hard links.</td>
+</tr>
+<tr class="even">
+<td><strong>Sistema de archivos.</strong></td>
+<td>Puede apuntar a archivos o directorios, incluso en diferentes sistemas de archivos.</td>
+<td>Deben residir en el mismo sistema de archivos.</td>
+</tr>
+<tr class="odd">
+<td><strong>Rutas</strong></td>
+<td>Se pueden usar rutas absolutas o relativas para la referencia.</td>
+<td>No puede enlazar directorios (en la mayoría de los sistemas modernos) ni cruzar sistemas de archivos diferentes.</td>
+</tr>
+<tr class="even">
+<td><strong>Uso común</strong></td>
+<td><ul>
+<li>Crear accesos directos a archivos o carpetas.</li>
+<li>Facilitar la gestión de rutas en aplicaciones.</li>
+</ul></td>
+<td><ul>
+<li>Garantizar accesibilidad a datos independientemente de qué enlace se elimine.</li>
+<li>Compartir archivos de forma eficiente sin duplicar espacio en disco.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Comando para crear</strong></td>
+<td><div class="sourceCode" id="cb1" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> archivo_original enlace_simbolico</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb2" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> archivo_original enlace_simbolico</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Debes tener cuidado al elegir cuál utilizar. Los <strong>enlaces simbólicos</strong> son más convenientes cuando trabajamos con datos importantes que están almacenados en un respaldo, ya que permiten acceder fácilmente a los archivos originales sin duplicarlos y facilitan la gestión de rutas, sin eliminar o afectar los archivos originales.</p>
+</div>
+</div>
+</section>
+<section id="orden-de-los-archivos" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="orden-de-los-archivos"><span class="header-section-number">10.2</span> Orden de los archivos</h2>
+<p>El&nbsp;<strong>sistema de archivos de GNU/Linux</strong>&nbsp;tiene una estructura jerárquica de directorios y subdirectorios que penden del&nbsp;<strong>directorio raíz</strong> <code>/</code>. Esta estructura puede ser visualizada convenientemente con el comando&nbsp;<code>tree</code> (Nota:&nbsp;<code>tree</code>&nbsp;tal vez no esté instalado en tu sistema).</p>
+<p>Organizar tu entorno de trabajo en <strong>Bash</strong> siguiendo buenas prácticas te permitirá gestionar tus archivos y scripts de manera eficiente. Aquí tienes una sugerencia de carpetas clave y nombres que puedes utilizar:</p>
+<pre><code>~/workspace/
+├── bin/           # Scripts ejecutables
+├── src/           # Código fuente
+├── logs/          # Archivos de registro
+├── config/        # Configuración
+├── data/
+│   ├── raw/       # Datos crudos
+│   └── processed/ # Datos procesados
+├── backup/        # Copias de seguridad
+├── tmp/           # Archivos temporales
+├── projects/
+│   └── project_name/
+├── git/           # Repositorios locales
+└── docs/          # Documentación</code></pre>
+<section id="consejos-adicionales" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="consejos-adicionales"><span class="header-section-number">10.2.1</span> <strong>Consejos adicionales</strong></h3>
+<ol type="1">
+<li><p><strong>Usa nombres descriptivos:</strong> Los nombres de las carpetas y archivos deben reflejar su contenido claramente.</p></li>
+<li><p><strong>Mantén consistencia:</strong> Usa un esquema de nombres uniforme (por ejemplo, todo en minúsculas o con guiones bajos).</p></li>
+<li><p><strong>Automatiza la limpieza:</strong> Utiliza scripts en Bash para eliminar archivos temporales o rotar logs antiguos.</p></li>
+<li><p><strong>Usa control de versiones:</strong> Integra Git en tus proyectos para mantener un historial de cambios en tus scripts.</p></li>
+</ol>
+<p>Esta estructura es flexible y se puede ajustar según tus necesidades específicas.</p>
+</section>
+</section>
+<section id="referencias" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="referencias"><span class="header-section-number">10.3</span> Referencias</h2>
+<ul>
+<li><p><a href="https://www.hostinger.com/tutorials/how-to-create-symbolic-links-in-linux/?utm_campaign=Generic-Tutorials-DSA%7CNT:Se%7CLO:MX-EN&amp;utm_medium=ppc&amp;gad_source=1&amp;gclid=Cj0KCQiAu8W6BhC-ARIsACEQoDBS5S76IeOtxlAtbyI5wPmsI72ILku8waMvXKlUo0X-ZzddJpjvKSAaAuAiEALw_wcB">How to create and remove Linux symlinks for files and directories</a></p></li>
+<li><p><a href="https://vinuesa.github.io/intro2linux/index.html#generaci%C3%B3n-de-ligas-simb%C3%B3licas-a-archivos-comando-ln--s-rutaalarchivofuente-nombre_liga">Generación de ligas simbólicas a archivos: comando&nbsp;<strong>ln -s /ruta/al/archivo/fuente nombre_liga</strong></a></p></li>
 </ul>
 
 
@@ -695,7 +843,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Parte4B.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (grep, cut, sort, uniq, wc)</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (<code>grep, cut, sort, uniq, wc</code>)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

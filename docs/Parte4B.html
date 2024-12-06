@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -76,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BuenasPracticas.html"><strong>Section 4</strong> - Manejo y redirección de datos</a></li><li class="breadcrumb-item"><a href="./Parte4B.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (grep, cut, sort, uniq, wc)</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./BuenasPracticas.html"><strong>Section 4</strong> - Manejo y redirección de datos</a></li><li class="breadcrumb-item"><a href="./Parte4B.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (`grep, cut, sort, uniq, wc`)</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -233,13 +267,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Parte4A.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Generación de ligas simbólicas a archivos y orden en directorios</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Enlaces simbólicos (symlinks)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Parte4B.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (grep, cut, sort, uniq, wc)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (<code>grep, cut, sort, uniq, wc</code>)</span></span></a>
   </div>
 </li>
       </ul>
@@ -300,8 +334,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#ejercicio-9" id="toc-ejercicio-9" class="nav-link active" data-scroll-target="#ejercicio-9"><span class="header-section-number">11.1</span> <strong>Ejercicio 9:</strong></a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">11.2</span> Referencias</a></li>
+  <li><a href="#contar-el-número-de-secuencias-en-un-archivo-fasta" id="toc-contar-el-número-de-secuencias-en-un-archivo-fasta" class="nav-link active" data-scroll-target="#contar-el-número-de-secuencias-en-un-archivo-fasta"><span class="header-section-number">11.1</span> Contar el número de secuencias en un archivo FASTA</a>
+  <ul>
+  <li><a href="#interpretación-de-pe-protein-existence-en-uniprot" id="toc-interpretación-de-pe-protein-existence-en-uniprot" class="nav-link" data-scroll-target="#interpretación-de-pe-protein-existence-en-uniprot"><span class="header-section-number">11.1.1</span> <strong>Interpretación de PE (Protein Existence) en UniProt:</strong></a></li>
+  </ul></li>
+  <li><a href="#ejercicio-8" id="toc-ejercicio-8" class="nav-link" data-scroll-target="#ejercicio-8"><span class="header-section-number">11.2</span> <strong>Ejercicio 8:</strong></a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">11.3</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -310,7 +348,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (grep, cut, sort, uniq, wc)</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Filtrado de texto (<code>grep, cut, sort, uniq, wc</code>)</span></h1>
 </div>
 
 
@@ -325,14 +363,116 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Por trabajar - Evelia</p>
-<section id="ejercicio-9" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="ejercicio-9"><span class="header-section-number">11.1</span> <strong>Ejercicio 9:</strong></h2>
-</section>
-<section id="referencias" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="referencias"><span class="header-section-number">11.2</span> Referencias</h2>
+<p>Veamos ahora los comandos más usados en tuberías de filtrado de texto en acción, haciendo uso de sólo algunas de las opciones más frecuentes listados en la sección anterior.</p>
+<section id="contar-el-número-de-secuencias-en-un-archivo-fasta" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="contar-el-número-de-secuencias-en-un-archivo-fasta"><span class="header-section-number">11.1</span> Contar el número de secuencias en un archivo FASTA</h2>
+<ol type="1">
+<li><strong>¿Cuántas líneas tiene el archivo S_clavuligerus_proteome.fasta?</strong></li>
+</ol>
+<div class="sourceCode" id="cb1" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /data/unix.bioinfo.rsgecuador-gh-pages/_files/</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> S_clavuligerus_proteome.fasta</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 40739 lineas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En archivos de formato FASTA o similares, el número de líneas no corresponde al número de secuencias. Esto se debe a la estructura del archivo:</p>
 <ul>
-<li></li>
+<li><p><strong>Formato FASTA</strong>: Cada secuencia comienza con una línea que tiene el símbolo <code>&gt;</code>, seguido de un identificador o descripción de la secuencia.</p></li>
+<li><p>Las líneas siguientes contienen la secuencia de nucleótidos o aminoácidos, que pueden estar divididas en varias líneas.</p></li>
+</ul>
+<p>Por lo tanto, para contar el número de secuencias en un archivo FASTA, <strong>debes contar las líneas que comienzan con <code>&gt;</code></strong>. Aquí tienes un ejemplo práctico en Bash para lograrlo:</p>
+<ol start="2" type="1">
+<li><strong>¿Cuántas secuencias tiene el archivo S_clavuligerus_proteome.fasta?</strong></li>
+</ol>
+<div class="sourceCode" id="cb2" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-c</span> <span class="st">"^&gt;"</span> S_clavuligerus_proteome.fasta</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 6439 secuencias</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><strong>¿Cuáles bases de datos detectaron estas secuencias?</strong></li>
+</ol>
+<div class="sourceCode" id="cb3" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"&gt;"</span> S_clavuligerus_proteome.fasta <span class="kw">|</span> <span class="fu">cut</span> <span class="at">-d</span> <span class="st">'|'</span> <span class="at">-f1</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="st">'s/&gt;//'</span> <span class="kw">|</span> <span class="fu">uniq</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># sp y tr</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bases de datos:</p>
+<ul>
+<li><p><strong><code>sp</code></strong>: Indica que la entrada proviene de UniProtKB/Swiss-Prot, una base de datos de proteínas revisada.</p></li>
+<li><p><code>tr</code>:</p></li>
+</ul>
+<p><strong>Explicación</strong>:</p>
+<ul>
+<li><p><code>grep "&gt;"</code>: Busca la línea con la cabecera.</p></li>
+<li><p><code>cut -d'|' -f1</code>: Divide por <code>|</code> y selecciona el primer campo.</p></li>
+<li><p><code>sed 's/&gt;//'</code>: Elimina el símbolo <code>&gt;</code> al inicio.</p></li>
+<li><p><code>uniq</code>: Nos da los valores únicos.</p></li>
+</ul>
+<ol start="4" type="1">
+<li><strong>¿Qué organismo produce esta proteína y cuál es su Taxonomy ID?</strong></li>
+</ol>
+<div class="sourceCode" id="cb4" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">organism</span><span class="op">=</span><span class="va">$(</span><span class="fu">grep</span> <span class="st">"&gt;"</span> S_clavuligerus_proteome.fasta <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-n</span> <span class="st">'s/.*OS=\([^ ]*\).*/\1/p'</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-u</span><span class="va">)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">taxonomy</span><span class="op">=</span><span class="va">$(</span><span class="fu">grep</span> <span class="st">"&gt;"</span> S_clavuligerus_proteome.fasta <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-n</span> <span class="st">'s/.*OX=\([0-9]*\).*/\1/p'</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-u</span><span class="va">)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Organismo: </span><span class="va">$organism</span><span class="st">"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Taxonomy ID: </span><span class="va">$taxonomy</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Explicación</strong>:</p>
+<ul>
+<li><p><code>sed -n 's/.*OS=\([^ ]*\).*/\1/p'</code>: Extrae el nombre del organismo entre <code>OS=</code> y el primer espacio.</p></li>
+<li><p><code>sed -n 's/.*OX=\([0-9]*\).*/\1/p'</code>: Extrae el número después de <code>OX=</code>.</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong><code>sort -u</code></strong>: Ordena las líneas y elimina duplicados, asegurando que solo queden valores únicos.</p></li>
+<li><p>Se aplica después de extraer los valores con <code>sed</code>, por si existen múltiples cabeceras en el archivo.</p></li>
+</ul>
+<ol start="5" type="1">
+<li><strong>¿Cuántos genes codifican a estas proteínas?</strong></li>
+</ol>
+<div class="sourceCode" id="cb5" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"&gt;"</span> S_clavuligerus_proteome.fasta <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-n</span> <span class="st">'s/.*GN=\([^ ]*\).*/\1/p'</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 6410 genes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Explicación</strong>:</p>
+<ul>
+<li><p><strong><code>grep "&gt;" header.fasta</code></strong>: Encuentra las líneas con cabeceras FASTA.</p></li>
+<li><p><strong><code>sed -n 's/.*GN=\([^ ]*\).*/\1/p'</code></strong>: Extrae el valor asociado a <code>GN=</code> (el nombre del gen).</p></li>
+<li><p><strong><code>sort</code></strong>: Ordena alfabéticamente los nombres de los genes.</p></li>
+<li><p><strong><code>uniq</code></strong>: Filtra y deja solo los nombres únicos.</p></li>
+<li><p><strong><code>wc -l</code></strong>: Cuenta el número total de líneas (es decir, el número de genes únicos).</p></li>
+</ul>
+<ol start="6" type="1">
+<li><strong>¿Qué nivel de evidencia tiene la existencia de la proteína TMUUS_STRC2?</strong></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><code>TMUUS_STRC2</code></strong>: Es el nombre de la proteína en formato abreviado y en mayúsculas.</p>
+<ul>
+<li><p><strong><code>TMUUS</code></strong>: Abreviatura de la función de la proteína: “(+)-T-muurolol synthase”.</p></li>
+<li><p><strong><code>STRC2</code></strong>: Abreviatura del organismo de origen, <strong>Streptomyces clavuligerus</strong>.</p></li>
+</ul>
+</div>
+</div>
+<p>El nivel de evidencia de la existencia de la proteína <strong><code>TMUUS_STRC2</code></strong> está especificado en la cabecera FASTA mediante el campo <strong><code>PE</code></strong>. En este caso: <code>&gt;sp|B5GW45|TMUUS_STRC2 (+)-T-muurolol synthase ((2E,6E)-farnesyl diphosphate cyclizing) OS=Streptomyces clavuligerus OX=443255 GN=SCLAV_p0068 PE=1 SV=1</code></p>
+<p>El campo <strong><code>PE=1</code></strong> indica que el nivel de evidencia es <strong>1</strong>, lo que significa que la existencia de esta proteína está confirmada experimentalmente.</p>
+<section id="interpretación-de-pe-protein-existence-en-uniprot" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="interpretación-de-pe-protein-existence-en-uniprot"><span class="header-section-number">11.1.1</span> <strong>Interpretación de PE (Protein Existence) en UniProt:</strong></h3>
+<ol type="1">
+<li><p><strong>PE=1</strong>: Evidencia experimental a nivel de proteína.</p></li>
+<li><p><strong>PE=2</strong>: Evidencia experimental a nivel de transcripción.</p></li>
+<li><p><strong>PE=3</strong>: Inferido por homología.</p></li>
+<li><p><strong>PE=4</strong>: Predicho.</p></li>
+<li><p><strong>PE=5</strong>: Proteína no existente.</p></li>
+</ol>
+<p>En Bash:</p>
+<div class="sourceCode" id="cb6" data-eval="FALSE"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="st">"&gt;.*TMUUS_STRC2"</span> S_clavuligerus_proteome.fasta <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-n</span> <span class="st">'s/.*PE=\([0-9]\).*/\1/p'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Por lo tanto, <strong>TMUUS_STRC2 tiene el nivel más alto de evidencia (PE=1), lo que confirma su existencia a nivel experimental</strong>.</p>
+</section>
+</section>
+<section id="ejercicio-8" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="ejercicio-8"><span class="header-section-number">11.2</span> <strong>Ejercicio 8:</strong></h2>
+</section>
+<section id="referencias" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="referencias"><span class="header-section-number">11.3</span> Referencias</h2>
+<ul>
+<li><a href="https://vinuesa.github.io/intro2linux/index.html#ejemplos-de-herramientas-de-filtrado-de-texto-pipelines-con-grep-cut-sort-uniq-wc-en-acci%C3%B3n">Ejemplos de herramientas de filtrado de texto:&nbsp;<em>pipelines</em>&nbsp;con&nbsp;<strong>grep</strong>,&nbsp;<strong>cut</strong>,&nbsp;<strong>sort</strong>,&nbsp;<strong>uniq</strong>,&nbsp;<strong>wc</strong>&nbsp;en acción</a></li>
 </ul>
 
 
@@ -690,7 +830,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Parte4A.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Generación de ligas simbólicas a archivos y orden en directorios</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Enlaces simbólicos (symlinks)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

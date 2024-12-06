@@ -104,10 +104,11 @@ Reporte de FastQC con [buena calidad](https://www.bioinformatics.babraham.ac.uk/
 ::: callout-note
 ## Ejercicio 3
 
-1.  Visualiza el contenido del archivo "\_files/secuencias_bash.fastq" empleando head. `head _files/secuencias_bash.fastq`
-2.  Calcula el numero de lineas contenidas en este archivo. `wc -l _files/secuencias_bash.fastq`
-3.  Imprime las lineas 4 a 8 del archivo. `sed -n '4,8p' _files/secuencias_bash.fastq`
-4.  Podemos utilizar la función `grep -c` para contar el número de secuencias de un archivo (de nuevo, sustituya archivo por el nombre de uno de los archivos): `grep -c "^@SRR" _files/secuencias_bash.fastq`
+1.  Ubicarte dentro de la carpeta descomprimida. `cd unix.bioinfo.rsgecuador-gh-pages`
+2.  Visualiza el contenido del archivo "\_files/secuencias_bash.fastq" empleando head. `head _files/secuencias_bash.fastq`
+3.  Calcula el numero de lineas contenidas en este archivo. `wc -l _files/secuencias_bash.fastq`
+4.  Imprime las lineas 4 a 8 del archivo. `sed -n '4,8p' _files/secuencias_bash.fastq`
+5.  Podemos utilizar la función `grep -c` para contar el número de secuencias de un archivo (de nuevo, sustituya archivo por el nombre de uno de los archivos): `grep -c "^@SRR" _files/secuencias_bash.fastq`
 :::
 
 ## Material suplementario
