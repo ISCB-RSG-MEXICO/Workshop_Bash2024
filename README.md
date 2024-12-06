@@ -1,4 +1,6 @@
-![](img/flyer_workshopBash.jpg){fig-align="center" width="246"}
+<p align="center">
+<img src='img/flyer_workshopBash.jpg' width='600'>
+</p>
 
 # Workshop Bash 2024
 
