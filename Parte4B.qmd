@@ -34,13 +34,14 @@ grep ">" S_clavuligerus_proteome.fasta | cut -d '|' -f1 | sed 's/>//' | uniq
 # sp y tr
 ```
 
-Bases de datos:
+**UniProtKB (Universal Protein Knowledgebase)** tiene dos secciones principales:
 
--   **`sp`**: Indica que la entrada proviene de UniProtKB/Swiss-Prot, una base de datos de proteínas revisada.
+-   **Swiss-Prot (**`sp`**)**: Contiene secuencias revisadas y anotadas manualmente.
 
--   `tr`:
+-   **TrEMBL (**`tr`**)**: Contiene secuencias computacionalmente anotadas y aún no revisadas manualmente.
 
-**Explicación**:
+::: {.callout-note icon="false"}
+## Explicación del código
 
 -   `grep ">"`: Busca la línea con la cabecera.
 
@@ -49,6 +50,7 @@ Bases de datos:
 -   `sed 's/>//'`: Elimina el símbolo `>` al inicio.
 
 -   `uniq`: Nos da los valores únicos.
+:::
 
 4.  **¿Qué organismo produce esta proteína y cuál es su Taxonomy ID?**
 
@@ -59,18 +61,17 @@ echo "Organismo: $organism"
 echo "Taxonomy ID: $taxonomy"
 ```
 
-**Explicación**:
+::: {.callout-note icon="false"}
+## Explicación del código
 
 -   `sed -n 's/.*OS=\([^ ]*\).*/\1/p'`: Extrae el nombre del organismo entre `OS=` y el primer espacio.
 
 -   `sed -n 's/.*OX=\([0-9]*\).*/\1/p'`: Extrae el número después de `OX=`.
 
-```{=html}
-<!-- -->
-```
 -   **`sort -u`**: Ordena las líneas y elimina duplicados, asegurando que solo queden valores únicos.
 
 -   Se aplica después de extraer los valores con `sed`, por si existen múltiples cabeceras en el archivo.
+:::
 
 5.  **¿Cuántos genes codifican a estas proteínas?**
 
@@ -79,7 +80,8 @@ grep ">" S_clavuligerus_proteome.fasta | sed -n 's/.*GN=\([^ ]*\).*/\1/p' | sort
 # 6410 genes
 ```
 
-**Explicación**:
+::: {.callout-note icon="false"}
+## Explicación del código
 
 -   **`grep ">" header.fasta`**: Encuentra las líneas con cabeceras FASTA.
 
@@ -90,6 +92,7 @@ grep ">" S_clavuligerus_proteome.fasta | sed -n 's/.*GN=\([^ ]*\).*/\1/p' | sort
 -   **`uniq`**: Filtra y deja solo los nombres únicos.
 
 -   **`wc -l`**: Cuenta el número total de líneas (es decir, el número de genes únicos).
+:::
 
 6.  **¿Qué nivel de evidencia tiene la existencia de la proteína TMUUS_STRC2?**
 
@@ -105,7 +108,7 @@ El nivel de evidencia de la existencia de la proteína **`TMUUS_STRC2`** está e
 
 El campo **`PE=1`** indica que el nivel de evidencia es **1**, lo que significa que la existencia de esta proteína está confirmada experimentalmente.
 
-### **Interpretación de PE (Protein Existence) en UniProt:**
+**Interpretación de PE (Protein Existence) en UniProt:**
 
 1.  **PE=1**: Evidencia experimental a nivel de proteína.
 
@@ -125,7 +128,25 @@ grep ">.*TMUUS_STRC2" S_clavuligerus_proteome.fasta | sed -n 's/.*PE=\([0-9]\).*
 
 Por lo tanto, **TMUUS_STRC2 tiene el nivel más alto de evidencia (PE=1), lo que confirma su existencia a nivel experimental**.
 
-## **Ejercicio 8:**
+::: callout-note
+## Ejercicio 8
+
+Contesta las siguientes preguntas empleando el archivo S_clavuligerus_proteome.fasta:
+
+1.  ¿Qué proteínas tienen un nivel de evidencia menor o igual a 2?
+2.  ¿Cuántas proteínas tienen el identificador de taxonomía (`OX=443255`) específico?
+3.  ¿Cuántas variantes de secuencia (SV, sequence version) diferentes hay en el archivo FASTA?
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` {eval="FALSE"}
+1. grep ">" S_clavuligerus_proteome.fasta | grep "PE=[1-2]"
+2. grep "OX=443255"  S_clavuligerus_proteome.fasta | wc -l
+3. grep ">"  S_clavuligerus_proteome.fasta | grep -o "SV=[0-9]*" | cut -d'=' -f2 | sort | uniq -c
+```
+:::
+:::
 
 ## Referencias
 

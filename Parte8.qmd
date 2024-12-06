@@ -2,11 +2,15 @@
 
 Reúnanse en equipos de 3 personas para completar **uno** de los ejercicios propuestos en esta sección, algunos de los ejercicios provienen de la actividad de [6. Extracción de información de archivos fastq](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/05_Ejercicios_procesamiento_ficheros_Bioinfo/5_Info_fastq.html) del curso de [GNU/Linux para Bioinformática](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html) organizado por RSG Ecuador.
 
+![](img/meme2.jpg){fig-align="center" width="506"}
+
 ## Extracción de información de archivos fastq
 
 En este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos `secuencias1.fastq`, `secuencias2.fastq` y `secuencias3.fastq` que se encuentra en la carpeta `_files` dentro del directorio raíz del repositorio de GitHub [unix.bioinfo.rsgecuador](https://github.com/RSG-Ecuador/unix.bioinfo.rsgecuador/tree/gh-pages) .
 
-**Ejercicio 6.1** La letra `N` representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o `missing data`. Imprime el número de secuencias que tenga diez `N` seguidas por cada uno de los archivos `fastq` de la carpeta `_files`.
+**Ejercicio 13.1** **Contar el número de secuencias con diez "N" seguidas por cada archivo FASTQ**
+
+La letra `N` representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o `missing data`. Imprime el número de secuencias que tenga diez `N` seguidas por cada uno de los archivos `fastq` de la carpeta `_files`.
 
 ::: callout-note
 Es posible realizar esto con un comando de una sola línea, intenta resolverlo de esta forma.
@@ -47,7 +51,9 @@ Salida:
 -   `secuencias3.fastq` - 75
 :::
 
-**Ejercicio 6.2** Ahora, determina el número de secuencias (lineas) de cada archivo `.fastq` por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo `.fastq` empiezan con el string `@SRR098026`.
+**Ejercicio 13.2** **Contar el número de secuencias (líneas) en cada archivo FASTQ**
+
+Ahora, determina el número de secuencias (lineas) de cada archivo `.fastq` por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo `.fastq` empiezan con el string `@SRR098026`.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solución
@@ -77,6 +83,134 @@ Salida:
 -   `secuencias2.fastq` - 75
 -   `secuencias3.fastq` - 75
 :::
+
+**Ejercicio 13.3 Identifica el número de secuencias con calidad baja.**
+
+En los archivos FASTQ, la tercera línea de cada entrada contiene el símbolo `+`, mientras que la cuarta línea representa la calidad de la secuencia en formato ASCII. Determina cuántas secuencias tienen una calidad promedio por debajo de un umbral específico (por ejemplo, una calidad promedio menor a 20).
+
+::: {.callout-note icon="false"}
+## Pista
+
+Usa herramientas como `grep` y un script auxiliar para convertir los símbolos ASCII a valores numéricos y calcular su promedio.
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solución
+
+``` {.bash eval="FALSE"}
+# Umbral de calidad
+umbral=20
+
+# Extraer las líneas de calidad (cuarta línea de cada entrada)
+grep -A 3 "^@" *.fastq | grep -v "^@" | grep -v "+" > quality_lines.txt
+
+# Convertir las líneas de calidad ASCII a números, calcular el promedio, y contar las que sean menores al umbral
+cat quality_lines.txt | while read line; do
+  # Convertir caracteres ASCII a valores numéricos y calcular la calidad promedio
+  sum=0
+  count=0
+  for i in $(echo "$line" | od -An -t u1); do
+    sum=$((sum + i - 33))  # Restar 33 para convertir de ASCII a valor de calidad
+    count=$((count + 1))
+  done
+
+  # Calcular la calidad promedio
+  if [ "$count" -gt 0 ]; then
+    calidad=$((sum / count))  # Calcular el promedio sin necesidad de bc
+  else
+    calidad=0
+  fi
+
+  # Comprobar si la calidad es menor que el umbral y almacenar
+  if [ "$calidad" -lt "$umbral" ]; then
+    echo "$calidad" >> low_quality_sequences.txt
+  fi
+done
+
+# Contar secuencias con calidad promedio menor al umbral
+echo "Número de secuencias con calidad promedio < $umbral: $(wc -l < low_quality_sequences 20: 757
+```
+
+Número de secuencias con calidad promedio \< 20: 757
+:::
+
+**Ejercicio 13.4 Cuenta cuántas secuencias únicas hay en cada archivo.**
+
+Determina cuántas secuencias únicas (sin repeticiones) existen en cada archivo. Asegúrate de ignorar las líneas que comienzan con `@` o `+`, ya que no forman parte de las secuencias.
+
+::: {.callout-note icon="false"}
+## Pista
+
+Usa `grep` para extraer solo las líneas correspondientes a las secuencias y después `sort` y `uniq` para contarlas.
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` {.bash eval="FALSE"}
+# Extraer solo las secuencias (segunda línea de cada entrada)
+grep -A 3 "^@" *.fastq | grep -v "^@" | grep -v "+" | grep -v "^--$" > sequences_only.txt
+
+# Contar las secuencias únicas
+echo "Número de secuencias únicas: $(sort sequences_only.txt | uniq | wc -l)"
+```
+
+Número de secuencias únicas: 620
+:::
+
+**Ejercicio 13.5 Encuentra la longitud promedio de las secuencias.**
+
+Calcula la longitud promedio de las secuencias en cada archivo. Esto requiere sumar las longitudes de todas las secuencias y dividirlas entre el número total de secuencias.
+
+::: {.callout-note icon="false"}
+## Pista
+
+Extrae las líneas correspondientes a las secuencias y utiliza `wc -c` para sumar los caracteres, luego divide por el número de secuencias.
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+# calcular_longitud_promedio.sh
+# Extraer solo las secuencias (segunda línea de cada entrada)
+grep -A 3 "^@" *.fastq | grep -v "^@" | grep -v "+" | grep -v "^--$" > sequences_only.txt
+
+# Calcular la longitud total de las secuencias
+total_length=0
+while read -r sequence; do
+  total_length=$((total_length + ${#sequence}))
+done < sequences_only.txt
+
+# Contar el número total de secuencias
+num_sequences=$(wc -l < sequences_only.txt)
+
+# Calcular la longitud promedio
+if [ "$num_sequences" -gt 0 ]; then
+  average_length=$((total_length / num_sequences))
+else
+  average_length=0
+fi
+
+echo "Longitud promedio de las secuencias: $average_length"
+```
+
+Longitud promedio de las secuencias: 58
+:::
+
+**Ejercicio 13.6**
+
+**Ejercicio 13.7**
+
+**Ejercicio 13.8**
+
+**Ejercicio 13.9**
+
+**Ejercicio 13.10**
+
+Y la historia continua ....
+
+![](img/meme1.png){fig-align="center"}
 
 ## Material suplementario
 

@@ -28,6 +28,8 @@ El signo `$` es un **prompt**, que nos muestra que la terminal está esperand
 **NOTA 3:** Podemos usar `pwd` para saber nuestra ubicación exacta.
 :::
 
+![](img/meme5.png){fig-align="center"}
+
 ## Conocer mi dirección / ubicación
 
 Averiguemos dónde estamos, ejecutando el comando `pwd` (que significa "imprime directorio de trabajo" - "print working directory"). En cualquier momento, nuestro **directorio actual** es nuestro directorio predeterminado, es decir, el directorio que la computadora supone queremos ejecutar comandos a menos que especifiquemos explícitamente otra cosa. En este caso la respuesta de la computadora es `/Users/nelle`, el cual es el directorio de inicio de Nelle, también conocido como su directorio **home**:
@@ -53,7 +55,7 @@ A partir de `/Users/ecoss/data/`, ¿Cuál de los siguientes comandos podría Am
 
 2.  `cd /`
 
-3.  `cd /``Users``/ecoss`
+3.  ``` cd /``Users``/ecoss ```
 
 4.  `cd ../..`
 
@@ -91,7 +93,7 @@ A partir de `/Users/ecoss/data/`, ¿Cuál de los siguientes comandos podría Am
 :::
 
 ::: callout-note
-Si colocamos `..` significa \'el directorio por encima del actual o el directorio anterior\', pero si colocamos `.` significa el directorio actual.
+Si colocamos `..` significa 'el directorio por encima del actual o el directorio anterior', pero si colocamos `.` significa el directorio actual.
 :::
 
 Ejemplo de rutas:

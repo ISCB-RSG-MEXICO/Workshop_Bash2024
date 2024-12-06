@@ -1,0 +1,972 @@
+secuencias_bash.fastq:@SRR098026.1 HWUSI-EAS1599_1:2:1:0:968 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.2 HWUSI-EAS1599_1:2:1:0:312 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.3 HWUSI-EAS1599_1:2:1:0:570 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.4 HWUSI-EAS1599_1:2:1:0:758 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.5 HWUSI-EAS1599_1:2:1:0:874 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.6 HWUSI-EAS1599_1:2:1:0:176 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.7 HWUSI-EAS1599_1:2:1:0:206 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.8 HWUSI-EAS1599_1:2:1:0:227 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.9 HWUSI-EAS1599_1:2:1:0:262 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.10 HWUSI-EAS1599_1:2:1:0:500 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.11 HWUSI-EAS1599_1:2:1:0:542 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.12 HWUSI-EAS1599_1:2:1:0:573 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.13 HWUSI-EAS1599_1:2:1:0:578 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.14 HWUSI-EAS1599_1:2:1:0:639 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.15 HWUSI-EAS1599_1:2:1:0:721 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.16 HWUSI-EAS1599_1:2:1:0:742 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.17 HWUSI-EAS1599_1:2:1:0:814 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.18 HWUSI-EAS1599_1:2:1:0:852 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.19 HWUSI-EAS1599_1:2:1:0:940 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.20 HWUSI-EAS1599_1:2:1:0:979 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.21 HWUSI-EAS1599_1:2:1:0:982 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.22 HWUSI-EAS1599_1:2:1:0:999 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.23 HWUSI-EAS1599_1:2:1:0:1005 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.24 HWUSI-EAS1599_1:2:1:0:1009 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.25 HWUSI-EAS1599_1:2:1:0:1027 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.26 HWUSI-EAS1599_1:2:1:0:1062 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.27 HWUSI-EAS1599_1:2:1:0:1134 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.28 HWUSI-EAS1599_1:2:1:0:1203 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.29 HWUSI-EAS1599_1:2:1:0:1300 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.30 HWUSI-EAS1599_1:2:1:0:1310 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.31 HWUSI-EAS1599_1:2:1:0:1452 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.32 HWUSI-EAS1599_1:2:1:0:1466 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.33 HWUSI-EAS1599_1:2:1:0:1571 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.34 HWUSI-EAS1599_1:2:1:0:1618 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.35 HWUSI-EAS1599_1:2:1:0:1654 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.36 HWUSI-EAS1599_1:2:1:0:1670 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.37 HWUSI-EAS1599_1:2:1:0:1716 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.38 HWUSI-EAS1599_1:2:1:0:1746 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.39 HWUSI-EAS1599_1:2:1:0:1762 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.40 HWUSI-EAS1599_1:2:1:0:1879 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.41 HWUSI-EAS1599_1:2:1:0:1896 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.42 HWUSI-EAS1599_1:2:1:0:1914 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.43 HWUSI-EAS1599_1:2:1:0:1941 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.44 HWUSI-EAS1599_1:2:1:0:1983 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.45 HWUSI-EAS1599_1:2:1:0:1987 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.46 HWUSI-EAS1599_1:2:1:0:2034 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.47 HWUSI-EAS1599_1:2:1:0:215 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.48 HWUSI-EAS1599_1:2:1:0:145 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.49 HWUSI-EAS1599_1:2:1:0:1593 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.50 HWUSI-EAS1599_1:2:1:0:1583 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNTNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.51 HWUSI-EAS1599_1:2:1:0:120 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.52 HWUSI-EAS1599_1:2:1:0:158 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNTNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.53 HWUSI-EAS1599_1:2:1:0:1588 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNCNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.54 HWUSI-EAS1599_1:2:1:0:257 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNANNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.55 HWUSI-EAS1599_1:2:1:0:513 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNCNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.56 HWUSI-EAS1599_1:2:1:0:558 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNTNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.57 HWUSI-EAS1599_1:2:1:0:1382 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNANNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.58 HWUSI-EAS1599_1:2:1:0:454 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.59 HWUSI-EAS1599_1:2:1:0:324 length=35
+secuencias_bash.fastq-NNNNNNNNNNNNNANNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.60 HWUSI-EAS1599_1:2:1:0:546 length=35
+secuencias_bash.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.61 HWUSI-EAS1599_1:2:1:0:1862 length=35
+secuencias_bash.fastq-NNNNNNNNNNNANCNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.62 HWUSI-EAS1599_1:2:1:0:7 length=35
+secuencias_bash.fastq-NNNNNNNNNNNCNANNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.63 HWUSI-EAS1599_1:2:1:0:50 length=35
+secuencias_bash.fastq-NNNNNNNNNNNCNGNNCNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.64 HWUSI-EAS1599_1:2:1:0:56 length=35
+secuencias_bash.fastq-NNNNNNNNNNNTNGNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.65 HWUSI-EAS1599_1:2:1:0:210 length=35
+secuencias_bash.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.66 HWUSI-EAS1599_1:2:1:0:287 length=35
+secuencias_bash.fastq-NNNNNNNNNNNGNTNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.67 HWUSI-EAS1599_1:2:1:0:335 length=35
+secuencias_bash.fastq-NNNNNNNNNNNTNANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.68 HWUSI-EAS1599_1:2:1:0:347 length=35
+secuencias_bash.fastq-NNNNNNNNNNNGNTNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.69 HWUSI-EAS1599_1:2:1:0:428 length=35
+secuencias_bash.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.70 HWUSI-EAS1599_1:2:1:0:473 length=35
+secuencias_bash.fastq-NNNNNNNNNNNCNGNNGNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.71 HWUSI-EAS1599_1:2:1:0:576 length=35
+secuencias_bash.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.72 HWUSI-EAS1599_1:2:1:0:679 length=35
+secuencias_bash.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.73 HWUSI-EAS1599_1:2:1:0:691 length=35
+secuencias_bash.fastq-NNNNNNNNNNNGNGNNANNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.74 HWUSI-EAS1599_1:2:1:0:912 length=35
+secuencias_bash.fastq-NNNNNNNNNNNGNCNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias_bash.fastq:@SRR098026.75 HWUSI-EAS1599_1:2:1:0:1047 length=35
+secuencias_bash.fastq-NNNNNNNNNNNTNGNNTNNNNNNNNNNNNNNNNNN
+secuencias_bash.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias1.fastq:@SRR098026.151 HWUSI-EAS1599_1:2:1:1:681 length=35
+secuencias1.fastq-GNNNNNNNNCAGGTTTGCAANNNNNNNNNTCATCT
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.152 HWUSI-EAS1599_1:2:1:1:892 length=35
+secuencias1.fastq-TNNNNNNNNGCGTAATGCGTNNNNNNNNNAGGCAG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.153 HWUSI-EAS1599_1:2:1:1:920 length=35
+secuencias1.fastq-ANNNNNNNNTGAAACCGGCGNNNNNNNNNGTCAAC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.154 HWUSI-EAS1599_1:2:1:1:1126 length=35
+secuencias1.fastq-GNNNNNNNNACCCTCTCCATNNNNNNNNNACCCAA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.155 HWUSI-EAS1599_1:2:1:1:1141 length=35
+secuencias1.fastq-TNNNNNNNNCGGTTCAGCAGNNNNNNNNNGACCGA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.156 HWUSI-EAS1599_1:2:1:1:1166 length=35
+secuencias1.fastq-CNNNNNNNNCCAGAGTCAGGNNNNNNNNNATTACC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.157 HWUSI-EAS1599_1:2:1:1:1375 length=35
+secuencias1.fastq-GNNNNNNNNGTCTCCCGTCTNNNNNNNNNCCCCGC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.158 HWUSI-EAS1599_1:2:1:1:1505 length=35
+secuencias1.fastq-GNNNNNNNNCAAAGTTGATCNNNNNNNNNTGTGCG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.159 HWUSI-EAS1599_1:2:1:1:1563 length=35
+secuencias1.fastq-GNNNNNNNNGCGCCGGTTACNNNNNNNNNGTGTTG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.160 HWUSI-EAS1599_1:2:1:1:1621 length=35
+secuencias1.fastq-CNNNNNNNNCTTCACACCCCNNNNNNNNNTACCCA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.161 HWUSI-EAS1599_1:2:1:1:1892 length=35
+secuencias1.fastq-ANNNNNNNNTGACTTTGGCCNNNNNNNNNTTGCGG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.162 HWUSI-EAS1599_1:2:1:1:1972 length=35
+secuencias1.fastq-CNNNNNNNNTGCGATTCTTANNNNNNNNNGAACCA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.163 HWUSI-EAS1599_1:2:1:1:1989 length=35
+secuencias1.fastq-CNNNNNNNNGCCAATCACGANNNNNNNNNGCAACC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.164 HWUSI-EAS1599_1:2:1:1:1759 length=35
+secuencias1.fastq-CNNNNNNNNAGTCCTGAAAANNNNNNNNNGTAAAG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.165 HWUSI-EAS1599_1:2:1:1:1540 length=35
+secuencias1.fastq-ANNNNNNNNGCACGCTCGATNNNNNNNNNGTGTTA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.166 HWUSI-EAS1599_1:2:1:1:194 length=35
+secuencias1.fastq-ANNNNNNNNAAAAAAAAAAANNNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.167 HWUSI-EAS1599_1:2:1:1:142 length=35
+secuencias1.fastq-ANNNNNNNNCGGCAGGGGACNNNNNNNNNGCTACC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.168 HWUSI-EAS1599_1:2:1:1:1041 length=35
+secuencias1.fastq-ANNNNNNNNCTGGTTCGTAGNNNNNNNNNGGCTTC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.169 HWUSI-EAS1599_1:2:1:1:1922 length=35
+secuencias1.fastq-GNNNNNNNNCGTTGCCGCCTNNNNNNNNNCCAGCG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.170 HWUSI-EAS1599_1:2:1:1:1840 length=35
+secuencias1.fastq-CNNNNNNNNATCTCAGAAGGNNNNNNNNNTCCGGT
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.171 HWUSI-EAS1599_1:2:1:1:480 length=35
+secuencias1.fastq-ANNNNNNNNAAAAAAAAAAANNNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.172 HWUSI-EAS1599_1:2:1:1:1733 length=35
+secuencias1.fastq-TNNNNNNNNTCGGTAATACGNNNNNNNNNCCCGAC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.173 HWUSI-EAS1599_1:2:1:1:1999 length=35
+secuencias1.fastq-TNNNNNNNNTGTACAGCCTTNNNNNNNNNAAGATG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.174 HWUSI-EAS1599_1:2:1:1:994 length=35
+secuencias1.fastq-GNNNNNNNNTACCCGGTGTGNNNNNNNNNGCATGG
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.175 HWUSI-EAS1599_1:2:1:1:202 length=35
+secuencias1.fastq-CNNNNNNNNAAATCGAAAGCNNNNNNNNNAGGGGC
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.176 HWUSI-EAS1599_1:2:1:1:1849 length=35
+secuencias1.fastq-CNNNNNNNNAATTTGCATGTNNNNNNNNNAACGAT
+secuencias1.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias1.fastq:@SRR098026.177 HWUSI-EAS1599_1:2:1:1:2025 length=35
+secuencias1.fastq-CNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+secuencias1.fastq-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+secuencias1.fastq:@SRR098026.178 HWUSI-EAS1599_1:2:1:1:934 length=35
+secuencias1.fastq-CNNNNNNNATCTAAGCACGANNNNNNNNNCGAGAT
+secuencias1.fastq-C!!!!!!!CBCCC#######!!!!!!!!!######
+secuencias1.fastq:@SRR098026.179 HWUSI-EAS1599_1:2:1:1:383 length=35
+secuencias1.fastq-ANNNNNNNAAAAAAAAAAAANNNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!!############!!!!!!!!!######
+secuencias1.fastq:@SRR098026.180 HWUSI-EAS1599_1:2:1:1:81 length=35
+secuencias1.fastq-GNNNNNNNTTTCAGGGGTATNNNNNNNNNTGGCAG
+secuencias1.fastq-A!!!!!!!BB?>A#######!!!!!!!!!######
+secuencias1.fastq:@SRR098026.181 HWUSI-EAS1599_1:2:1:1:342 length=35
+secuencias1.fastq-ANNNNNNNGCGGCCGGTTACNNNNNNNNNGAAAAA
+secuencias1.fastq-#!!!!!!!############!!!!!!!!!######
+secuencias1.fastq:@SRR098026.182 HWUSI-EAS1599_1:2:1:1:1610 length=35
+secuencias1.fastq-TNNNNNNNCTGTTGAAGAGANNNNNNNNNCCGCTG
+secuencias1.fastq-C!!!!!!!BBBBB#######!!!!!!!!!######
+secuencias1.fastq:@SRR098026.183 HWUSI-EAS1599_1:2:1:1:1582 length=35
+secuencias1.fastq-GNNNNNNNTTGATCTGCTGCNNNNNNNNNACGCAC
+secuencias1.fastq-#!!!!!!!############!!!!!!!!!######
+secuencias1.fastq:@SRR098026.184 HWUSI-EAS1599_1:2:1:1:394 length=35
+secuencias1.fastq-TNNNNNNNAGTGAAATTGCGNNNNNNNNNTGCCGT
+secuencias1.fastq-A!!!!!!!B?ABB#######!!!!!!!!!######
+secuencias1.fastq:@SRR098026.185 HWUSI-EAS1599_1:2:1:1:1556 length=35
+secuencias1.fastq-CNNNNNNNTTTAGGGGCGTTNNNNNNNNNGCTCGC
+secuencias1.fastq-B!!!!!!!B@ABB#######!!!!!!!!!######
+secuencias1.fastq:@SRR098026.186 HWUSI-EAS1599_1:2:1:1:837 length=35
+secuencias1.fastq-ANNNNNNNAAAAAAAAAAAANNNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!!############!!!!!!!!!######
+secuencias1.fastq:@SRR098026.187 HWUSI-EAS1599_1:2:1:1:781 length=35
+secuencias1.fastq-ANNNNNNNACAACGCTGTTTCNNNNNNNNGTTCGC
+secuencias1.fastq-C!!!!!!!CABBAA#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.188 HWUSI-EAS1599_1:2:1:1:1657 length=35
+secuencias1.fastq-TNNNNNNNGCGATTGTCGCTGNNNNNNNNATTGAG
+secuencias1.fastq-B!!!!!!!@BCBBC#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.189 HWUSI-EAS1599_1:2:1:1:1951 length=35
+secuencias1.fastq-ANNNNNNNAAGAATTTCAGGCNNNNNNNNATCTGA
+secuencias1.fastq-C!!!!!!!BCBCBB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.190 HWUSI-EAS1599_1:2:1:1:1221 length=35
+secuencias1.fastq-CNNNNNNNTTTTGCAGTCACTNNNNNNNNCGACAT
+secuencias1.fastq-C!!!!!!!?BBBBA#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.191 HWUSI-EAS1599_1:2:1:1:942 length=35
+secuencias1.fastq-GNNNNNNNTATAGGGGAAGAGNNNNNNNNTGCCAC
+secuencias1.fastq-A!!!!!!!BBBCBC#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.192 HWUSI-EAS1599_1:2:1:1:411 length=35
+secuencias1.fastq-TNNNNNNNCTGACAATGAGTGNNNNNNNNCTGCGT
+secuencias1.fastq-#!!!!!!!#############!!!!!!!!######
+secuencias1.fastq:@SRR098026.193 HWUSI-EAS1599_1:2:1:1:632 length=35
+secuencias1.fastq-CNNNNNNNACTGCAATGGCTGNNNNNNNNGATCGT
+secuencias1.fastq-C!!!!!!!BBBAAC#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.194 HWUSI-EAS1599_1:2:1:1:379 length=35
+secuencias1.fastq-TNNNNNNNGACTGGTTGACTTNNNNNNNNAGCGCT
+secuencias1.fastq-B!!!!!!!BA@BBC#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.195 HWUSI-EAS1599_1:2:1:1:813 length=35
+secuencias1.fastq-CNNNNNNNTCAGCTTAGAGACNNNNNNNNGCGTGG
+secuencias1.fastq-B!!!!!!!BA@B@B#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.196 HWUSI-EAS1599_1:2:1:1:1336 length=35
+secuencias1.fastq-ANNNNNNNTAATAAAAAAAAANNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!!#############!!!!!!!!######
+secuencias1.fastq:@SRR098026.197 HWUSI-EAS1599_1:2:1:1:685 length=35
+secuencias1.fastq-GNNNNNNNGCAGAAGCGGTGANNNNNNNNAAGGTT
+secuencias1.fastq-#!!!!!!!#############!!!!!!!!######
+secuencias1.fastq:@SRR098026.198 HWUSI-EAS1599_1:2:1:1:900 length=35
+secuencias1.fastq-GNNNNNNTCAGAAGTGATGTCNNNNNNNNGTACCA
+secuencias1.fastq:@!!!!!!@@B?BB########!!!!!!!!######
+secuencias1.fastq:@SRR098026.199 HWUSI-EAS1599_1:2:1:1:363 length=35
+secuencias1.fastq-CNNNNNNCCGTTCGGTGCTGCNNNNNNNNATGTGC
+secuencias1.fastq-#!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.200 HWUSI-EAS1599_1:2:1:1:715 length=35
+secuencias1.fastq-ANNNNNNAAAAAAAAAAAAAANNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.201 HWUSI-EAS1599_1:2:1:1:582 length=35
+secuencias1.fastq-TNNNNNNGAAATCTGCACTGCNNNNNNNNTTATCG
+secuencias1.fastq-A!!!!!!BBCBBBB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.202 HWUSI-EAS1599_1:2:1:1:669 length=35
+secuencias1.fastq-TNNNNNNTTTACAGCGGAACANNNNNNNNGTACTG
+secuencias1.fastq-A!!!!!!CCCCCCC#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.203 HWUSI-EAS1599_1:2:1:1:1643 length=35
+secuencias1.fastq-GNNNNNNCGGGATTTTGTCGANNNNNNNNGCCGCC
+secuencias1.fastq-B!!!!!!BB3BBB########!!!!!!!!######
+secuencias1.fastq:@SRR098026.204 HWUSI-EAS1599_1:2:1:1:275 length=35
+secuencias1.fastq-ANNNNNNAAAAAAAAAAAAAANNNNNNNNAAAAAA
+secuencias1.fastq-#!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.205 HWUSI-EAS1599_1:2:1:1:1133 length=35
+secuencias1.fastq-ANNNNNNGCCGGGACCACAACNNNNNNNNGCGGAT
+secuencias1.fastq-7!!!!!!BBAB5#########!!!!!!!!######
+secuencias1.fastq:@SRR098026.206 HWUSI-EAS1599_1:2:1:1:1871 length=35
+secuencias1.fastq-ANNNNNNAATGGCTGTGCTGTNNNNNNNNAGGGAT
+secuencias1.fastq-C!!!!!!BBB###########!!!!!!!!######
+secuencias1.fastq:@SRR098026.207 HWUSI-EAS1599_1:2:1:1:407 length=35
+secuencias1.fastq-GNNNNNNATATTTACGTTGATNNNNNNNNAGAGAT
+secuencias1.fastq-C!!!!!!BBBBC@A#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.208 HWUSI-EAS1599_1:2:1:1:831 length=35
+secuencias1.fastq-GNNNNNNGAATGCGGTAACACNNNNNNNNCGGTAC
+secuencias1.fastq-B!!!!!!ABCAAAA#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.209 HWUSI-EAS1599_1:2:1:1:1148 length=35
+secuencias1.fastq-CNNNNNNCAACGTCTCCCCATNNNNNNNNGCCAGC
+secuencias1.fastq-B!!!!!!BBCBB>=#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.210 HWUSI-EAS1599_1:2:1:1:769 length=35
+secuencias1.fastq-GNNNNNNGCTTATCACGATATNNNNNNNNGTCTTC
+secuencias1.fastq-B!!!!!!@A@ABAB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.211 HWUSI-EAS1599_1:2:1:1:1496 length=35
+secuencias1.fastq-CNNNNNNTGGGCACGGACAGCNNNNNNNNTATGGA
+secuencias1.fastq-B!!!!!!=<=@BB@#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.212 HWUSI-EAS1599_1:2:1:1:766 length=35
+secuencias1.fastq-TNNNNNNCCATAAACCCGAAANNNNNNNNACCGGG
+secuencias1.fastq-B!!!!!!?BCBCBB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.213 HWUSI-EAS1599_1:2:1:1:459 length=35
+secuencias1.fastq-ANNNNNNCGTTACATAACGGCNNNNNNNNAAATCT
+secuencias1.fastq-#!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.214 HWUSI-EAS1599_1:2:1:1:239 length=35
+secuencias1.fastq-GNNNNNNAGCACGAAGTCCGGNNNNNNNNGGGGGG
+secuencias1.fastq-B!!!!!!BAAAB@B#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.215 HWUSI-EAS1599_1:2:1:1:1008 length=35
+secuencias1.fastq-ANNNNNNAATGTTGGAGAAATNNNNNNNNTGAAAC
+secuencias1.fastq-#!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.216 HWUSI-EAS1599_1:2:1:1:1804 length=35
+secuencias1.fastq-GNNNNNNGACTTTAAGGTGGANNNNNNNNATTAAA
+secuencias1.fastq-B!!!!!!@BBBCBB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.217 HWUSI-EAS1599_1:2:1:1:1377 length=35
+secuencias1.fastq-TNNNNNNGTAGGGTTATGTTTNNNNNNNNCGTTCC
+secuencias1.fastq-C!!!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.218 HWUSI-EAS1599_1:2:1:1:1433 length=35
+secuencias1.fastq-ANNNNNNATCGCTTCCTGTGGNNNNNNNNCGTTTT
+secuencias1.fastq-B!!!!!!B@BBBB########!!!!!!!!######
+secuencias1.fastq:@SRR098026.219 HWUSI-EAS1599_1:2:1:1:1516 length=35
+secuencias1.fastq-ANNNNNNACGCCATTCATGGCNNNNNNNNTGATTT
+secuencias1.fastq-A!!!!!!A?<AAA########!!!!!!!!######
+secuencias1.fastq:@SRR098026.220 HWUSI-EAS1599_1:2:1:1:1523 length=35
+secuencias1.fastq-CNNNNNNCCGGGTTGGTTAACNNNNNNNNTCCCAG
+secuencias1.fastq-A!!!!!!??=>>9########!!!!!!!!######
+secuencias1.fastq:@SRR098026.221 HWUSI-EAS1599_1:2:1:1:844 length=35
+secuencias1.fastq-ANNNNNNCCAGTTGTGCTTTTNNNNNNNNCGTTAA
+secuencias1.fastq-B!!!!!!?BAB?BB#######!!!!!!!!######
+secuencias1.fastq:@SRR098026.222 HWUSI-EAS1599_1:2:1:1:1651 length=35
+secuencias1.fastq-CNCNNNNCATTAACTAACTTGNNNNNNNNCGGAAA
+secuencias1.fastq-?!B!!!!?@<@@#########!!!!!!!!######
+secuencias1.fastq:@SRR098026.223 HWUSI-EAS1599_1:2:1:1:1889 length=35
+secuencias1.fastq-GNCNNNNATCAACGAAGCATGNNNNNNNNCACCCA
+secuencias1.fastq-#!#!!!!##############!!!!!!!!######
+secuencias1.fastq:@SRR098026.224 HWUSI-EAS1599_1:2:1:1:1477 length=35
+secuencias1.fastq-TNTNNNNCAAGTCAATTAACACNNNNNNNCTAACG
+secuencias1.fastq-B!@!!!!?BAA?ABA#######!!!!!!!######
+secuencias1.fastq:@SRR098026.225 HWUSI-EAS1599_1:2:1:1:1416 length=35
+secuencias1.fastq-CNCNNNGAGAACGCATGTCGCCNNNNNNNACCAGC
+secuencias1.fastq-A!@!!!;?;></:#########!!!!!!!######
+secuencias1.fastq:@SRR098026.226 HWUSI-EAS1599_1:2:1:1:256 length=35
+secuencias1.fastq-CNTNNNCAAGCTAGGCGCGGAGNNNNNNNTCCTCG
+secuencias1.fastq-A!B!!!=@BBAABB########!!!!!!!######
+secuencias1.fastq:@SRR098026.227 HWUSI-EAS1599_1:2:1:1:1956 length=35
+secuencias1.fastq-CNGNNNAATGCGATCACCCCATNNNNNNNTGACTC
+secuencias1.fastq-A!<!!!AA>??BBBB#######!!!!!!!######
+secuencias1.fastq:@SRR098026.228 HWUSI-EAS1599_1:2:1:1:1469 length=35
+secuencias1.fastq-GNANNNAGCGCCTGCATCAGCANNNNNNNGGCGGG
+secuencias1.fastq:@!A!!!A=A>A@A#########!!!!!!!######
+secuencias1.fastq:@SRR098026.229 HWUSI-EAS1599_1:2:1:1:207 length=35
+secuencias1.fastq-GNANNNATCGACTCCCGTGGTANNNNNNNTGTTGA
+secuencias1.fastq-B!B!!!B@B@@AB#########!!!!!!!######
+secuencias1.fastq:@SRR098026.230 HWUSI-EAS1599_1:2:1:1:524 length=35
+secuencias1.fastq-ANANNAAAAAAAAAAAAAAAAANNNNNNNTAAAAA
+secuencias1.fastq-#!#!!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.231 HWUSI-EAS1599_1:2:1:1:1083 length=35
+secuencias1.fastq-CNGNNTGATATACCAGATACGCNNNNNNNGCGGCG
+secuencias1.fastq-B!?!!ABBBCBCBBCBBBBA=#!!!!!!!######
+secuencias1.fastq:@SRR098026.232 HWUSI-EAS1599_1:2:1:1:868 length=35
+secuencias1.fastq-CNTNNTATGACGCGTTTTGTCANNNNNNNGCTTCC
+secuencias1.fastq-B!@!!BBB@CBCACBBBA####!!!!!!!######
+secuencias1.fastq:@SRR098026.233 HWUSI-EAS1599_1:2:1:1:488 length=35
+secuencias1.fastq-TNGNNCGCTTCACACTGACGGANNNNNNNGTTATA
+secuencias1.fastq-#!#!!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.234 HWUSI-EAS1599_1:2:1:1:1705 length=35
+secuencias1.fastq-TNTNNCCCACCGTTGCTCCCACNNNNNNNGTCGCC
+secuencias1.fastq-B!B!!BB>CBABBA########!!!!!!!######
+secuencias1.fastq:@SRR098026.235 HWUSI-EAS1599_1:2:1:1:156 length=35
+secuencias1.fastq-ANTNNTCGCCTTCATAGTCATANNNNNNNGGTGGC
+secuencias1.fastq-B!B!!9;=*5=A;B########!!!!!!!######
+secuencias1.fastq:@SRR098026.236 HWUSI-EAS1599_1:2:1:1:17 length=35
+secuencias1.fastq-GNTNNCACCGTTGACCGTCTCGNNNNNNNTCAGCG
+secuencias1.fastq-C!B!!BBABBBAA:########!!!!!!!######
+secuencias1.fastq:@SRR098026.237 HWUSI-EAS1599_1:2:1:1:281 length=35
+secuencias1.fastq-ANANNAAAAAAAAAAAAAAAAANNNNNNNAAAAAA
+secuencias1.fastq-#!#!!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.238 HWUSI-EAS1599_1:2:1:2:1113 length=35
+secuencias1.fastq-TNGNNGGATGCGGCGTAAACCCNNNNNNNCCCCTA
+secuencias1.fastq-#!#!!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.239 HWUSI-EAS1599_1:2:1:2:420 length=35
+secuencias1.fastq-CNGNNTCATTCTGTTTCTAATTNNNNNNNAGATGA
+secuencias1.fastq:@!@!!B<AB@9@A=:A>A####!!!!!!!######
+secuencias1.fastq:@SRR098026.240 HWUSI-EAS1599_1:2:1:2:615 length=35
+secuencias1.fastq-ANANNAAAAAAAAAAAAAATAANNNNNNNAAAAAA
+secuencias1.fastq-#!#!!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.241 HWUSI-EAS1599_1:2:1:2:1188 length=35
+secuencias1.fastq-CNGNNTCAGCATAACGTCGTATNNNNNNNGCGTTT
+secuencias1.fastq-B!A!!??A@ABBCBABBAB?BB!!!!!!!######
+secuencias1.fastq:@SRR098026.242 HWUSI-EAS1599_1:2:1:2:541 length=35
+secuencias1.fastq-TNGNNGCCAGCGCCGTGTCATTNNNNNNNGGCGTC
+secuencias1.fastq-B!?!!?>@@6@AB>########!!!!!!!######
+secuencias1.fastq:@SRR098026.243 HWUSI-EAS1599_1:2:1:2:1682 length=35
+secuencias1.fastq-CNANNCGTCCGACATGGTACGTNNNNNNNTATTAA
+secuencias1.fastq-?!B!!??7>=@@>A########!!!!!!!######
+secuencias1.fastq:@SRR098026.244 HWUSI-EAS1599_1:2:1:2:721 length=35
+secuencias1.fastq-CNGGNTTGTGATGCAAATTTTTNNNNNNNTCACAT
+secuencias1.fastq-B!@@!BAB?BBBBBCCBCBBB@!!!!!!!BBBBBA
+secuencias1.fastq:@SRR098026.245 HWUSI-EAS1599_1:2:1:2:801 length=35
+secuencias1.fastq-GNATNACCACTTCCAGTGCTGANNNNNNNGGGATG
+secuencias1.fastq-B!BB!BBBCABBBBBBABB@>A!!!!!!!######
+secuencias1.fastq:@SRR098026.246 HWUSI-EAS1599_1:2:1:2:425 length=35
+secuencias1.fastq-TNGGNATGCCATGATTCATGACNNNNNNNGGTGCA
+secuencias1.fastq-B!?A!B>?AABABBBBB#####!!!!!!!######
+secuencias1.fastq:@SRR098026.247 HWUSI-EAS1599_1:2:1:2:1311 length=35
+secuencias1.fastq-TNAANAAAAAAAAAAAAAAAAANNNNNNNAAAATA
+secuencias1.fastq-#!##!#################!!!!!!!######
+secuencias1.fastq:@SRR098026.248 HWUSI-EAS1599_1:2:1:2:118 length=35
+secuencias1.fastq-GNTGNGGTCATCATACGCGCCCNNNNNNNGGCATG
+secuencias1.fastq-B!;?!A=5922:##########!!!!!!!######
+secuencias1.fastq:@SRR098026.249 HWUSI-EAS1599_1:2:1:2:1057 length=35
+secuencias1.fastq-CNCTNTATGCGTACGGCAGTGANNNNNNNGGAGAT
+secuencias1.fastq-A!@B!BBB@ABAB#########!!!!!!!######
+secuencias2.fastq:@SRR098026.76 HWUSI-EAS1599_1:2:1:0:1052 length=35
+secuencias2.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.77 HWUSI-EAS1599_1:2:1:0:1100 length=35
+secuencias2.fastq-NNNNNNNNNNNTNTNNGNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.78 HWUSI-EAS1599_1:2:1:0:1112 length=35
+secuencias2.fastq-NNNNNNNNNNNCNANNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.79 HWUSI-EAS1599_1:2:1:0:1131 length=35
+secuencias2.fastq-NNNNNNNNNNNANANNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.80 HWUSI-EAS1599_1:2:1:0:1168 length=35
+secuencias2.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.81 HWUSI-EAS1599_1:2:1:0:1200 length=35
+secuencias2.fastq-NNNNNNNNNNNCNCNNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.82 HWUSI-EAS1599_1:2:1:0:1251 length=35
+secuencias2.fastq-NNNNNNNNNNNTNCNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.83 HWUSI-EAS1599_1:2:1:0:1268 length=35
+secuencias2.fastq-NNNNNNNNNNNTNTNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.84 HWUSI-EAS1599_1:2:1:0:1281 length=35
+secuencias2.fastq-NNNNNNNNNNNANGNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.85 HWUSI-EAS1599_1:2:1:0:1340 length=35
+secuencias2.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.86 HWUSI-EAS1599_1:2:1:0:1372 length=35
+secuencias2.fastq-NNNNNNNNNNNTNCNNGNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.87 HWUSI-EAS1599_1:2:1:0:1400 length=35
+secuencias2.fastq-NNNNNNNNNNNANCNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.88 HWUSI-EAS1599_1:2:1:0:1425 length=35
+secuencias2.fastq-NNNNNNNNNNNTNGNNGNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.89 HWUSI-EAS1599_1:2:1:0:1437 length=35
+secuencias2.fastq-NNNNNNNNNNNCNANNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.90 HWUSI-EAS1599_1:2:1:0:1682 length=35
+secuencias2.fastq-NNNNNNNNNNNTNCNNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.91 HWUSI-EAS1599_1:2:1:0:1690 length=35
+secuencias2.fastq-NNNNNNNNNNNGNGNNTNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.92 HWUSI-EAS1599_1:2:1:0:1751 length=35
+secuencias2.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.93 HWUSI-EAS1599_1:2:1:0:1906 length=35
+secuencias2.fastq-NNNNNNNNNNNGNCNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.94 HWUSI-EAS1599_1:2:1:0:1928 length=35
+secuencias2.fastq-NNNNNNNNNNNTNTNNTNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.95 HWUSI-EAS1599_1:2:1:0:2028 length=35
+secuencias2.fastq-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.96 HWUSI-EAS1599_1:2:1:0:365 length=35
+secuencias2.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.97 HWUSI-EAS1599_1:2:1:0:1779 length=35
+secuencias2.fastq-NNNNNNNNNNNCNGNNTNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.98 HWUSI-EAS1599_1:2:1:0:1476 length=35
+secuencias2.fastq-NNNNNNNNNNNCNGNNCNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.99 HWUSI-EAS1599_1:2:1:0:833 length=35
+secuencias2.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias2.fastq:@SRR098026.100 HWUSI-EAS1599_1:2:1:0:662 length=35
+secuencias2.fastq-NNNNNNNNNNNGNGNNCGNNNNNNNNNNNNNCNNN
+secuencias2.fastq-!!!!!!!!!!!#!#!!##!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.101 HWUSI-EAS1599_1:2:1:0:91 length=35
+secuencias2.fastq-NNNNNNNNNNNANANAAANNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#!#!###!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.102 HWUSI-EAS1599_1:2:1:0:1544 length=35
+secuencias2.fastq-NNNNNNNNNNNANGCGCGNNNNNNNNNNNNNTNNN
+secuencias2.fastq-!!!!!!!!!!!#!#####!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.103 HWUSI-EAS1599_1:2:1:0:1812 length=35
+secuencias2.fastq-NNNNNNNNNNNGNGCCAGNNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#!#####!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.104 HWUSI-EAS1599_1:2:1:0:991 length=35
+secuencias2.fastq-NNNNNNNNNNNGTTCAGCNNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.105 HWUSI-EAS1599_1:2:1:0:86 length=35
+secuencias2.fastq-NNNNNNNNNNNAAAAAAANNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.106 HWUSI-EAS1599_1:2:1:0:1442 length=35
+secuencias2.fastq-NNNNNNNNNNNTGAAATCNNNNNNNNNNNNNCNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.107 HWUSI-EAS1599_1:2:1:0:70 length=35
+secuencias2.fastq-NNNNNNNNNNNTCGCTTCNNNNNNNNNNNNNCNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.108 HWUSI-EAS1599_1:2:1:0:284 length=35
+secuencias2.fastq-NNNNNNNNNNNTAAGAGANNNNNNNNNNNNNCNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.109 HWUSI-EAS1599_1:2:1:0:1288 length=35
+secuencias2.fastq-NNNNNNNNNNNGCTATCCNNNNNNNNNNNNNGNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.110 HWUSI-EAS1599_1:2:1:0:88 length=35
+secuencias2.fastq-NNNNNNNNNNNAAAAAAANNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.111 HWUSI-EAS1599_1:2:1:0:1487 length=35
+secuencias2.fastq-NNNNNNNNNNNACAGCGANNNNNNNNNNNNNTNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.112 HWUSI-EAS1599_1:2:1:0:139 length=35
+secuencias2.fastq-NNNNNNNNNNNAAAAAAANNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.113 HWUSI-EAS1599_1:2:1:0:1628 length=35
+secuencias2.fastq-NNNNNNNNNNNGCTGGCGNNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.114 HWUSI-EAS1599_1:2:1:0:1161 length=35
+secuencias2.fastq-NNNNNNNNNNNGCTACCTNNNNNNNNNNNNNTNNN
+secuencias2.fastq-!!!!!!!!!!!#######!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.115 HWUSI-EAS1599_1:2:1:0:1662 length=35
+secuencias2.fastq-NNNNNNNNNNCTGGCCGCNNNNNNNNNNNNNANNN
+secuencias2.fastq-!!!!!!!!!!########!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.116 HWUSI-EAS1599_1:2:1:0:1 length=35
+secuencias2.fastq-NNNNNNNNNNGCCCGCCCNNNNNNNNNNNNNTNNN
+secuencias2.fastq-!!!!!!!!!!########!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.117 HWUSI-EAS1599_1:2:1:0:502 length=35
+secuencias2.fastq-NNNNNNNNNNCGGATATCNNNNNNNNNNNNNTNNN
+secuencias2.fastq-!!!!!!!!!!########!!!!!!!!!!!!!#!!!
+secuencias2.fastq:@SRR098026.118 HWUSI-EAS1599_1:2:1:0:316 length=35
+secuencias2.fastq-NNNNNNNNNNGTTGATAANNNNNNNNNNNNAGNNN
+secuencias2.fastq-!!!!!!!!!!########!!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.119 HWUSI-EAS1599_1:2:1:0:361 length=35
+secuencias2.fastq-NNNNNNNNNNAAAAAAAAANNNNNNNNNNNAANNN
+secuencias2.fastq-!!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.120 HWUSI-EAS1599_1:2:1:0:775 length=35
+secuencias2.fastq-GNNNNNNNNNGCTGAAAAANNNNNNNNNNNCANNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.121 HWUSI-EAS1599_1:2:1:0:1322 length=35
+secuencias2.fastq-CNNNNNNNNNTACATCTGGNNNNNNNNNNNCGNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.122 HWUSI-EAS1599_1:2:1:0:1411 length=35
+secuencias2.fastq-ANNNNNNNNNCAATTTCCTNNNNNNNNNNNACNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.123 HWUSI-EAS1599_1:2:1:0:1948 length=35
+secuencias2.fastq-CNNNNNNNNNGTATTCACANNNNNNNNNNNTTNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.124 HWUSI-EAS1599_1:2:1:0:605 length=35
+secuencias2.fastq-CNNNNNNNNNAGGCGTTGCNNNNNNNNNNNCTNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.125 HWUSI-EAS1599_1:2:1:0:529 length=35
+secuencias2.fastq-TNNNNNNNNNTAAAATAAANNNNNNNNNNNAANNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.126 HWUSI-EAS1599_1:2:1:0:1710 length=35
+secuencias2.fastq-CNNNNNNNNNTTGGTGCTGNNNNNNNNNNNAANNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.127 HWUSI-EAS1599_1:2:1:0:795 length=35
+secuencias2.fastq-ANNNNNNNNNAAAAAAAAANNNNNNNNNNNAANNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.128 HWUSI-EAS1599_1:2:1:0:548 length=35
+secuencias2.fastq-GNNNNNNNNNTGGCACAATNNNNNNNNNNNCGNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.129 HWUSI-EAS1599_1:2:1:0:1824 length=35
+secuencias2.fastq-TNNNNNNNNNCGTGGAATTNNNNNNNNNNNATNNN
+secuencias2.fastq-#!!!!!!!!!#########!!!!!!!!!!!##!!!
+secuencias2.fastq:@SRR098026.130 HWUSI-EAS1599_1:2:1:0:150 length=35
+secuencias2.fastq-ANNNNNNNNNGCATTAAACGNNNNNNNNNNCANTN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!!##!#!
+secuencias2.fastq:@SRR098026.131 HWUSI-EAS1599_1:2:1:0:224 length=35
+secuencias2.fastq-GNNNNNNNNNATCAAAAAGCNNNNNNNNNNGTNAN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!!##!#!
+secuencias2.fastq:@SRR098026.132 HWUSI-EAS1599_1:2:1:0:320 length=35
+secuencias2.fastq-ANNNNNNNNNGTGGCAATATNNNNNNNNNNCCNGN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!!##!#!
+secuencias2.fastq:@SRR098026.133 HWUSI-EAS1599_1:2:1:0:1978 length=35
+secuencias2.fastq-ANNNNNNNNNTTCAGCGACTNNNNNNNNNNGTNGN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!!##!#!
+secuencias2.fastq:@SRR098026.134 HWUSI-EAS1599_1:2:1:0:1087 length=35
+secuencias2.fastq-TNNNNNNNNNAAACGGGGTCNNNNNNNNNTGANAN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!###!#!
+secuencias2.fastq:@SRR098026.135 HWUSI-EAS1599_1:2:1:0:191 length=35
+secuencias2.fastq-ANNNNNNNNNAAAAAAAAAANNNNNNNNNAAANAN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!###!#!
+secuencias2.fastq:@SRR098026.136 HWUSI-EAS1599_1:2:1:0:1534 length=35
+secuencias2.fastq-CNNNNNNNNNCAGATTCGATNNNNNNNNNAATNCN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!###!#!
+secuencias2.fastq:@SRR098026.137 HWUSI-EAS1599_1:2:1:0:1553 length=35
+secuencias2.fastq-GNNNNNNNNNTTAACTTTTTNNNNNNNNNAACGCN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.138 HWUSI-EAS1599_1:2:1:0:1106 length=35
+secuencias2.fastq-CNNNNNNNNNGCGACGCAGCNNNNNNNNNGTCACN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.139 HWUSI-EAS1599_1:2:1:0:1911 length=35
+secuencias2.fastq-ANNNNNNNNNCTTTTTTTTCNNNNNNNNNATTCTN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.140 HWUSI-EAS1599_1:2:1:0:402 length=35
+secuencias2.fastq-CNNNNNNNNNCTCCCCTTTCNNNNNNNNNTAATTN
+secuencias2.fastq-#!!!!!!!!!##########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.141 HWUSI-EAS1599_1:2:1:0:1536 length=35
+secuencias2.fastq-GNNNNNNNNATTACCCACGANNNNNNNNNCCTCGN
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.142 HWUSI-EAS1599_1:2:1:0:467 length=35
+secuencias2.fastq-ANNNNNNNNAAGGTAAAAAANNNNNNNNNAATAAN
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.143 HWUSI-EAS1599_1:2:1:0:1327 length=35
+secuencias2.fastq-ANNNNNNNNAAAAAAAAAAANNNNNNNNNAAAAAN
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.144 HWUSI-EAS1599_1:2:1:0:1304 length=35
+secuencias2.fastq-TNNNNNNNNCGAAGACCATGNNNNNNNNNTCGATN
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.145 HWUSI-EAS1599_1:2:1:0:811 length=35
+secuencias2.fastq-ANNNNNNNNCACTTTAAATTNNNNNNNNNTTTGTN
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!#####!
+secuencias2.fastq:@SRR098026.146 HWUSI-EAS1599_1:2:1:1:1237 length=35
+secuencias2.fastq-CNNNNNNNNGGCAACCAGCANNNNNNNNNCGACAA
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias2.fastq:@SRR098026.147 HWUSI-EAS1599_1:2:1:1:36 length=35
+secuencias2.fastq-ANNNNNNNNAATGAACGCGTNNNNNNNNNATATCG
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias2.fastq:@SRR098026.148 HWUSI-EAS1599_1:2:1:1:44 length=35
+secuencias2.fastq-GNNNNNNNNCAGGTCCGGTANNNNNNNNNGCGATG
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias2.fastq:@SRR098026.149 HWUSI-EAS1599_1:2:1:1:332 length=35
+secuencias2.fastq-GNNNNNNNNCGTGCCGCTGTNNNNNNNNNGCGGGC
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias2.fastq:@SRR098026.150 HWUSI-EAS1599_1:2:1:1:373 length=35
+secuencias2.fastq-TNNNNNNNNCGGTTCAGCAGNNNNNNNNNGACCGA
+secuencias2.fastq-#!!!!!!!!###########!!!!!!!!!######
+secuencias3.fastq:@SRR098026.1 HWUSI-EAS1599_1:2:1:0:968 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.2 HWUSI-EAS1599_1:2:1:0:312 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.3 HWUSI-EAS1599_1:2:1:0:570 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.4 HWUSI-EAS1599_1:2:1:0:758 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.5 HWUSI-EAS1599_1:2:1:0:874 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.6 HWUSI-EAS1599_1:2:1:0:176 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.7 HWUSI-EAS1599_1:2:1:0:206 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.8 HWUSI-EAS1599_1:2:1:0:227 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.9 HWUSI-EAS1599_1:2:1:0:262 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.10 HWUSI-EAS1599_1:2:1:0:500 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.11 HWUSI-EAS1599_1:2:1:0:542 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.12 HWUSI-EAS1599_1:2:1:0:573 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.13 HWUSI-EAS1599_1:2:1:0:578 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.14 HWUSI-EAS1599_1:2:1:0:639 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.15 HWUSI-EAS1599_1:2:1:0:721 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.16 HWUSI-EAS1599_1:2:1:0:742 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.17 HWUSI-EAS1599_1:2:1:0:814 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.18 HWUSI-EAS1599_1:2:1:0:852 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.19 HWUSI-EAS1599_1:2:1:0:940 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.20 HWUSI-EAS1599_1:2:1:0:979 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.21 HWUSI-EAS1599_1:2:1:0:982 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.22 HWUSI-EAS1599_1:2:1:0:999 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.23 HWUSI-EAS1599_1:2:1:0:1005 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.24 HWUSI-EAS1599_1:2:1:0:1009 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.25 HWUSI-EAS1599_1:2:1:0:1027 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.26 HWUSI-EAS1599_1:2:1:0:1062 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.27 HWUSI-EAS1599_1:2:1:0:1134 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.28 HWUSI-EAS1599_1:2:1:0:1203 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.29 HWUSI-EAS1599_1:2:1:0:1300 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.30 HWUSI-EAS1599_1:2:1:0:1310 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.31 HWUSI-EAS1599_1:2:1:0:1452 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.32 HWUSI-EAS1599_1:2:1:0:1466 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.33 HWUSI-EAS1599_1:2:1:0:1571 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.34 HWUSI-EAS1599_1:2:1:0:1618 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.35 HWUSI-EAS1599_1:2:1:0:1654 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.36 HWUSI-EAS1599_1:2:1:0:1670 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.37 HWUSI-EAS1599_1:2:1:0:1716 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.38 HWUSI-EAS1599_1:2:1:0:1746 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.39 HWUSI-EAS1599_1:2:1:0:1762 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.40 HWUSI-EAS1599_1:2:1:0:1879 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.41 HWUSI-EAS1599_1:2:1:0:1896 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.42 HWUSI-EAS1599_1:2:1:0:1914 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.43 HWUSI-EAS1599_1:2:1:0:1941 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.44 HWUSI-EAS1599_1:2:1:0:1983 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.45 HWUSI-EAS1599_1:2:1:0:1987 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.46 HWUSI-EAS1599_1:2:1:0:2034 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.47 HWUSI-EAS1599_1:2:1:0:215 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.48 HWUSI-EAS1599_1:2:1:0:145 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.49 HWUSI-EAS1599_1:2:1:0:1593 length=35
+secuencias3.fastq-NNNNNNNNNNNNNNNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.50 HWUSI-EAS1599_1:2:1:0:1583 length=35
+secuencias3.fastq-NNNNNNNNNNNNNTNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.51 HWUSI-EAS1599_1:2:1:0:120 length=35
+secuencias3.fastq-NNNNNNNNNNNNNANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.52 HWUSI-EAS1599_1:2:1:0:158 length=35
+secuencias3.fastq-NNNNNNNNNNNNNTNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.53 HWUSI-EAS1599_1:2:1:0:1588 length=35
+secuencias3.fastq-NNNNNNNNNNNNNCNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.54 HWUSI-EAS1599_1:2:1:0:257 length=35
+secuencias3.fastq-NNNNNNNNNNNNNANNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.55 HWUSI-EAS1599_1:2:1:0:513 length=35
+secuencias3.fastq-NNNNNNNNNNNNNCNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.56 HWUSI-EAS1599_1:2:1:0:558 length=35
+secuencias3.fastq-NNNNNNNNNNNNNTNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.57 HWUSI-EAS1599_1:2:1:0:1382 length=35
+secuencias3.fastq-NNNNNNNNNNNNNANNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.58 HWUSI-EAS1599_1:2:1:0:454 length=35
+secuencias3.fastq-NNNNNNNNNNNNNANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.59 HWUSI-EAS1599_1:2:1:0:324 length=35
+secuencias3.fastq-NNNNNNNNNNNNNANNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!!!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.60 HWUSI-EAS1599_1:2:1:0:546 length=35
+secuencias3.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.61 HWUSI-EAS1599_1:2:1:0:1862 length=35
+secuencias3.fastq-NNNNNNNNNNNANCNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.62 HWUSI-EAS1599_1:2:1:0:7 length=35
+secuencias3.fastq-NNNNNNNNNNNCNANNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.63 HWUSI-EAS1599_1:2:1:0:50 length=35
+secuencias3.fastq-NNNNNNNNNNNCNGNNCNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.64 HWUSI-EAS1599_1:2:1:0:56 length=35
+secuencias3.fastq-NNNNNNNNNNNTNGNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.65 HWUSI-EAS1599_1:2:1:0:210 length=35
+secuencias3.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.66 HWUSI-EAS1599_1:2:1:0:287 length=35
+secuencias3.fastq-NNNNNNNNNNNGNTNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.67 HWUSI-EAS1599_1:2:1:0:335 length=35
+secuencias3.fastq-NNNNNNNNNNNTNANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.68 HWUSI-EAS1599_1:2:1:0:347 length=35
+secuencias3.fastq-NNNNNNNNNNNGNTNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.69 HWUSI-EAS1599_1:2:1:0:428 length=35
+secuencias3.fastq-NNNNNNNNNNNANANNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.70 HWUSI-EAS1599_1:2:1:0:473 length=35
+secuencias3.fastq-NNNNNNNNNNNCNGNNGNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.71 HWUSI-EAS1599_1:2:1:0:576 length=35
+secuencias3.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.72 HWUSI-EAS1599_1:2:1:0:679 length=35
+secuencias3.fastq-NNNNNNNNNNNCNCNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.73 HWUSI-EAS1599_1:2:1:0:691 length=35
+secuencias3.fastq-NNNNNNNNNNNGNGNNANNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.74 HWUSI-EAS1599_1:2:1:0:912 length=35
+secuencias3.fastq-NNNNNNNNNNNGNCNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!
+secuencias3.fastq:@SRR098026.75 HWUSI-EAS1599_1:2:1:0:1047 length=35
+secuencias3.fastq-NNNNNNNNNNNTNGNNTNNNNNNNNNNNNNNNNNN
+secuencias3.fastq-!!!!!!!!!!!#!#!!#!!!!!!!!!!!!!!!!!!

@@ -1,5 +1,5 @@
 <p align="center">
-<img src='img/flyer_workshopBash.jpg' width='300'>
+<img src="img/flyer_workshopBash.jpg" width="300"/>
 </p>
 
 # Workshop Bash 2024
@@ -34,7 +34,7 @@ Este tutorial te enseñará los conceptos fundamentales en el empleo y manejo de
     7.  Edición de archivos con los editores de texto y con `sed`
     8.  Buenas prácticas
     9.  Generación de ligas simbólicas a archivos y orden en directorios
-    10. Filtrado de texto (grep, cut, sort, uniq, wc) 
+    10. Filtrado de texto (grep, cut, sort, uniq, wc)
     11. Condicionales y bucles (for loops)
     12. Crear un script en Bash.
 
