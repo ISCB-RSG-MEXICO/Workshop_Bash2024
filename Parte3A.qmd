@@ -2,8 +2,58 @@
 
 Por trabajar - Aaron Jaime
 
-## **Ejercicio 6:** Edición de archivos - Por crear
+Los editores de texto nos permiten hacer desde ligeros hasta cambios u operaciones masivas en el contenido de nuestros archivos. Existen varias herramientas para esto pero las más populares son "nano" y "vim".
+
+#### Nano
+
+Para utilizar nano, debemos de seguir una serie de comandos. Primero creamos/leemos nuestro archivo.
+
+`nano mi-archivo-nano.txt`
+
+Esto nos creará un archivo de texto al que podemos ingresar información y además nos va desplegar un menú de opciones en la parte inferior de nuestra terminal.
+
+![](images/Captura de pantalla 2024-12-07 131553.png){fig-align="center"}
+
+Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo `^` significa la tecla `Control` o `Command` y la `M` es la tecla `Alt`. En nuestro caso donde queremos agregar texto, simplemente escribimos
+
+Este es un archivo de prueba creado con nano.
+
+Para guardar los cambios en el archivo presionamos `control + x`, el programa nos desplegará un mensaje para guardar el archivo. Presionamos enter y ahora podemos verificar el contenido.
+
+`cat mi-archivo-nano.txt`
+
+Este es un archivo de prueba creado con nano.
+
+Aprenderemos a editar texto en la terminal.
+
+#### Vim
+
+Vim tiene ligeros cambios en su modo de uso:
+
+`vim mi-archivo-vim.txt`
+
+A diferencia de nano, no podemos ingresar texto directamente en el archivo y hay algo que se conoce como modos. En este primer modo normal puedes accesar a distintas otras funcionalidades, para cambiar a modo escritura o modo inserción de texto, debemos presionar "`i`".
+
+Una vez dentro del modo inserción, escribimos el siguiente texto:
+
+Este es un archivo de prueba creado con vim.
+
+Aprenderemos a usar modos de inserción.
+
+para guardar los cambios debemos presionar la tecla `Esc`, para salir del modo inserción y teclear:\
+
+`:wq`
+
+`w` = write, indica a la terminal guardar los cambios
+
+`q` = quit, indica salir de la edición del archivo.
+
+Para ambos editores puedes accesar al manual del usuario proporcionados dentro de la terminal usando cualquiera de los siguientes comandos:\
+\
+`man vim`
+
+`man nano`
 
 ## Referencias
 
--   
+-   [Aprende vim](https://victorhck.gitbook.io/aprende-vim)

@@ -2,8 +2,66 @@
 
 Por trabajar - Aaron Jaime
 
-## **Ejercicio 10:** Edición de archivos - Por crear
+## Condicionales
+
+Las condicionales son estructuras de programación que nos permiten tomar decisiones basadas en el resultado de una expresión. En otras palabras, nos permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no. Los condicionales son fundamentales para automatizar tareas y crear scripts fléxibles.
+
+La sintáxis básica de un condicional simple en formato de una línea es :
+
+``` {.bash code-copy="true" eval="false"}
+if [ condición ]; then orden1; orden2 …; fi
+```
+
+de igual manera pero en bloque identado:
+
+``` {.bash code-copy="true" eval="false"}
+if [ condición ]; then      orden1     orden2  fi
+```
+
+Queremos verificar si existe el archivo "secuencias1.fastq" antes de realizar alguna operación sobre él. Puedes usar el siguiente condicional:
+
+``` {.bash code-copy="true" eval="false"}
+if [ -f secuencias1.fastq ]; then
+  echo "El archivo existe."
+else
+  echo "El archivo no existe."
+fi
+```
+
+-   **`if [ -f secuencias1.fastq ]`:** Verifica si "secuencias1.fastq" es un archivo regular.
+
+```{=html}
+<!-- -->
+```
+-   **`then`:** Si la condición es verdadera, se ejecuta el código siguiente.
+
+```{=html}
+<!-- -->
+```
+-   **`else`:** Si la condición es falsa, se ejecuta el código siguiente.
+
+```{=html}
+<!-- -->
+```
+-   **`fi`:** Indica el final de la estructura `if`.
+
+Los condicionales pueden ser tan complejos como lo imagines. Por ejemplo:
+
+``` {.bash code-copy="true" eval="false"}
+for archivo in $file*.fastq; do 
+  if [ -f "$archivo" ]; then 
+    echo "Procesando archivo: $archivo"
+    wc -l "$archivo" 
+  else 
+    echo "El archivo $archivo no existe o no es un archivo regular"
+  fi 
+done
+```
+
+Explicación del código:
+
+En donde:
 
 ## Referencias
 
--   
+-   [DataCarpentry For Loops](https://datacarpentry.github.io/semester-biology/materials/for-loops-indexing/)
