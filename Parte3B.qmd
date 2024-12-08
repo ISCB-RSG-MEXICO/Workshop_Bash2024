@@ -1,22 +1,20 @@
 # Edición de archivos con el editor de flujo `sed`
 
-Por trabajar - Aaron Jaime
+Aaron Jaime
 
-## **Ejercicio 7:** Edición de archivos 
-
-sed (stream editor) es un **editor de flujo**, una potente herramienta de tratamiento de texto para el sistema operativo UNIX que acepta como entrada un archivo, lo lee y modifica línea a línea de acuerdo a un script. Sed permite manipular flujos de datos, como por ejemplo cortar líneas, buscar y reemplazar texto (con soporte de **expresiones regulares** ), entre otras cosas.
+Sed (stream editor) es un **editor de flujo**, una potente herramienta de tratamiento de texto para el sistema operativo UNIX que acepta como entrada un archivo, lo lee y modifica línea a línea de acuerdo a un script. Sed permite manipular flujos de datos, como por ejemplo cortar líneas, buscar y reemplazar texto (con soporte de **expresiones regulares** ), entre otras cosas.
 
 Algunas de las operaciones más primordiales de sed son el cambio de saltos de líneas, la sustitución de espacios por comas o tabulaciones, la deleción o adición de strings, etc.
 
 La sintaxis general de la orden `sed` es:
 
-```         
+``` {.bash code-copy="true" eval="false"}
 sed [-n] [-e'script'] [-f archivo] archivo1 archivo2 ...
 ```
 
 donde:
 
-```         
+``` {.bash code-copy="true" eval="false"}
 -n indica que se suprima la salida estándar. -e indica que se ejecute el script que viene a continuación. Si no se emplea la opción -f se puede omitir -e. -f indica que las órdenes se tomarán de un archivo
 ```
 
@@ -24,13 +22,13 @@ donde:
 
 Sustituciones *s///* de palabras: *s/esto/aquello/*
 
-```         
+``` {.bash code-copy="true" eval="false"}
 sed 's/Windows/Linux/' archivo
 ```
 
 En el ejemplo anterior, la modificación se hace solamente en la primer instancia que el comando encuentra. Esto no nos funciona si tenemos 400 repeticiones de Windows que queremos cambiar a Linux. Para que funcione debemos hacer un cambio de la siquiente manera:
 
-```         
+``` {.bash code-copy="true" eval="false"}
 sed 's/Windows/Linux/g' archivo
 ```
 
@@ -38,21 +36,31 @@ Esta letra **g** que agregamos, indica hacer las sustituciones de manera **globa
 
 ## Ejercicio 6: Práctica de sustituciones
 
-Si nos situamos dentro de la carpeta "\~/unix.bioinfo.rsgecuador-gh-pages/\_files" podremos encontrar el archivo "notas.txt". Explora este archivo y sustituye la palabra "Notas" de cada una de las columnas por la palabra "Columna". Una vez hecho el cambio redirige el resultado a un archivo llamado "columnas.txt". Corrobora tus resultados y discute posibles soluciones alternas.
+Si nos situamos dentro de la carpeta "`~/unix.bioinfo.rsgecuador-gh-pages/_files`" podremos encontrar el archivo "`notas.txt`". Explora este archivo y sustituye la palabra "Notas" de cada una de las columnas por la palabra "Columna". Una vez hecho el cambio redirige el resultado a un archivo llamado "`columnas.txt`". Corrobora tus resultados y discute posibles soluciones alternas.
 
-Solución:
+::: {.callout-note collapse="true"}
+## Solución
 
 Leemos el archivo:
 
-cat notas.txt
+``` {.bash code-copy="true" eval="false"}
+cat notas.txt 
+```
 
 o
 
+``` {.bash code-copy="true" eval="false"}
 less notas.txt
+```
 
 Sustituimos Notas por Columnas y redirigimos el resultado a otro archivo
 
-sed 's/Notas/columnas/g' notas.txt \>\> columnas.txt
+``` {.bash code-copy="true" eval="false"}
+sed 's/Notas/columnas/g' notas.txt >> columnas.txt
+```
+
+##  
+:::
 
 ## Referencias
 

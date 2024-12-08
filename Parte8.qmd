@@ -350,7 +350,7 @@ Contenido de bases en secuencias1.fastq:
 A: 643 T: 450 G: 494 C: 470 N: 1408
 :::
 
-**Ejercicio 13.9**
+**Ejercicio 13.9 Para lxs aventadxs**
 
 Calcula la distribución de las longitudes de las secuencias en el archivo `secuencias1.fastq`. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
 
@@ -401,9 +401,9 @@ done
 Procesando el archivo: secuencias1.fastq Distribución de longitudes de las secuencias: Longitud 35: 99 secuencias
 :::
 
-**Ejercicio 13.10**
+**Ejercicio 13.10 Para lxs más aventadxs**
 
-Este ejercicio calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
+Calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
