@@ -200,11 +200,13 @@ Longitud promedio de las secuencias: 58
 
 **Ejercicio 13.6**
 
-Calcula el porcentaje de GC en el archivo secuencias1.fastq en un script.
+Calcula el porcentaje de GC en el archivo `secuencias1.fastq` en un script.
 
+::: callout-note
 ## Pista
 
 Extrae las líneas correspondientes a las secuencias y utiliza `wc -c` para sumar los caracteres, luego divide por el número de secuencias.
+:::
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
@@ -250,7 +252,7 @@ Porcentaje de GC en secuencias1.fastq: 27.00%
 
 **Ejercicio 13.7**
 
-Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq secuencias1.fastq,secuencias2.fastq,secuencias3.fastq utilizando ciclos y/o bucles.
+Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq `secuencias1.fastq`,`secuencias2.fastq`,`secuencias3.fastq` utilizando ciclos y/o bucles.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
@@ -301,7 +303,7 @@ Procesando archivo: secuencias1.fastq: 27% Procesando archivo: secuencias2.fastq
 
 **Ejercicio 13.8**
 
-Calcula el contenido de cada una de las bases en las secuencias del archivo "secuencias1.fastq", A,T,G,C y N.
+Calcula el contenido de cada una de las bases en las secuencias del archivo `secuencias1.fastq`, A,T,G,C y N.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
@@ -350,7 +352,7 @@ A: 643 T: 450 G: 494 C: 470 N: 1408
 
 **Ejercicio 13.9**
 
-Calcula la distribución de las longitudes de las secuencias en el archivo secuencias1.fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
+Calcula la distribución de las longitudes de las secuencias en el archivo `secuencias1.fastq`. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
@@ -401,7 +403,7 @@ Procesando el archivo: secuencias1.fastq Distribución de longitudes de las secu
 
 **Ejercicio 13.10**
 
-Este ejercicio calcula la distribución de las longitudes de las secuencias en una lista de archivosfastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
+Este ejercicio calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## Solucion
