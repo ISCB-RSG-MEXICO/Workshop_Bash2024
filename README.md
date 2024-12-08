@@ -15,6 +15,7 @@ El contenido de este curso se realizó en base al material de Software Carpentry
     -   **Daniel Chávez** - Profesor invitado, UAGro.
     -   **Camilo Pérez** - Estudiante de doctorado, Cinvestav-LANGEBIO.
     -   **Abel Lovaco Flores -** Estudiante de maestria, Cinvestav-Irapuato.
+    -   **Mariana Devo López -** Estudiante de maestria, UAM.
     -   **Israel Aguilar** - Posdoc, Tec de Monterrey.
 
 ## Resumen
