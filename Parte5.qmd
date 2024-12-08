@@ -26,21 +26,18 @@ else
 fi
 ```
 
--   **`if [ -f secuencias1.fastq ]`:** Verifica si "secuencias1.fastq" es un archivo regular.
+-   **`if [ -f secuencias1.fastq ]`:** Verifica si **secuencias1.fastq** es un archivo regular.
 
-```{=html}
 <!-- -->
-```
+
 -   **`then`:** Si la condición es verdadera, se ejecuta el código siguiente.
 
-```{=html}
 <!-- -->
-```
+
 -   **`else`:** Si la condición es falsa, se ejecuta el código siguiente.
 
-```{=html}
 <!-- -->
-```
+
 -   **`fi`:** Indica el final de la estructura `if`.
 
 Los condicionales pueden ser tan complejos como lo imagines. Por ejemplo:
@@ -74,23 +71,23 @@ echo "Procesando archivo: $archivo"
 wc -l "$archivo"
 ```
 
--    **`echo`**: Imprime el mensaje indicando que se está procesando el archivo actual.
+-   **`echo`**: Imprime el mensaje indicando que se está procesando el archivo actual.
 
 -   **`wc -l "$archivo"`**: Cuenta el número de líneas en el archivo usando `wc -l` y muestra el resultado en la terminal.
 
-    ``` bash
-    else
-      echo "El archivo $archivo no existe o no es un archivo regular"
-    fi
-    ```
+``` bash
+else
+  echo "El archivo $archivo no existe o no es un archivo regular"
+fi
+```
 
-    Si el archivo no existe o no es un archivo regular, muestra un mensaje de error indicando el problema.
+-   Si el archivo no existe o no es un archivo regular, muestra un mensaje de error indicando el problema.
 
-    ``` bash
-    done
-    ```
+``` bash
+done
+```
 
-    Fin del bucle
+-   Fin del bucle
 :::
 
 ## Referencias

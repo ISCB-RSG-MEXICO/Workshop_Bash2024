@@ -20,7 +20,7 @@ donde:
 
 #### Ejemplo de sustitución con `sed` 
 
-Sustituciones *s///* de palabras: *s/esto/aquello/*
+Sustituciones *s///* de palabras: *`s/esto/aquello/`*
 
 ``` {.bash code-copy="true" eval="false"}
 sed 's/Windows/Linux/' archivo
