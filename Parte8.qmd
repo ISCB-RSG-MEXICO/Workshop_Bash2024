@@ -200,13 +200,262 @@ Longitud promedio de las secuencias: 58
 
 **Ejercicio 13.6**
 
+Calcula el porcentaje de GC en el archivo secuencias1.fastq en un script.
+
+## Pista
+
+Extrae las líneas correspondientes a las secuencias y utiliza `wc -c` para sumar los caracteres, luego divide por el número de secuencias.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+#!/bin/bash
+
+# Archivo de entrada
+archivo="secuencias1.fastq"
+
+# Inicializar contadores
+total_bases=0
+total_gc=0
+
+# Leer el archivo línea por línea
+contador=0
+while IFS= read -r linea; do
+  ((contador++))
+
+  # Procesar solo líneas de secuencias (segunda línea de cada bloque de 4)
+  if ((contador % 4 == 2)); then
+    # Contar bases G y C
+    gc=$(echo "$linea" | grep -o '[GC]' | wc -l)
+    bases=$(echo -n "$linea" | wc -c)
+
+    # Actualizar contadores
+    total_gc=$((total_gc + gc))
+    total_bases=$((total_bases + bases))
+  fi
+done < "$archivo"
+
+# Calcular porcentaje de GC
+if ((total_bases > 0)); then
+  porcentaje_gc=$(echo "scale=2; $total_gc / $total_bases * 100" | bc)
+  echo "Porcentaje de GC en $archivo: $porcentaje_gc%"
+else
+  echo "Error: No se encontraron secuencias en $archivo."
+fi
+```
+
+Porcentaje de GC en secuencias1.fastq: 27.00%
+:::
+
 **Ejercicio 13.7**
+
+Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq secuencias1.fastq,secuencias2.fastq,secuencias3.fastq utilizando ciclos y/o bucles.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+#!/bin/bash
+
+# Directorio donde están los archivos FASTQ
+directorio="$HOME/unix.bioinfo.rsgecuador-gh-pages/_files"
+
+# Loop para procesar cada archivo FASTQ
+for archivo in "$directorio"/*.fastq; do
+  if [ -f "$archivo" ]; then
+    echo "Procesando archivo: $archivo"
+
+    # Inicializar contadores
+    total_bases=0
+    gc_bases=0
+
+    # Leer el archivo línea por línea
+    contador=0
+    while IFS= read -r linea; do
+      ((contador++))
+      
+      # Solo procesamos las líneas de secuencias (segunda línea de cada bloque)
+      if ((contador % 4 == 2)); then
+        # Contamos las bases G y C
+        gc_bases=$((gc_bases + $(echo "$linea" | grep -o 'G' | wc -l) + $(echo "$linea" | grep -o 'C' | wc -l)))
+        total_bases=$((total_bases + ${#linea}))
+      fi
+    done < "$archivo"
+
+    # Calculamos el porcentaje de GC
+    if [ "$total_bases" -gt 0 ]; then
+      porcentaje_gc=$((gc_bases * 100 / total_bases))
+      echo "Porcentaje de GC en $archivo: $porcentaje_gc%"
+    else
+      echo "No se encontraron secuencias válidas en $archivo."
+    fi
+  else
+    echo "El archivo $archivo no existe."
+  fi
+done
+```
+
+Procesando archivo: secuencias1.fastq: 27% Procesando archivo: secuencias2.fastq: 11% Procesando archivo: secuencias3.fastq: 2% Procesando archivo: secuencias_bash.fastq: 2%
+:::
 
 **Ejercicio 13.8**
 
+Calcula el contenido de cada una de las bases en las secuencias del archivo "secuencias1.fastq", A,T,G,C y N.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+#!/bin/bash
+
+# Archivo de entrada
+archivo="secuencias1.fastq"
+
+# Inicializar contadores
+conteo_A=0
+conteo_T=0
+conteo_G=0
+conteo_C=0
+conteo_N=0
+
+# Leer el archivo línea por línea
+contador=0
+while IFS= read -r linea; do
+  ((contador++))
+
+  # Procesar solo líneas de secuencias (segunda línea de cada bloque de 4)
+  if ((contador % 4 == 2)); then
+    conteo_A=$((conteo_A + $(echo -n "$linea" | grep -o 'A' | wc -l)))
+    conteo_T=$((conteo_T + $(echo -n "$linea" | grep -o 'T' | wc -l)))
+    conteo_G=$((conteo_G + $(echo -n "$linea" | grep -o 'G' | wc -l)))
+    conteo_C=$((conteo_C + $(echo -n "$linea" | grep -o 'C' | wc -l)))
+    conteo_N=$((conteo_N + $(echo -n "$linea" | grep -o 'N' | wc -l)))
+  fi
+done < "$archivo"
+
+# Mostrar resultados
+echo "Contenido de bases en $archivo:"
+echo "A: $conteo_A"
+echo "T: $conteo_T"
+echo "G: $conteo_G"
+echo "C: $conteo_C"
+echo "N: $conteo_N"
+```
+
+Contenido de bases en secuencias1.fastq:
+
+A: 643 T: 450 G: 494 C: 470 N: 1408
+:::
+
 **Ejercicio 13.9**
 
+Calcula la distribución de las longitudes de las secuencias en el archivo secuencias1.fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+#!/bin/bash
+
+# Archivo FASTQ
+archivo="secuencias1.fastq"
+
+# Inicializar array para almacenar las longitudes de las secuencias
+declare -a longitudes
+
+# Leer el archivo línea por línea
+contador=0
+while IFS= read -r linea; do
+  ((contador++))
+
+  # Solo procesamos las líneas de secuencias (segunda línea de cada bloque)
+  if ((contador % 4 == 2)); then
+    # Obtener la longitud de la secuencia
+    longitudes+=(${#linea})
+  fi
+done < "$archivo"
+
+# Verificar si se encontraron secuencias
+if [ ${#longitudes[@]} -eq 0 ]; then
+  echo "No se encontraron secuencias válidas en el archivo."
+  exit 1
+fi
+
+# Calcular la distribución de longitudes
+echo "Distribución de longitudes de las secuencias:"
+
+# Calcular la frecuencia de cada longitud de secuencia
+for i in "${longitudes[@]}"; do
+  ((longitud_frecuencia[$i]++))
+done
+
+# Mostrar la distribución de longitudes
+for longitud in "${!longitud_frecuencia[@]}"; do
+  echo "Longitud $longitud: ${longitud_frecuencia[$longitud]} secuencias"
+done
+```
+
+Procesando el archivo: secuencias1.fastq Distribución de longitudes de las secuencias: Longitud 35: 99 secuencias
+:::
+
 **Ejercicio 13.10**
+
+Este ejercicio calcula la distribución de las longitudes de las secuencias en una lista de archivosfastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
+
+::: {.callout-tip collapse="true" icon="false"}
+## Solucion
+
+``` bash
+#!/bin/bash
+
+# Directorio donde se encuentran los archivos FASTQ
+directorio="$HOME/unix.bioinfo.rsgecuador-gh-pages/_files"
+
+# Loop para procesar cada archivo FASTQ
+for archivo in "$directorio"/*.fastq; do
+  if [ -f "$archivo" ]; then
+    echo "Procesando archivo: $archivo"
+
+    # Inicializar contador de longitudes
+    longitudes=()
+
+    # Leer el archivo línea por línea
+    contador=0
+    while IFS= read -r linea; do
+      ((contador++))
+      
+      # Solo procesamos las líneas de secuencias (segunda línea de cada bloque)
+      if ((contador % 4 == 2)); then
+        # Agregar la longitud de la secuencia al array
+        longitudes+=(${#linea})
+      fi
+    done < "$archivo"
+
+    # Calcular la distribución de longitudes
+    echo "Distribución de longitudes para $archivo:"
+    for longitud in "${longitudes[@]}"; do
+      echo -n "$longitud "  # Imprimir todas las longitudes
+    done
+
+    echo -e "\nNúmero total de secuencias: ${#longitudes[@]}"
+
+    # Opcional: generar un histograma (puedes ajustarlo según el rango de longitudes)
+    echo "Histograma de longitudes de secuencias:"
+    for longitud in "${longitudes[@]}"; do
+      echo "$longitud"
+    done | sort | uniq -c | sort -n  # Ordena y cuenta las frecuencias
+
+  else
+    echo "El archivo $archivo no existe."
+  fi
+done
+```
+
+La respuesta es:
+:::
+
+**Ejercicio**
 
 Y la historia continua ....
 
