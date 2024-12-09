@@ -186,20 +186,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bash.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
   </div>
 </li>
       </ul>
@@ -624,20 +624,64 @@ Solucion
 </div>
 </div>
 <p><strong>Ejercicio 13.6</strong></p>
-<p>Calcula el porcentaje de GC en el archivo <code>secuencias1.fastq</code> en un script.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p><strong>Ejercicio 13.7 Calcula porcentaje de GC con una lista de archivos</strong></p>
+<p>Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq <code>secuencias1.fastq</code>,<code>secuencias2.fastq</code>,<code>secuencias3.fastq</code> utilizando ciclos y/o bucles.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Pista
+Solucion
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Extrae las líneas correspondientes a las secuencias y utiliza <code>wc -c</code> para sumar los caracteres, luego divide por el número de secuencias.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Directorio donde están los archivos FASTQ</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="va">directorio</span><span class="op">=</span><span class="st">"</span><span class="va">$HOME</span><span class="st">/unix.bioinfo.rsgecuador-gh-pages/_files"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop para procesar cada archivo FASTQ</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="st">"</span><span class="va">$directorio</span><span class="st">"</span>/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Inicializar contadores</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">total_bases</span><span class="op">=</span>0</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="va">gc_bases</span><span class="op">=</span>0</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Leer el archivo línea por línea</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="va">contador</span><span class="op">=</span>0</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Solo procesamos las líneas de secuencias (segunda línea de cada bloque)</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Contamos las bases G y C</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        <span class="va">gc_bases</span><span class="op">=</span><span class="va">$((gc_bases</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'G'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'C'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>        <span class="va">total_bases</span><span class="op">=</span><span class="va">$((total_bases</span> <span class="op">+</span> <span class="va">${</span><span class="op">#</span><span class="va">linea}))</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>      <span class="cf">fi</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculamos el porcentaje de GC</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">[</span> <span class="st">"</span><span class="va">$total_bases</span><span class="st">"</span> <span class="ot">-gt</span> 0 <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>      <span class="va">porcentaje_gc</span><span class="op">=</span><span class="va">$((gc_bases</span> <span class="op">*</span> <span class="dv">100</span> <span class="op">/</span> <span class="va">total_bases))</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"Porcentaje de GC en </span><span class="va">$archivo</span><span class="st">: </span><span class="va">$porcentaje_gc</span><span class="st">%"</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"No se encontraron secuencias válidas en </span><span class="va">$archivo</span><span class="st">."</span></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"El archivo </span><span class="va">$archivo</span><span class="st"> no existe."</span></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Procesando archivo: secuencias1.fastq: 27% Procesando archivo: secuencias2.fastq: 11% Procesando archivo: secuencias3.fastq: 2% Procesando archivo: secuencias_bash.fastq: 2%</p>
 </div>
 </div>
+</div>
+<p><strong>Ejercicio 13.8</strong></p>
+<p>Calcula el contenido de cada una de las bases en las secuencias del archivo <code>secuencias1.fastq</code>, A,T,G,C y N.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -650,45 +694,48 @@ Solucion
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Archivo de entrada</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="va">archivo</span><span class="op">=</span><span class="st">"secuencias1.fastq"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inicializar contadores</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="va">total_bases</span><span class="op">=</span>0</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="va">total_gc</span><span class="op">=</span>0</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer el archivo línea por línea</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="va">contador</span><span class="op">=</span>0</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Procesar solo líneas de secuencias (segunda línea de cada bloque de 4)</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Contar bases G y C</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="va">gc</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'[GC]'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="va">bases</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-c</span><span class="va">)</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Actualizar contadores</span></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="va">total_gc</span><span class="op">=</span><span class="va">$((total_gc</span> <span class="op">+</span> <span class="va">gc))</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="va">total_bases</span><span class="op">=</span><span class="va">$((total_bases</span> <span class="op">+</span> <span class="va">bases))</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular porcentaje de GC</span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">((</span><span class="va">total_bases</span> <span class="op">&gt;</span> <span class="dv">0</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>  <span class="va">porcentaje_gc</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"scale=2; </span><span class="va">$total_gc</span><span class="st"> / </span><span class="va">$total_bases</span><span class="st"> * 100"</span> <span class="kw">|</span> <span class="fu">bc</span><span class="va">)</span></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Porcentaje de GC en </span><span class="va">$archivo</span><span class="st">: </span><span class="va">$porcentaje_gc</span><span class="st">%"</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Error: No se encontraron secuencias en </span><span class="va">$archivo</span><span class="st">."</span></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Porcentaje de GC en secuencias1.fastq: 27.00%</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Archivo de entrada</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="va">archivo</span><span class="op">=</span><span class="st">"secuencias1.fastq"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inicializar contadores</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_A</span><span class="op">=</span>0</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_T</span><span class="op">=</span>0</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_G</span><span class="op">=</span>0</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_C</span><span class="op">=</span>0</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_N</span><span class="op">=</span>0</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer el archivo línea por línea</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="va">contador</span><span class="op">=</span>0</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Procesar solo líneas de secuencias (segunda línea de cada bloque de 4)</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_A</span><span class="op">=</span><span class="va">$((conteo_A</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'A'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_T</span><span class="op">=</span><span class="va">$((conteo_T</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'T'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_G</span><span class="op">=</span><span class="va">$((conteo_G</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'G'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_C</span><span class="op">=</span><span class="va">$((conteo_C</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'C'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_N</span><span class="op">=</span><span class="va">$((conteo_N</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'N'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar resultados</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Contenido de bases en </span><span class="va">$archivo</span><span class="st">:"</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"A: </span><span class="va">$conteo_A</span><span class="st">"</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"T: </span><span class="va">$conteo_T</span><span class="st">"</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"G: </span><span class="va">$conteo_G</span><span class="st">"</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"C: </span><span class="va">$conteo_C</span><span class="st">"</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"N: </span><span class="va">$conteo_N</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Contenido de bases en secuencias1.fastq:</p>
+<p>A: 643 T: 450 G: 494 C: 470 N: 1408</p>
 </div>
 </div>
 </div>
-<p><strong>Ejercicio 13.7</strong></p>
-<p>Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq <code>secuencias1.fastq</code>,<code>secuencias2.fastq</code>,<code>secuencias3.fastq</code> utilizando ciclos y/o bucles.</p>
+<p><strong>Ejercicio 13.9</strong></p>
+<p><strong>Ejercicio 13.10 Calcula distribución de longitudes en una lista de archivos</strong></p>
+<p>Calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -701,214 +748,49 @@ Solucion
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Directorio donde están los archivos FASTQ</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="va">directorio</span><span class="op">=</span><span class="st">"</span><span class="va">$HOME</span><span class="st">/unix.bioinfo.rsgecuador-gh-pages/_files"</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop para procesar cada archivo FASTQ</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="st">"</span><span class="va">$directorio</span><span class="st">"</span>/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Inicializar contadores</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">total_bases</span><span class="op">=</span>0</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="va">gc_bases</span><span class="op">=</span>0</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Leer el archivo línea por línea</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="va">contador</span><span class="op">=</span>0</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>      <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Solo procesamos las líneas de secuencias (segunda línea de cada bloque)</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Contamos las bases G y C</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        <span class="va">gc_bases</span><span class="op">=</span><span class="va">$((gc_bases</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'G'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'C'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>        <span class="va">total_bases</span><span class="op">=</span><span class="va">$((total_bases</span> <span class="op">+</span> <span class="va">${</span><span class="op">#</span><span class="va">linea}))</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>      <span class="cf">fi</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculamos el porcentaje de GC</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">[</span> <span class="st">"</span><span class="va">$total_bases</span><span class="st">"</span> <span class="ot">-gt</span> 0 <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="va">porcentaje_gc</span><span class="op">=</span><span class="va">$((gc_bases</span> <span class="op">*</span> <span class="dv">100</span> <span class="op">/</span> <span class="va">total_bases))</span></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"Porcentaje de GC en </span><span class="va">$archivo</span><span class="st">: </span><span class="va">$porcentaje_gc</span><span class="st">%"</span></span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"No se encontraron secuencias válidas en </span><span class="va">$archivo</span><span class="st">."</span></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"El archivo </span><span class="va">$archivo</span><span class="st"> no existe."</span></span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Procesando archivo: secuencias1.fastq: 27% Procesando archivo: secuencias2.fastq: 11% Procesando archivo: secuencias3.fastq: 2% Procesando archivo: secuencias_bash.fastq: 2%</p>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio 13.8</strong></p>
-<p>Calcula el contenido de cada una de las bases en las secuencias del archivo <code>secuencias1.fastq</code>, A,T,G,C y N.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solucion
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Archivo de entrada</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">archivo</span><span class="op">=</span><span class="st">"secuencias1.fastq"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Directorio donde se encuentran los archivos FASTQ</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="va">directorio</span><span class="op">=</span><span class="st">"</span><span class="va">$HOME</span><span class="st">/unix.bioinfo.rsgecuador-gh-pages/_files"</span></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inicializar contadores</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_A</span><span class="op">=</span>0</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_T</span><span class="op">=</span>0</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_G</span><span class="op">=</span>0</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_C</span><span class="op">=</span>0</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="va">conteo_N</span><span class="op">=</span>0</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer el archivo línea por línea</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="va">contador</span><span class="op">=</span>0</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Procesar solo líneas de secuencias (segunda línea de cada bloque de 4)</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_A</span><span class="op">=</span><span class="va">$((conteo_A</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'A'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_T</span><span class="op">=</span><span class="va">$((conteo_T</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'T'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_G</span><span class="op">=</span><span class="va">$((conteo_G</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'G'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_C</span><span class="op">=</span><span class="va">$((conteo_C</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'C'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="va">conteo_N</span><span class="op">=</span><span class="va">$((conteo_N</span> <span class="op">+</span> <span class="va">$(</span><span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$linea</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-o</span> <span class="st">'N'</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span><span class="va">)))</span></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar resultados</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Contenido de bases en </span><span class="va">$archivo</span><span class="st">:"</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"A: </span><span class="va">$conteo_A</span><span class="st">"</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"T: </span><span class="va">$conteo_T</span><span class="st">"</span></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"G: </span><span class="va">$conteo_G</span><span class="st">"</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"C: </span><span class="va">$conteo_C</span><span class="st">"</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"N: </span><span class="va">$conteo_N</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Contenido de bases en secuencias1.fastq:</p>
-<p>A: 643 T: 450 G: 494 C: 470 N: 1408</p>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio 13.9 Para lxs aventadxs</strong></p>
-<p>Calcula la distribución de las longitudes de las secuencias en el archivo <code>secuencias1.fastq</code>. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solucion
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Archivo FASTQ</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="va">archivo</span><span class="op">=</span><span class="st">"secuencias1.fastq"</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inicializar array para almacenar las longitudes de las secuencias</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">declare</span> <span class="at">-a</span> <span class="va">longitudes</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Leer el archivo línea por línea</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="va">contador</span><span class="op">=</span>0</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Solo procesamos las líneas de secuencias (segunda línea de cada bloque)</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Obtener la longitud de la secuencia</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="va">longitudes</span><span class="op">+=</span><span class="va">(${</span><span class="op">#</span><span class="va">linea})</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar si se encontraron secuencias</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="va">${</span><span class="op">#</span><span class="va">longitudes</span><span class="op">[@]</span><span class="va">}</span> <span class="ot">-eq</span> 0 <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"No se encontraron secuencias válidas en el archivo."</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">exit</span> 1</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular la distribución de longitudes</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Distribución de longitudes de las secuencias:"</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcular la frecuencia de cada longitud de secuencia</span></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="st">"</span><span class="va">${longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">((</span><span class="va">longitud_frecuencia</span><span class="op">[</span><span class="va">$i</span><span class="op">]++</span><span class="kw">))</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar la distribución de longitudes</span></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> longitud <span class="kw">in</span> <span class="st">"</span><span class="va">${</span><span class="op">!</span><span class="va">longitud_frecuencia</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Longitud </span><span class="va">$longitud</span><span class="st">: </span><span class="va">${longitud_frecuencia</span><span class="op">[</span><span class="va">$longitud</span><span class="op">]</span><span class="va">}</span><span class="st"> secuencias"</span></span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Procesando el archivo: secuencias1.fastq Distribución de longitudes de las secuencias: Longitud 35: 99 secuencias</p>
-</div>
-</div>
-</div>
-<p><strong>Ejercicio 13.10 Para lxs más aventadxs</strong></p>
-<p>Calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solucion
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Directorio donde se encuentran los archivos FASTQ</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="va">directorio</span><span class="op">=</span><span class="st">"</span><span class="va">$HOME</span><span class="st">/unix.bioinfo.rsgecuador-gh-pages/_files"</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop para procesar cada archivo FASTQ</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="st">"</span><span class="va">$directorio</span><span class="st">"</span>/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Inicializar contador de longitudes</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">longitudes</span><span class="op">=</span><span class="va">()</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Leer el archivo línea por línea</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="va">contador</span><span class="op">=</span>0</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>      <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Solo procesamos las líneas de secuencias (segunda línea de cada bloque)</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Agregar la longitud de la secuencia al array</span></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        <span class="va">longitudes</span><span class="op">+=</span><span class="va">(${</span><span class="op">#</span><span class="va">linea})</span></span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>      <span class="cf">fi</span></span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calcular la distribución de longitudes</span></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Distribución de longitudes para </span><span class="va">$archivo</span><span class="st">:"</span></span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> longitud <span class="kw">in</span> <span class="st">"</span><span class="va">${longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$longitud</span><span class="st"> "</span>  <span class="co"># Imprimir todas las longitudes</span></span>
-<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span></span>
-<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\nNúmero total de secuencias: </span><span class="va">${</span><span class="op">#</span><span class="va">longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span></span>
-<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Opcional: generar un histograma (puedes ajustarlo según el rango de longitudes)</span></span>
-<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Histograma de longitudes de secuencias:"</span></span>
-<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> longitud <span class="kw">in</span> <span class="st">"</span><span class="va">${longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"</span><span class="va">$longitud</span><span class="st">"</span></span>
-<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span>  <span class="co"># Ordena y cuenta las frecuencias</span></span>
-<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span></span>
-<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"El archivo </span><span class="va">$archivo</span><span class="st"> no existe."</span></span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
-<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop para procesar cada archivo FASTQ</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="st">"</span><span class="va">$directorio</span><span class="st">"</span>/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Inicializar contador de longitudes</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="va">longitudes</span><span class="op">=</span><span class="va">()</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Leer el archivo línea por línea</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="va">contador</span><span class="op">=</span>0</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">IFS</span><span class="op">=</span> <span class="bu">read</span> <span class="at">-r</span> <span class="va">linea</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="kw">((</span><span class="va">contador</span><span class="op">++</span><span class="kw">))</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Solo procesamos las líneas de secuencias (segunda línea de cada bloque)</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> <span class="kw">((</span><span class="va">contador</span> <span class="op">%</span> <span class="dv">4</span> <span class="op">==</span> <span class="dv">2</span><span class="kw">));</span> <span class="cf">then</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Agregar la longitud de la secuencia al array</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>        <span class="va">longitudes</span><span class="op">+=</span><span class="va">(${</span><span class="op">#</span><span class="va">linea})</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>      <span class="cf">fi</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="op">&lt;</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calcular la distribución de longitudes</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Distribución de longitudes para </span><span class="va">$archivo</span><span class="st">:"</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> longitud <span class="kw">in</span> <span class="st">"</span><span class="va">${longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$longitud</span><span class="st"> "</span>  <span class="co"># Imprimir todas las longitudes</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\nNúmero total de secuencias: </span><span class="va">${</span><span class="op">#</span><span class="va">longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Opcional: generar un histograma (puedes ajustarlo según el rango de longitudes)</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Histograma de longitudes de secuencias:"</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> longitud <span class="kw">in</span> <span class="st">"</span><span class="va">${longitudes</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>      <span class="bu">echo</span> <span class="st">"</span><span class="va">$longitud</span><span class="st">"</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">done</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="kw">|</span> <span class="fu">uniq</span> <span class="at">-c</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span>  <span class="co"># Ordena y cuenta las frecuencias</span></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"El archivo </span><span class="va">$archivo</span><span class="st"> no existe."</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>La respuesta es:</p>
 </div>
 </div>

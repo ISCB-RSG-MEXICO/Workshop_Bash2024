@@ -187,20 +187,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bash.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
   </div>
 </li>
       </ul>
@@ -342,10 +342,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#nano" id="toc-nano" class="nav-link active" data-scroll-target="#nano">Nano</a></li>
-  <li><a href="#vim" id="toc-vim" class="nav-link" data-scroll-target="#vim">Vim</a></li>
-  <li><a href="#ejercicio-7-edición-de-archivos" id="toc-ejercicio-7-edición-de-archivos" class="nav-link" data-scroll-target="#ejercicio-7-edición-de-archivos"><span class="header-section-number">7.1</span> <strong>Ejercicio 7:</strong> Edición de archivos</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">7.2</span> Referencias</a></li>
+  <li><a href="#nano" id="toc-nano" class="nav-link active" data-scroll-target="#nano"><span class="header-section-number">7.0.1</span> Nano</a></li>
+  <li><a href="#vim" id="toc-vim" class="nav-link" data-scroll-target="#vim"><span class="header-section-number">7.0.2</span> Vim</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">7.1</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -371,10 +370,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Por trabajar - Aaron Jaime</p>
 <p>Los editores de texto nos permiten hacer desde ligeros hasta cambios u operaciones masivas en el contenido de nuestros archivos. Existen varias herramientas para esto pero las más populares son “nano” y “vim”.</p>
-<section id="nano" class="level4">
-<h4 class="anchored" data-anchor-id="nano">Nano</h4>
+<section id="nano" class="level3" data-number="7.0.1">
+<h3 data-number="7.0.1" class="anchored" data-anchor-id="nano"><span class="header-section-number">7.0.1</span> Nano</h3>
 <p>Para utilizar nano, debemos de seguir una serie de comandos. Primero creamos/leemos nuestro archivo.</p>
 <div class="sourceCode" id="cb1" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nano</span> mi-archivo-nano.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Esto nos creará un archivo de texto al que podemos ingresar información y además nos va desplegar un menú de opciones en la parte inferior de nuestra terminal.</p>
@@ -383,70 +381,81 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/Captura de pantalla 2024-12-07 131553.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo&nbsp;<code>^</code>&nbsp;significa la tecla&nbsp;<code>Control</code>&nbsp;o&nbsp;<code>Command</code>&nbsp;y la&nbsp;<code>M</code>&nbsp;es la tecla&nbsp;<code>Alt</code>. En nuestro caso donde queremos agregar texto, simplemente escribimos</p>
-<p>Este es un archivo de prueba creado con nano.</p>
-<p>Para guardar los cambios en el archivo presionamos <code>control + x</code>, el programa nos desplegará un mensaje para guardar el archivo. Presionamos enter y ahora podemos verificar el contenido.</p>
-<div class="sourceCode" id="cb2" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> mi-archivo-nano.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
+<p>Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo&nbsp;<code>^</code>&nbsp;significa la tecla&nbsp;<code>Control</code>&nbsp;o&nbsp;<code>Command</code>&nbsp;y la&nbsp;<code>M</code>&nbsp;es la tecla&nbsp;<code>Alt</code>. En nuestro caso donde queremos agregar texto, simplemente escribimos:</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Ejercicio 6. Edición de archivos con nano
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Este es un archivo de prueba creado con nano.</p>
-<p>Aprenderemos a editar texto en la terminal.</p>
+<ol type="1">
+<li>Crea un archivo nano con el nombre “mi-archivo-nano.txt”. <code>nano mi-archivo-nano.txt</code></li>
+<li>Agrega la siguiente información a tu archivo. <code>Hola mi nombre es NOMBRE y este es mi primer archivo nano.</code></li>
+<li>Utiliza <code>ctrl + x</code> para salir y guardar la información, presiona <code>Enter</code> para cerrar el editor.</li>
+</ol>
 </div>
 </div>
+<p>Para guardar los cambios en el archivo presionamos <code>control + x</code>, el programa nos desplegará un mensaje para guardar el archivo. Presionamos <strong>enter</strong> y ahora podemos verificar el contenido.</p>
+<div class="sourceCode" id="cb2" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> mi-archivo-nano.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="vim" class="level4">
-<h4 class="anchored" data-anchor-id="vim">Vim</h4>
+<section id="vim" class="level3" data-number="7.0.2">
+<h3 data-number="7.0.2" class="anchored" data-anchor-id="vim"><span class="header-section-number">7.0.2</span> Vim</h3>
 <p>Vim tiene ligeros cambios en su modo de uso:</p>
 <div class="sourceCode" id="cb3" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">vim</span> mi-archivo-vim.txt </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>A diferencia de nano, no podemos ingresar texto directamente en el archivo y hay algo que se conoce como modos. En este primer modo normal puedes accesar a distintas otras funcionalidades, para cambiar a modo escritura o modo inserción de texto, debemos presionar “<code>i</code>”.</p>
+<p>A diferencia de <code>nano</code>, no podemos ingresar texto directamente en el archivo y hay algo que se conoce como modos. En este primer modo normal puedes accesar a distintas otras funcionalidades, para cambiar a modo escritura o modo inserción de texto, debemos presionar <code>i</code>.</p>
 <p>Una vez dentro del modo inserción, escribimos el siguiente texto:</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Ejercicio 7. Edición de archivos con vim
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Este es un archivo de prueba creado con vim.</p>
-<p>Aprenderemos a usar modos de inserción.</p>
+<ol type="1">
+<li>Crea un archivo nano con el nombre “mi-archivo-vim.txt”. <code>vim mi-archivo-vim.txt</code></li>
+<li>Agrega la siguiente información a tu archivo. <code>Hola mi nombre es NOMBRE y este es mi primer archivo vim.</code></li>
+<li>Utiliza <code>ctrl + x</code> para salir y guardar la información, presiona <code>Enter</code> para cerrar el editor.</li>
+</ol>
 </div>
 </div>
 <p>para guardar los cambios debemos presionar la tecla <code>Esc</code>, para salir del modo inserción y teclear:</p>
 <div class="sourceCode" id="cb4" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">:wq</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>En donde:</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Explicación
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><code>w</code> = write, indica a la terminal guardar los cambios</p>
-<p><code>q</code> = quit, indica salir de la edición del archivo.</p>
+<ul>
+<li><code>w</code> = write, indica a la terminal guardar los cambios</li>
+<li><code>q</code> = quit, indica salir de la edición del archivo.</li>
+</ul>
 </div>
 </div>
-<div class="sourceCode" id="cb5" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Para</span> ambos editores puedes accesar al manual del usuario proporcionados dentro de la terminal usando cualquiera de los siguientes comandos:man vim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para ambos editores puedes accesar al manual del usuario proporcionados dentro de la terminal usando cualquiera de los siguientes comandos:</p>
+<ul>
+<li>Para ver el manual completo de <code>vim</code> escribe:</li>
+</ul>
+<div class="sourceCode" id="cb5" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">man</span> vim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Para ver el manual completo de <code>nano</code> escribe:</li>
+</ul>
 <div class="sourceCode" id="cb6" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">man</span> nano</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="ejercicio-7-edición-de-archivos" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="ejercicio-7-edición-de-archivos"><span class="header-section-number">7.1</span> <strong>Ejercicio 7:</strong> Edición de archivos</h2>
-</section>
-<section id="referencias" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="referencias"><span class="header-section-number">7.2</span> Referencias</h2>
+<section id="referencias" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="referencias"><span class="header-section-number">7.1</span> Referencias</h2>
 <ul>
 <li><a href="https://victorhck.gitbook.io/aprende-vim">Aprende vim</a></li>
 </ul>

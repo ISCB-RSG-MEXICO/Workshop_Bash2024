@@ -187,20 +187,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceptos Unix y GNU/Linux</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bash.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./BetterLab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
   </div>
 </li>
       </ul>
@@ -342,8 +342,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#condicionales" id="toc-condicionales" class="nav-link active" data-scroll-target="#condicionales"><span class="header-section-number">12.1</span> Condicionales</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">12.2</span> Referencias</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link active" data-scroll-target="#referencias"><span class="header-section-number">12.1</span> Referencias</a></li>
   </ul>
 </nav>
     </div>
@@ -369,49 +368,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Por trabajar - Aaron Jaime</p>
-<section id="condicionales" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="condicionales"><span class="header-section-number">12.1</span> Condicionales</h2>
-<p>Las condicionales son estructuras de programación que nos permiten tomar decisiones basadas en el resultado de una expresión. En otras palabras, nos permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no. Los condicionales son fundamentales para automatizar tareas y crear scripts fléxibles.</p>
+<p>Las condicionales son estructuras de programación que nos permiten tomar decisiones basadas en el resultado de una <strong>expresión</strong>. En otras palabras, nos permiten ejecutar diferentes bloques de código dependiendo de <strong>si una condición se cumple o no</strong>. Los condicionales son fundamentales para automatizar tareas y crear scripts fléxibles.</p>
 <p>La sintáxis básica de un condicional simple en formato de una línea es :</p>
 <div class="sourceCode" id="cb1" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> condición <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span> <span class="ex">orden1</span><span class="kw">;</span> <span class="ex">orden2</span> …<span class="kw">;</span> <span class="cf">fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>de igual manera pero en bloque identado:</p>
 <div class="sourceCode" id="cb2" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> condición <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span>      <span class="ex">orden1</span>     orden2  fi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Queremos verificar si existe el archivo “secuencias1.fastq” antes de realizar alguna operación sobre él. Puedes usar el siguiente condicional:</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ejemplo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si queremos verificar si existe el archivo <strong>secuencias1.fastq</strong> antes de realizar alguna operación sobre él. Puedes usar el siguiente condicional:</p>
+</div>
+</div>
 <div class="sourceCode" id="cb3" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> secuencias1.fastq <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"El archivo existe."</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"El archivo no existe."</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Explicación
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong><code>if [ -f secuencias1.fastq ]</code>:</strong> Verifica si “secuencias1.fastq” es un archivo regular.</li>
-</ul>
-<!-- -->
-<ul>
+<li><strong><code>if [ -f secuencias1.fastq ]</code>:</strong> Verifica si <strong>secuencias1.fastq</strong> es un archivo regular.</li>
 <li><strong><code>then</code>:</strong> Si la condición es verdadera, se ejecuta el código siguiente.</li>
-</ul>
-<!-- -->
-<ul>
 <li><strong><code>else</code>:</strong> Si la condición es falsa, se ejecuta el código siguiente.</li>
-</ul>
-<!-- -->
-<ul>
 <li><strong><code>fi</code>:</strong> Indica el final de la estructura <code>if</code>.</li>
 </ul>
+</div>
+</div>
 <p>Los condicionales pueden ser tan complejos como lo imagines. Por ejemplo:</p>
 <div class="sourceCode" id="cb4" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="va">$file</span><span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span> </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">[</span> <span class="ot">-f</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span> </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">wc</span> <span class="at">-l</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span> </span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"El archivo </span><span class="va">$archivo</span><span class="st"> no existe o no es un archivo regular"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"No tienes archivos fastq"</span></span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">fi</span> </span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Explicación del código:</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Explicación del código
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>En donde:</p>
-</section>
-<section id="referencias" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="referencias"><span class="header-section-number">12.2</span> Referencias</h2>
+<div class="sourceCode" id="cb5" data-code-copy="true" data-eval="false"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> archivo <span class="kw">in</span> <span class="va">$file</span><span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p><strong><code>$file*.fastq</code></strong>: Expande a todos los archivos que comienzan con el valor de la variable <code>$file</code> y terminan con la extensión <code>.fastq</code>.</p></li>
+<li><p><strong><code>archivo</code></strong>: Variable que almacena el nombre de cada archivo encontrado.</p></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"Procesando archivo: </span><span class="va">$archivo</span><span class="st">"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wc</span> <span class="at">-l</span> <span class="st">"</span><span class="va">$archivo</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p><strong><code>echo</code></strong>: Imprime el mensaje indicando que se está procesando el archivo actual.</p></li>
+<li><p><strong><code>wc -l "$archivo"</code></strong>: Cuenta el número de líneas en el archivo usando <code>wc -l</code> y muestra el resultado en la terminal.</p></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"No tienes archivos fastq"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Si el archivo no existe o no es un archivo regular, muestra un mensaje de error indicando el problema.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Fin del bucle</li>
+</ul>
+</div>
+</div>
+<section id="referencias" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="referencias"><span class="header-section-number">12.1</span> Referencias</h2>
 <ul>
 <li><a href="https://datacarpentry.github.io/semester-biology/materials/for-loops-indexing/">DataCarpentry For Loops</a></li>
 </ul>

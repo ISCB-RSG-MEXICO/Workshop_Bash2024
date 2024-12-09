@@ -1,8 +1,6 @@
 # Edición de archivos con el editor de flujo `sed`
 
-Aaron Jaime
-
-Sed (stream editor) es un **editor de flujo**, una potente herramienta de tratamiento de texto para el sistema operativo UNIX que acepta como entrada un archivo, lo lee y modifica línea a línea de acuerdo a un script. Sed permite manipular flujos de datos, como por ejemplo cortar líneas, buscar y reemplazar texto (con soporte de **expresiones regulares** ), entre otras cosas.
+`sed` (stream editor) es un **editor de flujo**, una potente herramienta de tratamiento de texto para el sistema operativo UNIX que acepta como entrada un archivo, lo lee y modifica línea a línea de acuerdo a un script. `sed` permite manipular flujos de datos, como por ejemplo cortar líneas, buscar y reemplazar texto (con soporte de **expresiones regulares** ), entre otras cosas.
 
 Algunas de las operaciones más primordiales de sed son el cambio de saltos de líneas, la sustitución de espacios por comas o tabulaciones, la deleción o adición de strings, etc.
 
@@ -14,63 +12,53 @@ sed [-n] [-e'script'] [-f archivo] archivo1 archivo2 ...
 
 donde:
 
-``` {.bash code-copy="true" eval="false"}
--n indica que se suprima la salida estándar. -e indica que se ejecute el script que viene a continuación. Si no se emplea la opción -f se puede omitir -e. -f indica que las órdenes se tomarán de un archivo
-```
+::: {.callout-note icon="false"}
+## Explicación
+
+-   `-n` indica que se suprima la salida estándar.
+-   `-e` indica que se ejecute el script que viene a continuación.
+-   `-f` indica que las órdenes se tomarán de un archivo.
+:::
 
 #### Ejemplo de sustitución con `sed`
 
-Sustituciones *s///* de palabras: *`s/esto/aquello/`*
+Sustituciones `s///` de palabras: `s/esto/aquello/`
 
 ``` {.bash code-copy="true" eval="false"}
-sed 's/Windows/Linux/' archivo
+echo "Windows es lo máximo" | sed -e 's/Windows/Linux/'
 ```
 
 En el ejemplo anterior, la modificación se hace solamente en la primer instancia que el comando encuentra. Esto no nos funciona si tenemos 400 repeticiones de Windows que queremos cambiar a Linux. Para que funcione debemos hacer un cambio de la siquiente manera:
 
 ``` {.bash code-copy="true" eval="false"}
-sed 's/Windows/Linux/g' archivo
+echo "Windows es un sistema operativo ampliamente utilizado." > archivo.txt
+cat archivo.txt
+sed 's/Windows/Linux/g' archivo.txt
 ```
 
 Esta letra **g** que agregamos, indica hacer las sustituciones de manera **global**, es decir en todas las ocurrencias o repeticiones dentro de un archivo.
 
-## Ejercicio 6: Práctica de sustituciones
+::: {.callout-note icon="false"}
+## Ejercicio 8: Práctica de sustituciones
 
-Si nos situamos dentro de la carpeta "`~/unix.bioinfo.rsgecuador-gh-pages/_files`" podremos encontrar el archivo "`notas.txt`". Explora este archivo y sustituye la palabra "Notas" de cada una de las columnas por la palabra "Columna". Una vez hecho el cambio redirige el resultado a un archivo llamado "`columnas.txt`". Corrobora tus resultados y discute posibles soluciones alternas.
-
-::: {.callout-note collapse="true"}
-## Solución
-
-**Paso 1.** Leemos el archivo:
-
-``` {.bash code-copy="true" eval="false"}
-cat notas.txt 
-```
-
-o
-
-``` {.bash code-copy="true" eval="false"}
-less notas.txt
-```
-
-**Paso 2.** Sustituimos Notas por Columnas y redirigimos el resultado a otro archivo
-
-``` {.bash code-copy="true" eval="false"}
-sed 's/Notas/columnas/g' notas.txt >> columnas.txt
-```
-:::
+1.  Verifica que te encuentres en la carpeta "`~/unix.bioinfo.rsgecuador-gh-pages/_files`" `pwd`
+2.  Cámbiate de carpeta si es necesario `cd  ~/unix.bioinfo.rsgecuador-gh-pages/_files`
+3.  En esta carpeta podrás encontrar el archivo "`notas.txt`", explora este archivo `cat notas.txt` ó `less notas.txt` ó `head notas.txt`
+4.  Sustituye la palabra "Notas" de cada una de las columnas por la palabra "Columna" y una vez hecho el cambio redirige el resultado a un archivo llamado "`columnas.txt`". `sed 's/Notas/Columnas/g' notas.txt >> columnas.txt`
+5.  Corrobora tus resultados y discute posibles soluciones alternas.
 
 Como pudiste darte cuenta, el archivo está separado por tabulaciones entre columna y columna. Si quisieras además, cambiar el formato del archivo de separación por tabulaciones a separación por comas, ¿qué pasos extra agregarías a tu código? Discute qué hace cada parte del código.
 
-::: {.callout-note collapse="true"}
+::: {.callout-tip collapse="true" icon="false"}
 ## Solución 2
 
 ``` {.bash code-copy="true" eval="false"}
 sed 's/Notas/Columnas/' -e 's/\t/,/g' notas.txt >> columnas.txt
 ```
 :::
+:::
 
-## Referencias
+### Referencias
 
 -   [RegEx](https://www.rexegg.com/regex-quickstart.php)
 

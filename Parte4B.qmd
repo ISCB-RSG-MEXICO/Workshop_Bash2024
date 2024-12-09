@@ -7,7 +7,7 @@ Veamos ahora los comandos más usados en tuberías de filtrado de texto en acci�
 1.  **¿Cuántas líneas tiene el archivo S_clavuligerus_proteome.fasta?**
 
 ``` {.bash eval="FALSE"}
-cd /data/unix.bioinfo.rsgecuador-gh-pages/_files/
+cd ~/unix.bioinfo.rsgecuador-gh-pages/_files
 wc -l S_clavuligerus_proteome.fasta
 # 40739 lineas
 ```
@@ -129,7 +129,7 @@ grep ">.*TMUUS_STRC2" S_clavuligerus_proteome.fasta | sed -n 's/.*PE=\([0-9]\).*
 Por lo tanto, **TMUUS_STRC2 tiene el nivel más alto de evidencia (PE=1), lo que confirma su existencia a nivel experimental**.
 
 ::: callout-note
-## Ejercicio 8
+## Ejercicio 9
 
 Contesta las siguientes preguntas empleando el archivo S_clavuligerus_proteome.fasta:
 

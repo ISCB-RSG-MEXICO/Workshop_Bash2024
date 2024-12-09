@@ -1,8 +1,6 @@
 # Condicionales
 
-Aaron Jaime
-
-Las condicionales son estructuras de programación que nos permiten tomar decisiones basadas en el resultado de una expresión. En otras palabras, nos permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no. Los condicionales son fundamentales para automatizar tareas y crear scripts fléxibles.
+Las condicionales son estructuras de programación que nos permiten tomar decisiones basadas en el resultado de una **expresión**. En otras palabras, nos permiten ejecutar diferentes bloques de código dependiendo de **si una condición se cumple o no**. Los condicionales son fundamentales para automatizar tareas y crear scripts fléxibles.
 
 La sintáxis básica de un condicional simple en formato de una línea es :
 
@@ -16,7 +14,11 @@ de igual manera pero en bloque identado:
 if [ condición ]; then      orden1     orden2  fi
 ```
 
-Queremos verificar si existe el archivo **secuencias1.fastq** antes de realizar alguna operación sobre él. Puedes usar el siguiente condicional:
+::: {.callout-note icon="false"}
+## Ejemplo
+
+Si queremos verificar si existe el archivo **secuencias1.fastq** antes de realizar alguna operación sobre él. Puedes usar el siguiente condicional:
+:::
 
 ``` {.bash code-copy="true" eval="false"}
 if [ -f secuencias1.fastq ]; then
@@ -26,19 +28,14 @@ else
 fi
 ```
 
+::: {.callout-note icon="false"}
+## Explicación
+
 -   **`if [ -f secuencias1.fastq ]`:** Verifica si **secuencias1.fastq** es un archivo regular.
-
-<!-- -->
-
 -   **`then`:** Si la condición es verdadera, se ejecuta el código siguiente.
-
-<!-- -->
-
 -   **`else`:** Si la condición es falsa, se ejecuta el código siguiente.
-
-<!-- -->
-
 -   **`fi`:** Indica el final de la estructura `if`.
+:::
 
 Los condicionales pueden ser tan complejos como lo imagines. Por ejemplo:
 
@@ -48,12 +45,12 @@ for archivo in $file*.fastq; do
     echo "Procesando archivo: $archivo"
     wc -l "$archivo" 
   else 
-    echo "El archivo $archivo no existe o no es un archivo regular"
+    echo "No tienes archivos fastq"
   fi 
 done
 ```
 
-::: callout-note
+::: {.callout-note icon="false"}
 ## Explicación del código
 
 En donde:
@@ -77,7 +74,7 @@ wc -l "$archivo"
 
 ``` bash
 else
-  echo "El archivo $archivo no existe o no es un archivo regular"
+  echo "No tienes archivos fastq"
 fi
 ```
 

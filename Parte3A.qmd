@@ -1,10 +1,8 @@
 # Edición de archivos con los editores de texto (nano y vim)
 
-Aaron Jaime
-
 Los editores de texto nos permiten hacer desde ligeros hasta cambios u operaciones masivas en el contenido de nuestros archivos. Existen varias herramientas para esto pero las más populares son "nano" y "vim".
 
-#### Nano
+### Nano
 
 Para utilizar nano, debemos de seguir una serie de comandos. Primero creamos/leemos nuestro archivo.
 
@@ -16,23 +14,23 @@ Esto nos creará un archivo de texto al que podemos ingresar información y adem
 
 ![](images/Captura%20de%20pantalla%202024-12-07%20131553.png){fig-align="center"}
 
-Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo `^` significa la tecla `Control` o `Command` y la `M` es la tecla `Alt`. En nuestro caso donde queremos agregar texto, simplemente escribimos
+Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo `^` significa la tecla `Control` o `Command` y la `M` es la tecla `Alt`. En nuestro caso donde queremos agregar texto, simplemente escribimos:
 
-Este es un archivo de prueba creado con nano.
+::: {.callout-note icon="false"}
+## Ejercicio 6. Edición de archivos con nano
 
-Para guardar los cambios en el archivo presionamos `control + x`, el programa nos desplegará un mensaje para guardar el archivo. Presionamos enter y ahora podemos verificar el contenido.
+1.  Crea un archivo nano con el nombre "mi-archivo-nano.txt". `nano mi-archivo-nano.txt`
+2.  Agrega la siguiente información a tu archivo. `Hola mi nombre es NOMBRE y este es mi primer archivo nano.`
+3.  Utiliza `ctrl + x` para salir y guardar la información, presiona `Enter` para cerrar el editor.
+:::
+
+Para guardar los cambios en el archivo presionamos `control + x`, el programa nos desplegará un mensaje para guardar el archivo. Presionamos **enter** y ahora podemos verificar el contenido.
 
 ``` {.bash code-copy="true" eval="false"}
 cat mi-archivo-nano.txt
 ```
 
-::: callout-note
-Este es un archivo de prueba creado con nano.
-
-Aprenderemos a editar texto en la terminal.
-:::
-
-#### Vim
+### Vim
 
 Vim tiene ligeros cambios en su modo de uso:
 
@@ -40,14 +38,16 @@ Vim tiene ligeros cambios en su modo de uso:
 vim mi-archivo-vim.txt 
 ```
 
-A diferencia de nano, no podemos ingresar texto directamente en el archivo y hay algo que se conoce como modos. En este primer modo normal puedes accesar a distintas otras funcionalidades, para cambiar a modo escritura o modo inserción de texto, debemos presionar "`i`".
+A diferencia de `nano`, no podemos ingresar texto directamente en el archivo y hay algo que se conoce como modos. En este primer modo normal puedes accesar a distintas otras funcionalidades, para cambiar a modo escritura o modo inserción de texto, debemos presionar `i`.
 
 Una vez dentro del modo inserción, escribimos el siguiente texto:
 
-::: callout-note
-Este es un archivo de prueba creado con vim.
+::: {.callout-note icon="false"}
+## Ejercicio 7. Edición de archivos con vim
 
-Aprenderemos a usar modos de inserción.
+1.  Crea un archivo nano con el nombre "mi-archivo-vim.txt". `vim mi-archivo-vim.txt`
+2.  Agrega la siguiente información a tu archivo. `Hola mi nombre es NOMBRE y este es mi primer archivo vim.`
+3.  Utiliza `ctrl + x` para salir y guardar la información, presiona `Enter` para cerrar el editor.
 :::
 
 para guardar los cambios debemos presionar la tecla `Esc`, para salir del modo inserción y teclear:
@@ -58,17 +58,22 @@ para guardar los cambios debemos presionar la tecla `Esc`, para salir del modo i
 
 En donde:
 
-::: callout-note
-`w` = write, indica a la terminal guardar los cambios
+::: {.callout-note icon="false"}
+## Explicación
 
-`q` = quit, indica salir de la edición del archivo.
+-   `w` = write, indica a la terminal guardar los cambios
+-   `q` = quit, indica salir de la edición del archivo.
 :::
 
 Para ambos editores puedes accesar al manual del usuario proporcionados dentro de la terminal usando cualquiera de los siguientes comandos:
 
+-   Para ver el manual completo de `vim` escribe:
+
 ``` {.bash code-copy="true" eval="false"}
 man vim
 ```
+
+-   Para ver el manual completo de `nano` escribe:
 
 ``` {.bash code-copy="true" eval="false"}
 man nano

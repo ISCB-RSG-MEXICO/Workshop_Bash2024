@@ -11,9 +11,9 @@ book:
     - index.qmd
     - part: "**Section 1** - Introducción a Bash"
       chapters: 
-      - BetterLab.qmd
       - intro.qmd
       - Bash.qmd
+      - BetterLab.qmd
     - part: "**Section 2** - Manejo y redirección de datos"
       chapters: 
       - Rnaseq_intro.qmd
