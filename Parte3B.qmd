@@ -18,7 +18,7 @@ donde:
 -n indica que se suprima la salida estándar. -e indica que se ejecute el script que viene a continuación. Si no se emplea la opción -f se puede omitir -e. -f indica que las órdenes se tomarán de un archivo
 ```
 
-#### Ejemplo de sustitución con `sed` 
+#### Ejemplo de sustitución con `sed`
 
 Sustituciones *s///* de palabras: *`s/esto/aquello/`*
 
@@ -41,7 +41,7 @@ Si nos situamos dentro de la carpeta "`~/unix.bioinfo.rsgecuador-gh-pages/_files
 ::: {.callout-note collapse="true"}
 ## Solución
 
-Leemos el archivo:
+**Paso 1.** Leemos el archivo:
 
 ``` {.bash code-copy="true" eval="false"}
 cat notas.txt 
@@ -53,13 +53,21 @@ o
 less notas.txt
 ```
 
-Sustituimos Notas por Columnas y redirigimos el resultado a otro archivo
+**Paso 2.** Sustituimos Notas por Columnas y redirigimos el resultado a otro archivo
 
 ``` {.bash code-copy="true" eval="false"}
 sed 's/Notas/columnas/g' notas.txt >> columnas.txt
 ```
+:::
 
-##  
+Como pudiste darte cuenta, el archivo está separado por tabulaciones entre columna y columna. Si quisieras además, cambiar el formato del archivo de separación por tabulaciones a separación por comas, ¿qué pasos extra agregarías a tu código? Discute qué hace cada parte del código.
+
+::: {.callout-note collapse="true"}
+## Solución 2
+
+``` {.bash code-copy="true" eval="false"}
+sed 's/Notas/Columnas/' -e 's/\t/,/g' notas.txt >> columnas.txt
+```
 :::
 
 ## Referencias

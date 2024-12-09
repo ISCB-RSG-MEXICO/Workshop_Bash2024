@@ -29,7 +29,7 @@ echo $mi_primer_string
 Los `wildcards` o `wild characters` son símbolos utilizados para representar uno o más caracteres. Se pueden utilizar con otros comandos para facilitar el procesamiento o búsqueda de archivos, directorios y datos en general.
 
 | **Wildcard** | **Función**                                                                                                    |
-|--------------|----------------------------------------------------------|
+|--------------|----------------------------------------------------------------------------------------------------------------|
 | `*`          | Asocia **uno o más** caracteres especificados por el usuario, con caracteres en un string con el que se opera. |
 | `?`          | Asocia **solo un** caracter a la vez en un string.                                                             |
 | `[ ]`        | Asocia **cuaquiera** de los caracteres dentro en un string.                                                    |

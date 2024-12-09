@@ -1,6 +1,6 @@
 # Edición de archivos con los editores de texto (nano y vim)
 
-Por trabajar - Aaron Jaime
+Aaron Jaime
 
 Los editores de texto nos permiten hacer desde ligeros hasta cambios u operaciones masivas en el contenido de nuestros archivos. Existen varias herramientas para esto pero las más populares son "nano" y "vim".
 
@@ -14,7 +14,7 @@ nano mi-archivo-nano.txt
 
 Esto nos creará un archivo de texto al que podemos ingresar información y además nos va desplegar un menú de opciones en la parte inferior de nuestra terminal.
 
-![](images/Captura de pantalla 2024-12-07 131553.png){fig-align="center"}
+![](images/Captura%20de%20pantalla%202024-12-07%20131553.png){fig-align="center"}
 
 Para utilizar estas opciones se usan shorchuts o atajos en el teclado, en las que el símbolo `^` significa la tecla `Control` o `Command` y la `M` es la tecla `Alt`. En nuestro caso donde queremos agregar texto, simplemente escribimos
 

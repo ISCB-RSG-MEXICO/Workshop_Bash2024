@@ -1,6 +1,6 @@
 # Bucles (for loops)
 
-Por trabajar - Aaron Jaime
+Aaron Jaime
 
 Imagina que quieres realizar una misma tarea para 3 archivos distintos, no sería nada molesto escribir el mismo código 3 veces, cierto?
 
