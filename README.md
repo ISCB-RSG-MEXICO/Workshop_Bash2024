@@ -11,12 +11,15 @@ El contenido de este curso se realizó en base al material de Software Carpentry
 -   Instructures:
     -   **Evelia Lorena Coss-Navarrete** - PostDoc, LIIGH-UNAM. [Pagina web](https://eveliacoss.github.io/)
     -   **Aaron Espinosa Jaime -** Estudiante de maestria, Cinvestav-LANGEBIO.
+    -   **Andrés Arredondo** - Ciencias Agrogenómicas, CCM-UNAM.
 -   Ayudantes:
     -   **Daniel Chávez** - Profesor invitado, UAGro.
     -   **Camilo Pérez** - Estudiante de doctorado, Cinvestav-LANGEBIO.
     -   **Abel Lovaco Flores -** Estudiante de maestria, Cinvestav-Irapuato.
     -   **Mariana Devo López -** Estudiante de maestria, UAM.
     -   **Israel Aguilar** - Posdoc, Tec de Monterrey.
+    -   **Mariana Devon** - Estudiante de maestría, UAM.
+    -   **Andrés Arredondo** - Ciencias Agrogenómicas, CCM-UNAM.
 
 ## Resumen
 
