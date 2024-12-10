@@ -1,6 +1,6 @@
 # Ejercicios en equipo
 
-Reúnanse en equipos de 3 personas para completar **uno** de los ejercicios propuestos en esta sección, algunos de los ejercicios provienen de la actividad de [6. Extracción de información de archivos fastq](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/05_Ejercicios_procesamiento_ficheros_Bioinfo/5_Info_fastq.html) del curso de [GNU/Linux para Bioinformática](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html) organizado por RSG Ecuador.
+Reúnanse en **equipos de 3 personas** para completar **uno** de los ejercicios propuestos en esta sección, algunos de los ejercicios provienen de la actividad de [6. Extracción de información de archivos fastq](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/content/Curso_basico/05_Ejercicios_procesamiento_ficheros_Bioinfo/5_Info_fastq.html) del curso de [GNU/Linux para Bioinformática](https://rsg-ecuador.github.io/unix.bioinfo.rsgecuador/README.html) organizado por RSG Ecuador.
 
 ![](img/meme2.jpg){fig-align="center" width="506"}
 
@@ -8,7 +8,7 @@ Reúnanse en equipos de 3 personas para completar **uno** de los ejercicios prop
 
 En este ejercicio se obtendrá información de archivos fastq, que cotienen secuencias de nucleótidos y la calidad de su proceso de secuenciación. Para esto usaremos los archivos `secuencias1.fastq`, `secuencias2.fastq` y `secuencias3.fastq` que se encuentra en la carpeta `_files` dentro del directorio raíz del repositorio de GitHub [unix.bioinfo.rsgecuador](https://github.com/RSG-Ecuador/unix.bioinfo.rsgecuador/tree/gh-pages) .
 
-**Ejercicio 13.1** **Contar el número de secuencias con diez "N" seguidas por cada archivo FASTQ**
+#### **Ejercicio 10.1 Contar el número de secuencias con diez "N" seguidas por cada archivo FASTQ**
 
 La letra `N` representa un nucleótido que no pudo ser leído correctamente, y se reporta como ninguno, o `missing data`. Imprime el número de secuencias que tenga diez `N` seguidas por cada uno de los archivos `fastq` de la carpeta `_files`.
 
@@ -17,11 +17,9 @@ Es posible realizar esto con un comando de una sola línea, intenta resolverlo d
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solución
+##### Solución
 
 ``` {.bash code-copy="true" eval="false"}
-# cd C:/Users/ecoss/Documents/Respaldos/Github_notes/Workshop_Bash2024/data/unix.bioinfo.rsgecuador-gh-pages
-
 #!/bin/bash
 # File: countseq.sh
 
@@ -42,7 +40,7 @@ for file in "$FOLDER"/*[1-3].fastq; do
 done
 ```
 
-Recuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida `unix.bioinfo.rsgecuador-gh-pages/`y ejecutar: `./countseq.sh.`
+Recuerda para ejecutar este codigo deberas encontrarte dentro de la carpeta descomprimida `unix.bioinfo.rsgecuador-gh-pages/`y ejecutar: `./countseq.sh`
 
 Salida:
 
@@ -51,12 +49,12 @@ Salida:
 -   `secuencias3.fastq` - 75
 :::
 
-**Ejercicio 13.2** **Contar el número de secuencias (líneas) en cada archivo FASTQ**
+#### **Ejercicio 10.2 Contar el número de secuencias con un string en cada archivo FASTQ**
 
 Ahora, determina el número de secuencias (lineas) de cada archivo `.fastq` por separado. Se conoce que los títulos de las corridas de las secuencias en cada archivo `.fastq` empiezan con el string `@SRR098026`.
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solución
+##### Solución
 
 ``` bash
 #!/bin/bash
@@ -84,18 +82,20 @@ Salida:
 -   `secuencias3.fastq` - 75
 :::
 
-**Ejercicio 13.3 Identifica el número de secuencias con calidad baja.**
+#### **Ejercicio 10.3 Identifica el número de secuencias con calidad baja**
 
 En los archivos FASTQ, la tercera línea de cada entrada contiene el símbolo `+`, mientras que la cuarta línea representa la calidad de la secuencia en formato ASCII. Determina cuántas secuencias tienen una calidad promedio por debajo de un umbral específico (por ejemplo, una calidad promedio menor a 20).
 
 ::: {.callout-note icon="false"}
-## Pista
+##### Pista
 
 Usa herramientas como `grep` y un script auxiliar para convertir los símbolos ASCII a valores numéricos y calcular su promedio.
+
+Recuerda que los archivos se encuentran en `unix.bioinfo.rsgecuador-gh-pages/_files/`
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solución
+##### Solución
 
 ``` {.bash eval="FALSE"}
 # Umbral de calidad
@@ -128,24 +128,26 @@ cat quality_lines.txt | while read line; do
 done
 
 # Contar secuencias con calidad promedio menor al umbral
-echo "Número de secuencias con calidad promedio < $umbral: $(wc -l < low_quality_sequences 20: 757
+echo "Número de secuencias con calidad promedio < $umbral: $(wc -l < low_quality_sequences.txt)"
 ```
 
-Número de secuencias con calidad promedio \< 20: 757
+Número de secuencias con calidad promedio \< 20: 763
 :::
 
-**Ejercicio 13.4 Cuenta cuántas secuencias únicas hay en cada archivo.**
+#### **Ejercicio 10.4 Cuenta cuántas secuencias únicas hay en cada archivo**
 
 Determina cuántas secuencias únicas (sin repeticiones) existen en cada archivo. Asegúrate de ignorar las líneas que comienzan con `@` o `+`, ya que no forman parte de las secuencias.
 
 ::: {.callout-note icon="false"}
-## Pista
+##### Pista
 
 Usa `grep` para extraer solo las líneas correspondientes a las secuencias y después `sort` y `uniq` para contarlas.
+
+Recuerda que los archivos se encuentran en `unix.bioinfo.rsgecuador-gh-pages/_files/`
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solucion
+##### Solución
 
 ``` {.bash eval="FALSE"}
 # Extraer solo las secuencias (segunda línea de cada entrada)
@@ -158,20 +160,20 @@ echo "Número de secuencias únicas: $(sort sequences_only.txt | uniq | wc -l)"
 Número de secuencias únicas: 620
 :::
 
-**Ejercicio 13.5 Encuentra la longitud promedio de las secuencias.**
+#### **Ejercicio 10.5 Encuentra la longitud promedio de las secuencias**
 
 Calcula la longitud promedio de las secuencias en cada archivo. Esto requiere sumar las longitudes de todas las secuencias y dividirlas entre el número total de secuencias.
 
 ::: {.callout-note icon="false"}
-## Pista
+##### Pista
 
 Extrae las líneas correspondientes a las secuencias y utiliza `wc -c` para sumar los caracteres, luego divide por el número de secuencias.
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solucion
+##### Solución
 
-``` bash
+``` {.bash code-copy="true" eval="false"}
 # calcular_longitud_promedio.sh
 # Extraer solo las secuencias (segunda línea de cada entrada)
 grep -A 3 "^@" *.fastq | grep -v "^@" | grep -v "+" | grep -v "^--$" > sequences_only.txt
@@ -198,17 +200,16 @@ echo "Longitud promedio de las secuencias: $average_length"
 Longitud promedio de las secuencias: 58
 :::
 
-**Ejercicio 13.6**
+#### **Ejercicio 10.6 Calcular el porcentaje de GC con una lista de archivos**
 
-**Ejercicio 13.7 Calcula porcentaje de GC con una lista de archivos**
-
-Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq `secuencias1.fastq`,`secuencias2.fastq`,`secuencias3.fastq` utilizando ciclos y/o bucles.
+Tomando en cuenta el ejercicio anterior, calcula el porcentaje de GC de los tres archivos fastq `secuencias1.fastq`, `secuencias2.fastq`, `secuencias3.fastq` utilizando ciclos y/o bucles.
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solucion
+##### Solución
 
-``` bash
+``` {.bash code-copy="true" eval="false"}
 #!/bin/bash
+# GC_per.sh
 
 # Directorio donde están los archivos FASTQ
 directorio="$HOME/unix.bioinfo.rsgecuador-gh-pages/_files"
@@ -251,14 +252,14 @@ done
 Procesando archivo: secuencias1.fastq: 27% Procesando archivo: secuencias2.fastq: 11% Procesando archivo: secuencias3.fastq: 2% Procesando archivo: secuencias_bash.fastq: 2%
 :::
 
-**Ejercicio 13.8**
+#### **Ejercicio 10.7 Calcular el contenido de bases por secuencias**
 
 Calcula el contenido de cada una de las bases en las secuencias del archivo `secuencias1.fastq`, A,T,G,C y N.
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solucion
+##### Solución
 
-``` bash
+``` {.bash code-copy="true" eval="false"}
 #!/bin/bash
 
 # Archivo de entrada
@@ -300,17 +301,16 @@ Contenido de bases en secuencias1.fastq:
 A: 643 T: 450 G: 494 C: 470 N: 1408
 :::
 
-**Ejercicio 13.9**
-
-**Ejercicio 13.10 Calcula distribución de longitudes en una lista de archivos**
+#### **Ejercicio 10.8 Calcular la distribución de longitudes en una lista de archivos**
 
 Calcula la distribución de las longitudes de las secuencias en una lista de archivos fastq. En este ejercicio, deberán discutir qué hace cada uno de los pasos dentro del script y discutirlos con el resto de la clase.
 
 ::: {.callout-tip collapse="true" icon="false"}
-## Solucion
+##### Solución
 
-``` bash
+``` {.bash code-copy="true" eval="false"}
 #!/bin/bash
+# LongitudArchivos.sh
 
 # Directorio donde se encuentran los archivos FASTQ
 directorio="$HOME/unix.bioinfo.rsgecuador-gh-pages/_files"
@@ -354,13 +354,43 @@ for archivo in "$directorio"/*.fastq; do
   fi
 done
 ```
-
-La respuesta es:
 :::
 
-**Ejercicio**
+#### **Ejercicio 10.9 Encontrar la longitud de la secuencia más larga**
 
-Y la historia continua ....
+Determina la longitud de la secuencia más larga entre los archivos FASTQ.
+
+::: {.callout-tip collapse="true" icon="false"}
+##### Solución
+
+``` {.bash code-copy="true" eval="false"}
+grep -A 1 "^@" *.fastq | grep -v "^@" | grep -v "^--$" | wc -L
+```
+
+La respuesta es: 72
+:::
+
+#### **Ejercicio 10.10 Encontrar un motivo específico en un archivo FASTQ**
+
+El objetivo de este ejercicio es buscar un motivo específico (un patrón de nucleótidos) dentro de las secuencias de un archivo FASTQ y contar cuántas secuencias contienen ese motivo.
+
+**Ejemplo de motivo:** Supongamos que el motivo a buscar es `AGCT`
+
+::: {.callout-tip collapse="true" icon="false"}
+##### Solución
+
+``` {.bash code-copy="true" eval="false"}
+# Motivo a buscar
+motivo="AGCT"
+
+# Buscar el motivo en las secuencias del archivo FASTQ
+grep -A 1 "^@" *.fastq | grep -v "^@" | grep -v "^--$" | grep -c "$motivo"
+```
+
+La respuesta es: 2
+:::
+
+**Y la historia continua ....**
 
 ![](img/meme1.png){fig-align="center"}
 

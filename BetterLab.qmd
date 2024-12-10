@@ -1,10 +1,108 @@
-# Uso de BetterLab
+# Cómo acceder al servidor Bettertab en RStudio
 
-Lo escribira Abel
+Este tutorial te guiará para acceder al servidor Betterlab utilizando una interfaz gráfica de RStudio a través de un enlace.
 
-Falta el acceso y las pruebas en el mismo
+## **Paso 1: Verifica los requisitos previos**
+
+Antes de comenzar, asegúrate de contar con lo siguiente:
+
+-   **Un navegador web actualizado** (Chrome, Firefox o Edge).
+-   **Credenciales de acceso:** nombre de usuario y contraseña, proporcionados por el administrador del servidor.
+-   **El enlace de acceso al servidor Betterlab**: `https://bioinformatica.matmor.unam.mx/rstudio/auth-sign-in?appUri=%2F`
+
+::: callout-note
+Los instructores te han proporcionado la lista de usuarios de Betterlab.\
+\
+Escribe tu nombre en alguno de los usuarios disponibles y toma nota de tu usuario y contraseña.
+:::
+
+## **Paso 2: Accede al enlace**
+
+1.  Abre tu navegador web e ingresa el siguiente URL en la barra de direcciones (copia y pega o da clic al link): `https://bioinformatica.matmor.unam.mx/rstudio/auth-sign-in?appUri=%2F`
+
+2.  Presiona **Enter** para cargar la página.
+
+    ![](img/BetterLab1.png){width="403"}
+
+## **Paso 3: Inicia sesión**
+
+En la pantalla de inicio de sesión, introduce tus credenciales, por ejemplo:
+
+-   **Usuario:** alumno10.
+-   **Contraseña:** (Escribe la contraseña correspondiente de la hoja de usuarios)
+-   Haz clic en **Iniciar sesión** o presiona **Enter**.
+
+## **Paso 4: Explora RStudio en Bettertab**
+
+Una vez que hayas iniciado sesión, se abrirá la interfaz de usuario de RStudio. Aquí puedes:
+
+-   Crear, cargar y ejecutar scripts en R.
+-   Gestionar tus proyectos.
+-   Acceder a datos y recursos alojados en el servidor Bettertab.
+-   Cuando entramos veremos cuatro ventanas:
+
+![](img/BetterLab2.jpg)
+
+### **1. Script o Editor de Código (**Ventana superior izquierda**)**
+
+-   Uso: Aquí escribes, editas y guardas tus **scripts** de R.
+-   Características principales:
+-   Puedes abrir varios archivos a la vez en pestañas.
+-   Permite ejecutar líneas o bloques de código presionando Ctrl+Enter (o Cmd+Enter en Mac).
+-   Prueba: Haz el comando **getwd()** para saber cual es tu directorio de trabajo
+
+![](img/BetterLab3.png)
+
+### **2. Consola (Console) (**Ventana inferior izquierda)
+
+-   Uso: Aquí se ejecuta el código de manera directa.
+-   Muestra los resultados y mensajes de salida.
+-   Características:
+-   Puedes escribir comandos directamente para probar ideas rápidas.
+-   Repite el mismo ejercicio anterior.
+
+### **3. Entorno y/o Historial (**Ventana superior derecha)
+
+-   Pestaña Entorno: Muestra los objetos que has creado (como variables, funciones, y datos cargados).
+-   Pestaña Historial: Muestra todos los comandos ejecutados en la sesión.
+-   Tip: Puedes hacer clic en los objetos para inspeccionarlos o eliminarlos (botón de escoba).
+
+![](img/BetterLab4.png)
+
+### **4. Archivos, Gráficos, Paquetes, y Ayuda (**Ventana inferior derecha**)**
+
+Uso:
+
+-   Archivos: Explora las carpetas y archivos en tu directorio de trabajo.
+-   Gráficos: Muestra los gráficos generados con tu código.
+-   Paquetes: Administra e instala paquetes de R.
+-   Ayuda: Busca documentación sobre funciones y comandos de R.
+
+![](img/BetterLab5.png)
+
+### **Terminal (Bash)**
+
+::: callout-note
+Pestaña en la ventana inferior izquierda, junto a la Consola.
+:::
+
+Uso:
+
+-   Es un terminal de línea de comandos para ejecutar comandos en Bash directamente desde RStudio.
+-   Útil para tareas del sistema, como mover archivos, instalar software o trabajar con Git.
+-   Ejemplo: Puedes usar **ls** para listar archivos.
+
+![](img/BetterLab6.png)
+
+## **Paso 5: Cerrar sesión** 
+
+Cuando termines de trabajar:
+
+1.  Haz clic en el botón **Cerrar sesión** ubicado en la esquina superior derecha.
+2.  Cierra la pestaña del navegador para garantizar que tu sesión quede cerrada.
 
 ## Material suplementario
 
 -   Nelly Selem Tutorial - [Bioinformática](https://nselem.github.io/bioinformatics/)
 -   En Windows puedes usar [Git Bash.](https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/)
+-   [Entrar a un servidor desde SSH](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-es)

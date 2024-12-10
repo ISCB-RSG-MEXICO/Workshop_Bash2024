@@ -7,7 +7,7 @@ Imagina que quieres realizar una misma tarea para 3 archivos distintos, ¿no ser
 ::: {.callout-note icon="false"}
 ## For
 
-`for` es ideal cuando sabes cuántas veces quieres que se repita ese bloque de código. Por ejemplo:\
+`for` es ideal cuando sabes cuántas veces quieres que se repita ese bloque de código. Por ejemplo:
 :::
 
 ``` {.bash code-copy="true" eval="false"}
@@ -19,7 +19,7 @@ done
 ::: {.callout-note icon="false"}
 ## while
 
-`while`, por su parte, se utiliza cuando quieres que un bloque de código se ejecute mientras se cumpla una determinada condición. Por ejemplo:\
+`while`, por su parte, se utiliza cuando quieres que un bloque de código se ejecute mientras se cumpla una determinada condición. Por ejemplo:
 :::
 
 ``` {.bash code-copy="true" eval="false"}
@@ -28,7 +28,7 @@ while [ condición ]; do
 done
 ```
 
-## **Ejercicio grupal**
+## Actividad grupal
 
 Retomando el ejercicio anterior, modifiquemos el código para crear un bucle para procesar los tres archivos fastq (**secuencias1.fastq, secuencias2.fastq, secuencias3.fastq** ) que tenemos.
 

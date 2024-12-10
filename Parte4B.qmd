@@ -65,11 +65,8 @@ echo "Taxonomy ID: $taxonomy"
 ## Explicación del código
 
 -   `sed -n 's/.*OS=\([^ ]*\).*/\1/p'`: Extrae el nombre del organismo entre `OS=` y el primer espacio.
-
 -   `sed -n 's/.*OX=\([0-9]*\).*/\1/p'`: Extrae el número después de `OX=`.
-
 -   **`sort -u`**: Ordena las líneas y elimina duplicados, asegurando que solo queden valores únicos.
-
 -   Se aplica después de extraer los valores con `sed`, por si existen múltiples cabeceras en el archivo.
 :::
 
@@ -84,13 +81,9 @@ grep ">" S_clavuligerus_proteome.fasta | sed -n 's/.*GN=\([^ ]*\).*/\1/p' | sort
 ## Explicación del código
 
 -   **`grep ">" header.fasta`**: Encuentra las líneas con cabeceras FASTA.
-
 -   **`sed -n 's/.*GN=\([^ ]*\).*/\1/p'`**: Extrae el valor asociado a `GN=` (el nombre del gen).
-
 -   **`sort`**: Ordena alfabéticamente los nombres de los genes.
-
 -   **`uniq`**: Filtra y deja solo los nombres únicos.
-
 -   **`wc -l`**: Cuenta el número total de líneas (es decir, el número de genes únicos).
 :::
 
@@ -100,7 +93,6 @@ grep ">" S_clavuligerus_proteome.fasta | sed -n 's/.*GN=\([^ ]*\).*/\1/p' | sort
 **`TMUUS_STRC2`**: Es el nombre de la proteína en formato abreviado y en mayúsculas.
 
 -   **`TMUUS`**: Abreviatura de la función de la proteína: "(+)-T-muurolol synthase".
-
 -   **`STRC2`**: Abreviatura del organismo de origen, **Streptomyces clavuligerus**.
 :::
 

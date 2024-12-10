@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop Bash 2024 - 3&nbsp; Uso de BetterLab</title>
+<title>Workshop Bash 2024 - 3&nbsp; Cómo acceder al servidor Bettertab en RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,13 +50,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -65,10 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
@@ -81,13 +73,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><strong>Section 1</strong> - Introducción a Bash</a></li><li class="breadcrumb-item"><a href="./BetterLab.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><strong>Section 1</strong> - Introducción a Bash</a></li><li class="breadcrumb-item"><a href="./BetterLab.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cómo acceder al servidor Bettertab en RStudio</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -96,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Workshop Bash 2024</a> 
@@ -166,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./BetterLab.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cómo acceder al servidor Bettertab en RStudio</span></span></a>
   </div>
 </li>
       </ul>
@@ -301,23 +293,35 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#material-suplementario" id="toc-material-suplementario" class="nav-link active" data-scroll-target="#material-suplementario"><span class="header-section-number">3.1</span> Material suplementario</a></li>
+  <li><a href="#paso-1-verifica-los-requisitos-previos" id="toc-paso-1-verifica-los-requisitos-previos" class="nav-link active" data-scroll-target="#paso-1-verifica-los-requisitos-previos"><span class="header-section-number">3.1</span> <strong>Paso 1: Verifica los requisitos previos</strong></a></li>
+  <li><a href="#paso-2-accede-al-enlace" id="toc-paso-2-accede-al-enlace" class="nav-link" data-scroll-target="#paso-2-accede-al-enlace"><span class="header-section-number">3.2</span> <strong>Paso 2: Accede al enlace</strong></a></li>
+  <li><a href="#paso-3-inicia-sesión" id="toc-paso-3-inicia-sesión" class="nav-link" data-scroll-target="#paso-3-inicia-sesión"><span class="header-section-number">3.3</span> <strong>Paso 3: Inicia sesión</strong></a></li>
+  <li><a href="#paso-4-explora-rstudio-en-bettertab" id="toc-paso-4-explora-rstudio-en-bettertab" class="nav-link" data-scroll-target="#paso-4-explora-rstudio-en-bettertab"><span class="header-section-number">3.4</span> <strong>Paso 4: Explora RStudio en Bettertab</strong></a>
+  <ul>
+  <li><a href="#script-o-editor-de-código-ventana-superior-izquierda" id="toc-script-o-editor-de-código-ventana-superior-izquierda" class="nav-link" data-scroll-target="#script-o-editor-de-código-ventana-superior-izquierda"><span class="header-section-number">3.4.1</span> <strong>1. Script o Editor de Código (</strong>Ventana superior izquierda<strong>)</strong></a></li>
+  <li><a href="#consola-console-ventana-inferior-izquierda" id="toc-consola-console-ventana-inferior-izquierda" class="nav-link" data-scroll-target="#consola-console-ventana-inferior-izquierda"><span class="header-section-number">3.4.2</span> <strong>2. Consola (Console) (</strong>Ventana inferior izquierda)</a></li>
+  <li><a href="#entorno-yo-historial-ventana-superior-derecha" id="toc-entorno-yo-historial-ventana-superior-derecha" class="nav-link" data-scroll-target="#entorno-yo-historial-ventana-superior-derecha"><span class="header-section-number">3.4.3</span> <strong>3. Entorno y/o Historial (</strong>Ventana superior derecha)</a></li>
+  <li><a href="#archivos-gráficos-paquetes-y-ayuda-ventana-inferior-derecha" id="toc-archivos-gráficos-paquetes-y-ayuda-ventana-inferior-derecha" class="nav-link" data-scroll-target="#archivos-gráficos-paquetes-y-ayuda-ventana-inferior-derecha"><span class="header-section-number">3.4.4</span> <strong>4. Archivos, Gráficos, Paquetes, y Ayuda (</strong>Ventana inferior derecha<strong>)</strong></a></li>
+  <li><a href="#terminal-bash" id="toc-terminal-bash" class="nav-link" data-scroll-target="#terminal-bash"><span class="header-section-number">3.4.5</span> <strong>Terminal (Bash)</strong></a></li>
+  </ul></li>
+  <li><a href="#paso-5-cerrar-sesión" id="toc-paso-5-cerrar-sesión" class="nav-link" data-scroll-target="#paso-5-cerrar-sesión"><span class="header-section-number">3.5</span> <strong>Paso 5: Cerrar sesión</strong></a></li>
+  <li><a href="#material-suplementario" id="toc-material-suplementario" class="nav-link" data-scroll-target="#material-suplementario"><span class="header-section-number">3.6</span> Material suplementario</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><strong>Section 1</strong> - Introducción a Bash</a></li><li class="breadcrumb-item"><a href="./BetterLab.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Uso de BetterLab</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cómo acceder al servidor Bettertab en RStudio</span></h1>
 </div>
 
 
@@ -330,17 +334,139 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
 
-
-<p>Lo escribira Abel</p>
-<p>Falta el acceso y las pruebas en el mismo</p>
-<section id="material-suplementario" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="material-suplementario"><span class="header-section-number">3.1</span> Material suplementario</h2>
+<p>Este tutorial te guiará para acceder al servidor Betterlab utilizando una interfaz gráfica de RStudio a través de un enlace.</p>
+<section id="paso-1-verifica-los-requisitos-previos" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="paso-1-verifica-los-requisitos-previos"><span class="header-section-number">3.1</span> <strong>Paso 1: Verifica los requisitos previos</strong></h2>
+<p>Antes de comenzar, asegúrate de contar con lo siguiente:</p>
+<ul>
+<li><strong>Un navegador web actualizado</strong> (Chrome, Firefox o Edge).</li>
+<li><strong>Credenciales de acceso:</strong> nombre de usuario y contraseña, proporcionados por el administrador del servidor.</li>
+<li><strong>El enlace de acceso al servidor Betterlab</strong>: <code>https://bioinformatica.matmor.unam.mx/rstudio/auth-sign-in?appUri=%2F</code></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Los instructores te han proporcionado la lista de usuarios de Betterlab.<br>
+<br>
+Escribe tu nombre en alguno de los usuarios disponibles y toma nota de tu usuario y contraseña.</p>
+</div>
+</div>
+</section>
+<section id="paso-2-accede-al-enlace" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="paso-2-accede-al-enlace"><span class="header-section-number">3.2</span> <strong>Paso 2: Accede al enlace</strong></h2>
+<ol type="1">
+<li><p>Abre tu navegador web e ingresa el siguiente URL en la barra de direcciones (copia y pega o da clic al link): <code>https://bioinformatica.matmor.unam.mx/rstudio/auth-sign-in?appUri=%2F</code></p></li>
+<li><p>Presiona <strong>Enter</strong> para cargar la página.</p>
+<p><img src="img/BetterLab1.png" class="img-fluid" width="403"></p></li>
+</ol>
+</section>
+<section id="paso-3-inicia-sesión" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="paso-3-inicia-sesión"><span class="header-section-number">3.3</span> <strong>Paso 3: Inicia sesión</strong></h2>
+<p>En la pantalla de inicio de sesión, introduce tus credenciales, por ejemplo:</p>
+<ul>
+<li><strong>Usuario:</strong> alumno10.</li>
+<li><strong>Contraseña:</strong> (Escribe la contraseña correspondiente de la hoja de usuarios)</li>
+<li>Haz clic en <strong>Iniciar sesión</strong> o presiona <strong>Enter</strong>.</li>
+</ul>
+</section>
+<section id="paso-4-explora-rstudio-en-bettertab" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="paso-4-explora-rstudio-en-bettertab"><span class="header-section-number">3.4</span> <strong>Paso 4: Explora RStudio en Bettertab</strong></h2>
+<p>Una vez que hayas iniciado sesión, se abrirá la interfaz de usuario de RStudio. Aquí puedes:</p>
+<ul>
+<li>Crear, cargar y ejecutar scripts en R.</li>
+<li>Gestionar tus proyectos.</li>
+<li>Acceder a datos y recursos alojados en el servidor Bettertab.</li>
+<li>Cuando entramos veremos cuatro ventanas:</li>
+</ul>
+<p><img src="img/BetterLab2.jpg" class="img-fluid"></p>
+<section id="script-o-editor-de-código-ventana-superior-izquierda" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="script-o-editor-de-código-ventana-superior-izquierda"><span class="header-section-number">3.4.1</span> <strong>1. Script o Editor de Código (</strong>Ventana superior izquierda<strong>)</strong></h3>
+<ul>
+<li>Uso: Aquí escribes, editas y guardas tus <strong>scripts</strong> de R.</li>
+<li>Características principales:</li>
+<li>Puedes abrir varios archivos a la vez en pestañas.</li>
+<li>Permite ejecutar líneas o bloques de código presionando Ctrl+Enter (o Cmd+Enter en Mac).</li>
+<li>Prueba: Haz el comando <strong>getwd()</strong> para saber cual es tu directorio de trabajo</li>
+</ul>
+<p><img src="img/BetterLab3.png" class="img-fluid"></p>
+</section>
+<section id="consola-console-ventana-inferior-izquierda" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="consola-console-ventana-inferior-izquierda"><span class="header-section-number">3.4.2</span> <strong>2. Consola (Console) (</strong>Ventana inferior izquierda)</h3>
+<ul>
+<li>Uso: Aquí se ejecuta el código de manera directa.</li>
+<li>Muestra los resultados y mensajes de salida.</li>
+<li>Características:</li>
+<li>Puedes escribir comandos directamente para probar ideas rápidas.</li>
+<li>Repite el mismo ejercicio anterior.</li>
+</ul>
+</section>
+<section id="entorno-yo-historial-ventana-superior-derecha" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="entorno-yo-historial-ventana-superior-derecha"><span class="header-section-number">3.4.3</span> <strong>3. Entorno y/o Historial (</strong>Ventana superior derecha)</h3>
+<ul>
+<li>Pestaña Entorno: Muestra los objetos que has creado (como variables, funciones, y datos cargados).</li>
+<li>Pestaña Historial: Muestra todos los comandos ejecutados en la sesión.</li>
+<li>Tip: Puedes hacer clic en los objetos para inspeccionarlos o eliminarlos (botón de escoba).</li>
+</ul>
+<p><img src="img/BetterLab4.png" class="img-fluid"></p>
+</section>
+<section id="archivos-gráficos-paquetes-y-ayuda-ventana-inferior-derecha" class="level3" data-number="3.4.4">
+<h3 data-number="3.4.4" class="anchored" data-anchor-id="archivos-gráficos-paquetes-y-ayuda-ventana-inferior-derecha"><span class="header-section-number">3.4.4</span> <strong>4. Archivos, Gráficos, Paquetes, y Ayuda (</strong>Ventana inferior derecha<strong>)</strong></h3>
+<p>Uso:</p>
+<ul>
+<li>Archivos: Explora las carpetas y archivos en tu directorio de trabajo.</li>
+<li>Gráficos: Muestra los gráficos generados con tu código.</li>
+<li>Paquetes: Administra e instala paquetes de R.</li>
+<li>Ayuda: Busca documentación sobre funciones y comandos de R.</li>
+</ul>
+<p><img src="img/BetterLab5.png" class="img-fluid"></p>
+</section>
+<section id="terminal-bash" class="level3" data-number="3.4.5">
+<h3 data-number="3.4.5" class="anchored" data-anchor-id="terminal-bash"><span class="header-section-number">3.4.5</span> <strong>Terminal (Bash)</strong></h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pestaña en la ventana inferior izquierda, junto a la Consola.</p>
+</div>
+</div>
+<p>Uso:</p>
+<ul>
+<li>Es un terminal de línea de comandos para ejecutar comandos en Bash directamente desde RStudio.</li>
+<li>Útil para tareas del sistema, como mover archivos, instalar software o trabajar con Git.</li>
+<li>Ejemplo: Puedes usar <strong>ls</strong> para listar archivos.</li>
+</ul>
+<p><img src="img/BetterLab6.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="paso-5-cerrar-sesión" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="paso-5-cerrar-sesión"><span class="header-section-number">3.5</span> <strong>Paso 5: Cerrar sesión</strong></h2>
+<p>Cuando termines de trabajar:</p>
+<ol type="1">
+<li>Haz clic en el botón <strong>Cerrar sesión</strong> ubicado en la esquina superior derecha.</li>
+<li>Cierra la pestaña del navegador para garantizar que tu sesión quede cerrada.</li>
+</ol>
+</section>
+<section id="material-suplementario" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="material-suplementario"><span class="header-section-number">3.6</span> Material suplementario</h2>
 <ul>
 <li>Nelly Selem Tutorial - <a href="https://nselem.github.io/bioinformatics/">Bioinformática</a></li>
 <li>En Windows puedes usar <a href="https://miguel-mx.github.io/2024-01-24-ccm-unam-swc/">Git Bash.</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server-es">Entrar a un servidor desde SSH</a></li>
 </ul>
 
 
@@ -388,33 +514,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -483,15 +582,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -570,27 +667,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -600,17 +680,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -622,130 +693,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -789,7 +737,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -815,32 +762,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -902,18 +823,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Bash.html" class="pagination-link" aria-label="Mis primeros pasos en Bash">
+      <a href="./Bash.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Mis primeros pasos en Bash</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Rnaseq_intro.html" class="pagination-link" aria-label="**Análisis de datos de RNA-Seq**">
+      <a href="./Rnaseq_intro.html" class="pagination-link">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><strong>Análisis de datos de RNA-Seq</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 
